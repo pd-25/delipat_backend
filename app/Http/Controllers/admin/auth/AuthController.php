@@ -21,6 +21,7 @@ class AuthController extends Controller
         ]);
         try {
             $data = $request->all();
+            // dd($data);
             if (Auth::guard('admin')->attempt(["email" => $data["email"], "password" => $data["password"]])) {
                 return redirect()->route('admin.dashboard');
             } else {

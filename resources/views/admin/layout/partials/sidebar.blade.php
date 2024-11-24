@@ -8,15 +8,31 @@
                 <span>Dashboard</span>
             </a>
         </li>
-
-
-
-        <li class="nav-item {{ Route::is('category-mamages.*') ? 'active' : '' }}">
-            <a class="nav-link " href="{{route('category-mamages.index')}}">
+        <li class="nav-item {{ Route::is('blogs.*') ? 'active' : '' }}">
+            <a class="nav-link " href="{{ route('blogs.index') }}">
                 <i class="ri-group-fill"></i>
-                <span>Categories</span>
+                <span>Blog</span>
             </a>
         </li>
+        <li class="nav-item {{ Route::is('gallery.*') ? 'active' : '' }}">
+            <a class="nav-link " href="{{ route('gallery.index') }}">
+                <i class="ri-group-fill"></i>
+                <span>Gallery</span>
+            </a>
+        </li>
+        <li class="nav-item {{ Route::is('seo-settings.*') ? 'active' : '' }}">
+            <a class="nav-link " href="{{ route('seo-settings.index') }}">
+                <i class="ri-group-fill"></i>
+                <span>Seo Settings</span>
+            </a>
+        </li>
+       <li class="nav-item {{ Route::is('site-settings.*') ? 'active' : '' }}">
+            <a class="nav-link " href="{{ route('site-settings.index') }}">
+                <i class="ri-group-fill"></i>
+                <span>Site Settings</span>
+            </a>
+        </li>
+         {{-- 
 
         <li class="nav-item {{ Route::is('product-mamages.*') ? 'active' : '' }}">
             <a class="nav-link " href="{{route('product-mamages.index')}}">
@@ -36,7 +52,7 @@
                 <span>Users</span>
             </a>
         </li>
-        
+         --}}
     </ul>
 
 </aside>
