@@ -297,7 +297,7 @@
             </div>
                 <div class="d-flex align-items-center more-details justify-content-center">
                     <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="#">Discover Industry Solutions</a>
+                        <a href="{{route('industry')}}">Discover Industry Solutions</a>
                     </div>
                     <!-- <div class="call-con position-relative d-inline-block" data-aos="fade-up"
                             data-aos-duration="600">
@@ -436,63 +436,26 @@
                     </h2>
                 </div>
                 <div class="row">
+                    @foreach($blogs as $blog)
                     <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                         <div class="blog-item">
                             <figure>
-                                <img src="{{asset('frontend/assets/images/blog-img1.jpg')}}" alt="blog-img">
+                                <img src="{{asset('storage/' . $blog->image)}}"   style="width: 100%;"   alt="{{ $blog->title }}">
                             </figure>
                             <div class="blog-item-content">
-                                <a href="#">
-                                    <h4>Great Tips To Choose A Professional developer</h4>
+                                <a href="{{ route('blog.show', $blog->slug) }}">
+                                    <h4>{{ $blog->title }}</h4>
                                 </a>
-                                <p>Duis aute irure dolor in reprehenderit in volupta te velit esse cillum dolore eu
-                                    fugiat
-                                    nulla pariat</p>
+                                <p>{{ Str::limit($blog->short_description, 100) }}</p>
                                 <ul class="list-unstyled mb-0 position-relative">
                                     <li><i class="fas fa-user"></i> By : Admin</li>
-                                    <li><i class="fas fa-calendar-alt"></i> Oct 26,2022</li>
+                                    <li><i class="fas fa-calendar-alt"></i> {{ $blog->created_at->format('M d, Y') }}</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
-                        <div class="blog-item">
-                            <figure>
-                                <img src="{{asset('frontend/assets/images/blog-img2.jpg')}}" alt="blog-img">
-                            </figure>
-                            <div class="blog-item-content">
-                                <a href="#">
-                                    <h4>The Secret offer Salesforce & HubSpot Development</h4>
-                                </a>
-                                <p>Duis aute irure dolor in reprehenderit in volupta te velit esse cillum dolore eu
-                                    fugiat
-                                    nulla pariat</p>
-                                <ul class="list-unstyled mb-0 position-relative">
-                                    <li><i class="fas fa-user"></i> By : Admin</li>
-                                    <li><i class="fas fa-calendar-alt"></i> Oct 26,2022</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
-                        <div class="blog-item mb-0">
-                            <figure>
-                                <img src="{{asset('frontend/assets/images/blog-img3.jpg')}}" alt="blog-img">
-                            </figure>
-                            <div class="blog-item-content">
-                                <a href="#">
-                                    <h4>Lorem ipsum dolor sit, amet consectetur </h4>
-                                </a>
-                                <p>Duis aute irure dolor in reprehenderit in volupta te velit esse cillum dolore eu
-                                    fugiat
-                                    nulla pariat</p>
-                                <ul class="list-unstyled mb-0 position-relative">
-                                    <li>By : Admin</li>
-                                    <li>Oct 26,2022</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    @endforeach
                 </div>
             </div>
         </div>

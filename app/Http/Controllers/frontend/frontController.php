@@ -5,6 +5,7 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\GalleryImage;
+use App\Models\MetaData;
 use Illuminate\Http\Request;
 
 class frontController extends Controller
@@ -12,33 +13,35 @@ class frontController extends Controller
     
     public function index()
     {
-        
-        return view('frontend.index');
+        $blogs = Blog::take(3)->get();
+        $pagemeta = MetaData::where('page_name', 'home')->first();
+        return view('frontend.index', compact('blogs','pagemeta'));
     }
     public function about()
     {
-        
-        return view('frontend.about');
+        $pagemeta = MetaData::where('page_name', 'about-us')->first();
+        return view('frontend.about', compact('pagemeta'));
     }
     public function service()
     {
-        
-        return view('frontend.service');
+        $pagemeta = MetaData::where('page_name', 'service')->first();
+        return view('frontend.service',compact('pagemeta'));
     }
     public function gallery()
     {
         $gallery = GalleryImage::all();
-        
-        return view('frontend.gallery', compact('gallery'));
+        $pagemeta = MetaData::where('page_name', 'gallery')->first();
+        return view('frontend.gallery', compact('gallery','pagemeta'));
     }
     public function blog()
-{
+{    $pagemeta = MetaData::where('page_name', 'blog')->first();
     $blogs = Blog::latest()->paginate(6); // Fetch blogs with pagination (6 per page)
-    return view('frontend.blog', compact('blogs'));
+    return view('frontend.blog', compact('blogs','pagemeta'));
 }
 public function show($slug)
 {
     $blog = Blog::where('slug', $slug)->firstOrFail();
+    $pagemeta = $blog;
     $relatedBlogs = Blog::where('id', '!=', $blog->id)->orderBy('created_at', 'desc')->limit(3)->get();
 
     // Ensure tags are always an array
@@ -54,10 +57,18 @@ public function show($slug)
     $tags = array_map('trim', $tags);
 
     // dd($tags);  // For debugging purposes, check the result of the split
+    // dd($blog->faqs);
 
-    return view('frontend.single_blog', compact('blog', 'relatedBlogs', 'tags'));
+    return view('frontend.single_blog', compact('blog', 'relatedBlogs', 'tags','pagemeta'));
 }
 
-
-
+public function industry(){
+    $pagemeta = MetaData::where('page_name', 'industry')->first();
+    return view('frontend.industry',compact('pagemeta'));
+}
+public function contactus()
+{
+    $pagemeta = MetaData::where('page_name', 'contact-us')->first();
+    return view('frontend.contactus',compact('pagemeta'));
+}
 }

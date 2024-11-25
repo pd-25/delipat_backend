@@ -31,12 +31,12 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4">
-                <div class="single-generic-box" data-aos="fade-up" data-aos-duration="600">
+                {{-- <div class="single-generic-box" data-aos="fade-up" data-aos-duration="600">
                     <h3>Search News</h3>
                     <div class="search-input">
                         <input type="text" placeholder="Type Keywords">
                     </div>
-                </div>
+                </div> --}}
                 <div class="single-generic-box" data-aos="fade-up" data-aos-duration="600">
                     <h3>Tags</h3>
                     <div class="tag-link">
@@ -76,4 +76,41 @@
         </div>
     </div>
 </section>
+<section class="w-100 float-left faq-box position-relative">
+    <div class="container">
+        <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
+            <h2 class="aos-init aos-animate">Frequently Asked
+                <span class="color-01d0cc">Questions</span>
+            </h2>
+        </div>
+        <div class="aos-init aos-animate" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="accordion-section">
+                        <div class="accordion" id="faqAccordion">
+                            @foreach($blog->faqs as $faq)
+                                <div class="accordion-card">
+                                    <div class="accordion-header" id="heading{{ $loop->index }}">
+                                        <a href="#" class="accordion-btn collapsed" data-toggle="collapse"
+                                            data-target="#collapse{{ $loop->index }}" aria-expanded="false"
+                                            aria-controls="collapse{{ $loop->index }}">
+                                            <h5>{{ $faq->question }}</h5>
+                                        </a>
+                                    </div>
+                                    <div id="collapse{{ $loop->index }}" class="collapse"
+                                        aria-labelledby="heading{{ $loop->index }}" data-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p>{{ $faq->answer }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection

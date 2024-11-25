@@ -77,8 +77,8 @@ class siteSettingController extends Controller
     public function update(Request $request, SiteSetting $siteSetting)
     {
         $validated = $request->validate([
-            'logo1' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validate as image
-            'logo2' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validate as image
+            'logo1' => 'nullable|image', // Validate as image
+            'logo2' => 'nullable|image', // Validate as image
             'phone' => 'nullable|string',
             'email' => 'nullable|email',
             'facebooklink' => 'nullable|url',

@@ -11,9 +11,10 @@ Route::get('/',[frontController::class, 'index'])->name('index');
 Route::get('/about-us',[frontController::class, 'about'])->name('about');
 Route::get('/services',[frontController::class, 'service'])->name('service');
 Route::get('/gallery',[frontController::class, 'gallery'])->name('gallery');
-Route::get('/blogs',[frontController::class, 'blog'])->name('blog');
-Route::get('/blog/{slug}', [frontController::class, 'show'])->name('blog.show');
-
+Route::get('/case-study',[frontController::class, 'blog'])->name('blog');
+Route::get('/case-study/{slug}', [frontController::class, 'show'])->name('blog.show');
+Route::get( '/industry',[frontController::class, 'industry'])->name('industry');
+Route::get( '/contact-us',[frontController::class, 'contactus'])->name('contactus');
 // Auth::routes();
 
 

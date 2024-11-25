@@ -150,7 +150,7 @@ body{
 }
 .header-con .navbar-brand figure {
     left: 50%;
-    top: -105px;
+    top: -45px;
     position: absolute;
     transform: translateX(-50%);
 }

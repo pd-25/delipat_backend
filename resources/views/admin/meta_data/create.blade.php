@@ -27,6 +27,7 @@
                         <option value="home">Home</option>
                         <option value="gallery">Gallery</option>
                         <option value="service">Service</option>
+                        <option value="industry">Industry</option>
                         <option value="blog">Blog</option>
                         <option value="about-us">About Us</option>
                         <option value="contact-us">Contact Us</option>

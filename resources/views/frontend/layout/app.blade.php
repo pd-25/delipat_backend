@@ -1,3 +1,6 @@
+@php
+    $siteSettings = App\Models\SiteSetting::first();
+@endphp
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -7,7 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{asset('frontend/assets/images/favicon.png')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <title>Delipat | Home</title>
+    <title>{{$pagemeta->meta_title ?? $siteSettings->title ?? 'Delipat'}}</title>
+    <meta name="description" content="{{$pagemeta->meta_description ?? $siteSettings->description ?? 'Delipat'}}">
+    {!! $pagemeta->headerscript ?? $siteSettings->header_script ?? '' !!}
     <link rel="stylesheet" href="{{asset('frontend/assets/css/unpkg.com_blaze-slider@1.9.3_dist_blaze.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/assets/bootstrap/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/assets/css/owl.carousel.min.css')}}">
@@ -20,6 +25,7 @@
 </head>
 
 <body>
+    {!! $siteSettings->body_script ?? '' !!}
     <!-- <div class="loader-mask">
         <div class="loader">
             <div></div>
@@ -34,18 +40,33 @@
                     <div class="socisl-con d-flex align-items-center justify-content-md-start justify-content-center">
                         <span class="text-white d-inline-block text-uppercase">Follow Us:</span>
                         <ul class="list-unstyled mb-0 d-flex">
-                            <li><a href="https://www.facebook.com/"><i
+                            @if(!empty($siteSettings->facebooklink))
+                            <li><a href="{{$siteSettings->facebooklink}}"><i
                                         class="fab fa-facebook-f d-flex align-items-center justify-content-center"></i></a>
                             </li>
-                            <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><i
+                            @endif
+                            @if(!empty($siteSettings->twitterlink))
+                            <li><a href="{{$siteSettings->twitterlink}}"><i
                                         class="fab fa-twitter d-flex align-items-center justify-content-center"></i></a>
                             </li>
-                            <li><a href="https://www.linkedin.com/login"><i
+                            @endif
+                            @if(!empty($siteSettings->linkdinlink))
+                            <li><a href="{{$siteSettings->linkdinlink}}"><i
                                         class="fab fa-linkedin-in d-flex align-items-center justify-content-center"></i></a>
                             </li>
-                            <li><a href="https://www.instagram.com/"><i
+                            @endif
+                            @if(!empty($siteSettings->instagramlink))
+                            
+                            <li><a href="{{$siteSettings->instagramlink}}"><i
                                         class="fab fa-instagram d-flex align-items-center justify-content-center"></i></a>
                             </li>
+                            @endif
+                            @if(!empty($siteSettings->youtubelink))
+                            <li><a href="{{$siteSettings->youtubelink}}"><i
+                                        class="fab fa-youtube d-flex align-items-center justify-content-center"></i></a>
+                            </li>
+                            @endif
+                        
                         </ul>
                     </div>
                 </div>
@@ -53,13 +74,20 @@
                     class="col-lg-6 col-md-6 col-12 d-flex justify-content-md-end align-items-center justify-content-center">
                     <div class="client-info">
                         <ul class="list-unstyled mb-0 d-flex">
-                            <li><a style="color: white;" href="tel:+911234567890"><img
-                                        src="{{asset('frontend/assets/images/phone-icon.png')}}" alt="phone-icon"> +61
-                                    3 8376
-                                    6284</a></li>
-                            <li><a style="color: white;" href="mailto:Info@Delipat.com"><img
+                            @if(!empty($siteSettings->phone))
+                                <li>
+                                    <a style="color: white;" href="tel:{{$siteSettings->phone}}">
+                                        <img src="{{asset('frontend/assets/images/phone-icon.png')}}" alt="phone-icon">
+                                        {{$siteSettings->phone}}
+                                    </a>
+                                </li>
+                            @endif
+
+                                    @if(!empty($siteSettings->email))
+                            <li><a style="color: white;" href="mailto:{{$siteSettings->email}}"><img
                                         src="{{asset('frontend/assets/images/email-icon.png')}}" alt="email-icon">
-                                    Info@Delipat.com</a></li>
+                                    {{$siteSettings->email}}</a></li>
+                                    @endif
                         </ul>
                     </div>
                 </div>
@@ -72,8 +100,8 @@
     <header class="w-100 float-left header-con">
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navbar-dark px-0">
-                <a class="navbar-brand d-lg-none" href="#">
-                    <img src="{{asset('frontend/assets/images/mobile-logo.png')}}" alt="mobile-logo">
+                <a class="navbar-brand d-lg-none" href="{{route('index')}}">
+                    <img src="{{asset('Storage/'.$siteSettings->logo1)}}" alt="mobile-logo">
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -98,9 +126,9 @@
                         </li>
                     </ul>
                     <!--   Show this only lg screens and up   -->
-                    <a class="navbar-brand d-none d-lg-block" href="#">
+                    <a class="navbar-brand d-none d-lg-block" href="{{route('index')}}">
                         <figure class="mb-0">
-                            <img src="{{asset('frontend/assets/images/logo-img.png')}}" alt="logo-img">
+                            <img src="{{asset('Storage/'.$siteSettings->logo1)}}" alt="logo-img">
                         </figure>
                     </a>
                     <ul class="navbar-nav">
@@ -109,11 +137,11 @@
                         </li>
                         <li class="nav-item dropdown">
                         <li class="nav-item">
-                            <a class="nav-link p-0 {{ Route::is('blog') ? 'active' : '' }}" href="{{route('blog')}}">Blog</a>
+                            <a class="nav-link p-0 {{ Route::is('blog') ? 'active' : '' }}" href="{{route('blog')}}">Case Studies</a>
 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0 " href="contact.html">Contact Us</a>
+                            <a class="nav-link p-0 {{ Route::is('contactus') ? 'active' : '' }}" href="{{route('contactus')}}">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -140,14 +168,16 @@
                         <li><a href="#">services</a></li>
                         <li><a href="{{route('gallery')}}">Gallery</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="{{route('contactus')}}">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class="site-map">
                     <h4>Get Free Estimate</h4>
+                    @if(!empty($siteSettings->phone))
                     <div class="footer-phone">
-                        <a href="tel:+911234567890">+1234567890</a>
+                        <a href="tel:{{$siteSettings->phone}}">{{$siteSettings->phone}}</a>
                     </div>
+                    @endif
                     <span class="d-block">Our online scheduling and payment system is safe.</span>
                     <div class="online-btn">
                         <a href="#">Reques With Online Form</a>
@@ -179,18 +209,33 @@
             <div class="copyright-inner-con d-flex align-items-center justify-content-between">
                 <div class="footer-social">
                     <ul class="list-unstyled mb-0 d-flex">
-                        <li><a href="https://www.facebook.com/"><i
+                        @if(!empty($siteSettings->facebooklink))
+                        <li><a href="{{$siteSettings->facebooklink}}"><i
                                     class="fab fa-facebook-f d-flex align-items-center justify-content-center"></i></a>
                         </li>
-                        <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><i
+                        @endif
+                        @if(!empty($siteSettings->twitterlink))
+                        <li><a href="{{$siteSettings->twitterlink}}"><i
                                     class="fab fa-twitter d-flex align-items-center justify-content-center"></i></a>
                         </li>
-                        <li><a href="https://www.linkedin.com/login"><i
+                        @endif
+                        @if(!empty($siteSettings->linkdinlink))
+                        <li><a href="{{$siteSettings->linkdinlink}}"><i
                                     class="fab fa-linkedin-in d-flex align-items-center justify-content-center"></i></a>
                         </li>
-                        <li><a href="https://www.instagram.com/"><i
+                        @endif
+                        @if(!empty($siteSettings->instagramlink))
+                        
+                        <li><a href="{{$siteSettings->instagramlink}}"><i
                                     class="fab fa-instagram d-flex align-items-center justify-content-center"></i></a>
                         </li>
+                        @endif
+                        @if(!empty($siteSettings->youtubelink))
+                        <li><a href="{{$siteSettings->youtubelink}}"><i
+                                    class="fab fa-youtube d-flex align-items-center justify-content-center"></i></a>
+                        </li>
+                        @endif
+                    
                     </ul>
                 </div>
                 <div class="copyright-txt"><span>©2024 Delipat , All Rights Reserved. </span></div>
@@ -249,6 +294,7 @@
     <script>
         AOS.init();
     </script>
+    {!! $siteSettings->footer_script ?? '' !!}
 </body>
 
 </html>
