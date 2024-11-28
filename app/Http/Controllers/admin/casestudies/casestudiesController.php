@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Http\Controllers\admin\blog;
+namespace App\Http\Controllers\admin\casestudies;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Models\BlogFaq;
-class BlogController extends Controller
+class casestudiesController extends Controller
 {
-    /**
-     * Display a listing of the blogs.
+     /**
+     * Display a listing of the case-studies.
      */
     public function index()
     {
-        $blogs = Blog::where('type','blog')->latest()->paginate(10);
-        return view('admin.blog.index', compact('blogs'));
+        $blogs = Blog::where('type','case-studies')->latest()->paginate(10);
+        return view('admin.casestudies.index', compact('blogs'));
     }
 
     /**
@@ -23,7 +23,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('admin.blog.create');
+        return view('admin.casestudies.create');
     }
 
     /**
@@ -42,6 +42,7 @@ class BlogController extends Controller
             'headerscript' => 'nullable|string',
             'faqs.*.question' => 'required|string|max:255',
             'faqs.*.answer' => 'required|string',
+
         ]);
 
         // Handle image upload
@@ -67,7 +68,7 @@ class BlogController extends Controller
             'meta_title' => $request->meta_title,
             'meta_description' => $request->meta_description,
             'headerscript' => $request->headerscript,
-            'type'=> 'blog'
+            'type'=> 'case-studies',
         ]);
 
         // Add FAQs
@@ -77,7 +78,7 @@ class BlogController extends Controller
             }
         }
 
-        return redirect()->route('blogs.index')->with('success', 'Blog created successfully!');
+        return redirect()->route('case-studies.index')->with('success', 'Case Studies created successfully!');
     }
 
     /**
@@ -86,7 +87,7 @@ class BlogController extends Controller
     public function show(string $id)
     {
         $blog = Blog::with('faqs')->findOrFail($id); // Find the blog with its FAQs
-        return view('admin.blog.show', compact('blog'));
+        return view('admin.casestudies.show', compact('blog'));
     }
     
 
@@ -96,7 +97,7 @@ class BlogController extends Controller
     public function edit(string $id)
     {
         $blog = Blog::with('faqs')->findOrFail($id); // Find the blog with its FAQs
-        return view('admin.blog.edit', compact('blog'));
+        return view('admin.casestudies.edit', compact('blog'));
     }
     
 
@@ -164,7 +165,7 @@ class BlogController extends Controller
         // Remove FAQs that are not in the request
         BlogFaq::where('blog_id', $blog->id)->whereNotIn('id', $faqIds)->delete();
     
-        return redirect()->route('blogs.index')->with('success', 'Blog updated successfully!');
+        return redirect()->route('case-studies.index')->with('success', 'Case Studies updated successfully!');
     }
     
     
@@ -176,7 +177,7 @@ class BlogController extends Controller
     {
         $blog = Blog::findOrFail($id);
         $blog->delete(); // Automatically deletes associated FAQs due to cascading
-        return redirect()->route('blogs.index')->with('success', 'Blog deleted successfully!');
+        return redirect()->route('case-studies.index')->with('success', 'Case Studies deleted successfully!');
     }
-    
+  
 }

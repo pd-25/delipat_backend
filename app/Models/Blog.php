@@ -19,6 +19,7 @@ class Blog extends Model
         'meta_title',
         'meta_description',
         'headerscript',
+        'type',
     ];
 
     protected $casts = [

@@ -137,7 +137,7 @@
                         </li>
                         <li class="nav-item dropdown">
                         <li class="nav-item">
-                            <a class="nav-link p-0 {{ Route::is('blog') ? 'active' : '' }}" href="{{route('blog')}}">Case Studies</a>
+                            <a class="nav-link p-0 {{ Route::is('blog') ? 'active' : '' }}" href="{{route('blog')}}">Blog</a>
 
                         </li>
                         <li class="nav-item">

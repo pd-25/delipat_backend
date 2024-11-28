@@ -14,7 +14,7 @@
         <div class="card mt-3">
             <div class="card-header d-flex justify-content-between align-items-center">
                 Blogs List
-                <a href="{{ route('blogs.create') }}" class="btn btn-primary btn-sm">Create New Blog</a>
+                <a href="{{ route('case-studies.create') }}" class="btn btn-primary btn-sm">Create New Blog</a>
             </div>
             <div class="card-body">
                 <table class="table table-striped">
@@ -33,9 +33,9 @@
                                 <td>{{ $blog->slug }}</td>
                                 <td>{{ $blog->short_description }}</td>
                                 <td class="d-flex">
-                                    {{-- <a href="{{ route('blogs.show', $blog) }}" class="btn btn-info btn-sm me-2">View</a> --}}
-                                    <a href="{{ route('blogs.edit', $blog) }}" class="btn btn-warning btn-sm me-2">Edit</a>
-                                    <form action="{{ route('blogs.destroy', $blog) }}" method="POST" style="display:inline;">
+                                    {{-- <a href="{{ route('case-studies.show', $blog) }}" class="btn btn-info btn-sm me-2">View</a> --}}
+                                    <a href="{{ route('case-studies.edit', $blog) }}" class="btn btn-warning btn-sm me-2">Edit</a>
+                                    <form action="{{ route('case-studies.destroy', $blog) }}" method="POST" style="display:inline;">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this blog?')">Delete</button>
@@ -55,4 +55,5 @@
             </div>
         </div>
     </div>
+
 @endsection

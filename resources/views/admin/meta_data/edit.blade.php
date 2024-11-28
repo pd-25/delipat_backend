@@ -29,6 +29,7 @@
                         <option value="gallery" {{ $metaData->page_name == 'gallery' ? 'selected' : '' }}>Gallery</option>
                         <option value="service" {{ $metaData->page_name == 'service' ? 'selected' : '' }}>Service</option>
                         <option value="service" {{ $metaData->page_name == 'industry' ? 'selected' : '' }}>Industry</option>
+                        <option value="case-study" {{ $metaData->page_name == 'case-study' ? 'selected' : '' }}>Case Study</option>
                         <option value="blog" {{ $metaData->page_name == 'blog' ? 'selected' : '' }}>Blog</option> 
                         <option value="about-us" {{ $metaData->page_name == 'about-us' ? 'selected' : '' }}>About Us</option>
                         <option value="contact-us" {{ $metaData->page_name == 'contact-us' ? 'selected' : '' }}>Contact Us</option>

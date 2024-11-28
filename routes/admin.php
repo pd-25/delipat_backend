@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\auth\AuthController;
 use App\Http\Controllers\admin\blog\BlogController;
+use App\Http\Controllers\admin\casestudies\casestudiesController;
 use App\Http\Controllers\admin\dashboard\DashboardController;
 use App\Http\Controllers\admin\gallery\GalleryImageController;
 use App\Http\Controllers\admin\metadata\MetaDataController;
@@ -19,5 +20,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('gallery', GalleryImageController::class);
     Route::resource('blogs', BlogController::class);
     Route::resource('seo-settings', MetaDataController::class);
+    Route::resource('case-studies', casestudiesController::class);
+
 
 });

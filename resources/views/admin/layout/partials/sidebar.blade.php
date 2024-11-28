@@ -14,6 +14,12 @@
                 <span>Blog</span>
             </a>
         </li>
+        <li class="nav-item {{ Route::is('case-studies*') ? 'active' : '' }}">
+            <a class="nav-link " href="{{ route('case-studies.index') }}">
+                <i class="ri-group-fill"></i>
+                <span>Case Studies</span>
+            </a>
+        </li>
         <li class="nav-item {{ Route::is('gallery.*') ? 'active' : '' }}">
             <a class="nav-link " href="{{ route('gallery.index') }}">
                 <i class="ri-group-fill"></i>

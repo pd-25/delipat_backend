@@ -35,12 +35,12 @@ class frontController extends Controller
     }
     public function blog()
 {    $pagemeta = MetaData::where('page_name', 'blog')->first();
-    $blogs = Blog::latest()->paginate(6); // Fetch blogs with pagination (6 per page)
+    $blogs = Blog::where('type','blog')->latest()->paginate(10);
     return view('frontend.blog', compact('blogs','pagemeta'));
 }
-public function show($slug)
+public function showblog($slug)
 {
-    $blog = Blog::where('slug', $slug)->firstOrFail();
+    $blog = Blog::where('slug', $slug )->firstOrFail();
     $pagemeta = $blog;
     $relatedBlogs = Blog::where('id', '!=', $blog->id)->orderBy('created_at', 'desc')->limit(3)->get();
 
@@ -71,4 +71,34 @@ public function contactus()
     $pagemeta = MetaData::where('page_name', 'contact-us')->first();
     return view('frontend.contactus',compact('pagemeta'));
 }
+
+public function casestudies()
+{    $pagemeta = MetaData::where('page_name', 'blog')->first();
+    $blogs = Blog::where('type','case-study')->latest()->paginate(10);
+    return view('frontend.blog', compact('blogs','pagemeta'));
+}
+public function showcasestudies($slug)
+{
+    $blog = Blog::where('slug', $slug )->firstOrFail();
+    $pagemeta = $blog;
+    $relatedBlogs = Blog::where('id', '!=', $blog->id)->orderBy('created_at', 'desc')->limit(3)->get();
+
+    // Ensure tags are always an array
+    if (is_array($blog->tags)) {
+        // If it's already an array, use it directly
+        $tags = $blog->tags;
+    } else {
+        // If it's a string, explode it into an array
+        $tags = explode(',', $blog->tags);
+    }
+
+    // Optional: Trim spaces around each tag if needed
+    $tags = array_map('trim', $tags);
+
+    // dd($tags);  // For debugging purposes, check the result of the split
+    // dd($blog->faqs);
+
+    return view('frontend.single_blog', compact('blog', 'relatedBlogs', 'tags','pagemeta'));
+}
+
 }
