@@ -26,6 +26,7 @@ body{
 }
 :root{
     --primary--color: #fcb61f;
+  
     --secondary--color: #000;
     --text-color:#191919;
     --accent:#fcb61f;
@@ -95,7 +96,8 @@ body{
 }
 .top-bar-con{
     padding: 16px 0;
-    background: var(--primary--color);
+    /* background: var(--primary--color); */
+    background: #cbebea;
 }
 .socisl-con ul li a i {
     width: 30px;
@@ -162,18 +164,24 @@ body{
 /*****BANNER SECTION******/
 .banner-inner-con{
     padding-top: 310px;
-    padding-bottom: 269px;
+    /* padding-bottom: 269px; */
 }
 .banner-con{
     background-repeat: no-repeat;
     background-position: center;
 }
-.home-banner{
-    overflow: hidden;
-    background-image: url(../images/bgsk.webp);
-    background-size: cover;
+.banner-text-h1{
+    color: #013244;
 }
-.banner-inner-con:after,
+
+.home-banner{
+    /* overflow: hidden; */
+    width: 100%;
+    background-image: url(../images/main-banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .banner-inner-con:after, */
 .contact-con:after {
     top: 0;
     left: 0;
@@ -193,14 +201,14 @@ body{
     /* background: url(../images/contact-leaf.png) no-repeat; */
 }
 .banner-inner-con:before {
-    bottom: 0;
+    /* bottom: 0;
     left: 0;
     content: "";
     z-index: 3;
     width: 354px;
     height: 347px;
     position: absolute;
-    background: url(../images/banner-dots-img.png) no-repeat;
+    background: url(../images/banner-dots-img.png) no-repeat; */
 }
 /* .banner-con:before{
     top: 61px;
@@ -278,11 +286,15 @@ body{
 .more-details{
     gap: 34px;
 }
-.banner-img{
+/* .banner-img{
     left: 50px;
     bottom: -50px;
     position: absolute;
     width: 80%;
+} */
+ .banner-img img{
+    width: 100%;
+    object-fit: cover;
 }
 /*****BANNER SECTION******/
 /*****CONTACT SECTION******/
@@ -439,7 +451,8 @@ span.error{
 }
 .service-item {
     background: var(--white-color);
-    box-shadow: 0 -24px 80px 0 rgba(166, 184, 213, 0.17) inset;
+    /* box-shadow: 0 -24px 80px 0 rgba(166, 184, 213, 0.17) inset; */
+    box-shadow: 0 2px 8px -2px hsla(0, 0%, 9%, .08), 0 8px 12px -2px hsla(0, 0%, 9%, .16);
     border-radius: 15px;
     padding: 11px 10px 14px 10px;
     width: 350px;
@@ -2551,4 +2564,94 @@ margin-bottom: 130px;
 }
 .salesforce-banner .crm-development-title{
     padding-bottom: 0;
+}
+
+/* ====== 29/11/2024 ======= */
+.solution-image{
+    width: 100%;
+    object-fit: cover;
+}
+.solution-address-sec{
+    background: url(../images/background-two.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: fixed;
+}
+.main-header-div{
+    text-align: center;
+}
+.trusted-crm{
+    width: 100%;
+    object-fit: cover; 
+}
+.our-approach-sec{
+    background: url(../images/Banner-2.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: fixed;
+}
+.approach-card{
+ height: 100%;
+ padding: 11px 10px 14px 10px;
+ /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+ background: #fff;
+    border: none;
+    box-shadow: 0 2px 8px -2px hsla(0, 0%, 9%, .08), 0 8px 12px -2px hsla(0, 0%, 9%, .16);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.approach-card .card{
+    border: none;
+}
+
+.approach-card-image{
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    
+}
+.approach-image-div {
+    padding-bottom: 20px;
+    margin: auto;
+}
+.contact-img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.form-con  input, .form-con  textarea {
+    width: 100%;
+    color: var(--white-color);
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid #b3b3b3;
+    padding: 11px 20px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    outline: none;
+}
+.form-con .form-input-div{
+    margin-bottom: 30px;
+  
+}
+.form-con  input:focus, .form-con  textarea:focus {
+    outline: none;
+    border-color: var(--primary--color);
+}
+.contact-form{
+    /* background-color: #2196F3; */
+}
+.form-button-div{
+    text-align: center;
+}
+.service-area{
+    background: url(../images/background-three.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.transparent-bg{
+    background: #f0f8ff4f;
 }

@@ -3,16 +3,16 @@
    <!-- HEADER -->
     <!-- HEADER -->
     <!-- BANNER SECTION -->
-    <section id="back-top" class="w-100 float-left banner-con home-banner position-relative">
+    <section id="back-top" class="w-100 float-left banner-con home-banner">
         <div class="banner-inner-con position-relative">
             <div class="wrapper2">
-                <div class="row">
+                <div class="row justify-conetnt-center align-items-start">
                     <div class="col-lg-7">
-                        <div class="banner-title position-relative">
-                            <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">Delipat – Your Premier
+                        <div class="banner-title generic-box-content">
+                            <h1 class="banner-text-h1" data-aos="fade-up" data-aos-duration="600">Delipat – Your Premier
                                 Salesforce & HubSpot Consulting Partner
                             </h1>
-                            <h4 class="text-white" data-aos="fade-up" data-aos-duration="600">Unlock CRM Potential with
+                            <h4 class="" data-aos="fade-up" data-aos-duration="600">Unlock CRM Potential with
                                 Tailored Solutions for Every Business
                             </h4>
                             <p data-aos="fade-up" data-aos-duration="600">Whether you’re a growing startup or an
@@ -28,7 +28,7 @@
                                     data-aos-duration="600">
                                     <img src="{{asset('frontend/assets/images/headphones-icon.png')}}" alt="headphones-icon">
                                     <div class="call-number">
-                                        <span class="d-block text-white">Consult with Us Now</span>
+                                        <span class="d-block">Consult with Us Now</span>
                                         <a href="#">+91 1234567890</a>
                                     </div>
                                 </div>
@@ -38,7 +38,7 @@
                     <div class="col-lg-5 order-lg-0 order-1">
                         <div class="banner-img">
                             <figure class="mb-0">
-                                <img src="{{asset('frontend/assets/images/banner_side_img.webp')}}" alt="home-girls-img">
+                                <img src="{{asset('frontend/assets/images/main-banner-image.webp')}}" alt="home-girls-img">
                             </figure>
                         </div>
                     </div>
@@ -53,14 +53,14 @@
         <div class="wrapper2">
             <div class="generic-box">
                 <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
-                    <div class="generic-box-img1 position-relative">
+                    <div class="generic-box-img1345">
                         <figure class="mb-0 position-relative">
-                            <img src="{{asset('frontend/assets/images/Banner 1.png')}}" alt="clean-img">
+                            <img src="{{asset('frontend/assets/images/trusted-crm.png')}}" alt="clean-img" class="trusted-crm">
                         </figure>
                     </div>
-                    <figure class="mb-0 generic-box-img2">
+                    <!-- <figure class="mb-0 generic-box-img2">
                         <img src="{{asset('frontend/assets/images/clean-small-img.png')}}" alt="clean-small-img">
-                    </figure>
+                    </figure> -->
                 </div>
                 <div class="generic-box-content position-relative">
                     <h2 data-aos="fade-up" data-aos-duration="600">Trusted CRM Experts with a <span
@@ -108,7 +108,7 @@
     </section>
     <!-- CLEAN SECTION -->
     <!-- SERVICE SECTION -->
-    <section class="w-100 float-left service-con position-relative pb-0">
+    <section class="w-100 float-left  pb-0 service-area">
         <div class="service-inner-box position-relative">
             <div class="wrapper">
                 <div class="service-title text-center position-relative">
@@ -123,7 +123,7 @@
                         <div class="item">
                             <div class="service-item text-center">
                                 <figure>
-                                    <img src="{{asset('frontend/assets/images/service/consulting.webp')}}" alt="service-img">
+                                    <img src="{{asset('frontend/assets/images/service/service-card-1.png')}}" alt="service-img">
                                 </figure>
                                 <h3>Salesforce Consulting & Implementation
                                 </h3>
@@ -134,7 +134,7 @@
                                 <!-- <a href="#"><img src="assets/images/left-angle.png" alt="left-angle"></a> -->
                                 <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
                                     data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
-                                    <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Explore
+                                    <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Explore<br>
                                         Salesforce Solutions</a>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                         <div class="item">
                             <div class="service-item text-center slider-service-box">
                                 <figure>
-                                    <img src="{{asset('frontend/assets/images/service/hubspot.webp')}}" alt="service-img">
+                                    <img src="{{asset('frontend/assets/images/service/service-card-2.png')}}" alt="service-img">
                                 </figure>
                                 <h3>HubSpot Consulting & Optimization
                                 </h3>
@@ -160,7 +160,7 @@
                         <div class="item">
                             <div class="service-item text-center">
                                 <figure>
-                                    <img src="{{asset('frontend/assets/images/service/automation.webp')}}" alt="service-img">
+                                    <img src="{{asset('frontend/assets/images/service/service-card-3.png')}}" alt="service-img">
                                 </figure>
                                 <h3>Integration & Automation Solutions
                                 </h3>
@@ -170,7 +170,7 @@
                                 </p>
                                 <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
                                     data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
-                                    <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Start
+                                    <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Start<br>
                                         Your Integration</a>
                                 </div>
                             </div>
@@ -183,80 +183,82 @@
         </div>
     </section>
     <!-- SERVICE SECTION -->
-    <section class="w-100 float-left user-con">
-        <div class="wrapper">
-            <div class="text-center">
-                <div class="generic-box-content position-relative">
-                    <h2 data-aos="fade-up" data-aos-duration="600">Solutions to Address Your
-                        <span class="color-01d0cc">Pain Points</span>
-                    </h2>
+
+    <!-- Solutions to Address Your Pain Points -->
+    <section class="w-100 float-left user-con solution-address-sec">
+        <div class="wrapper2">
+            <div class="generic-box">
+                <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
+                    <div class="generic-box-img1345">
+                        <figure class="mb-0 position-relative">
+                            <img src="{{asset('frontend/assets/images/solution-side.webp')}}" alt="crm-solution" class="solution-image">
+                        </figure>
+                    </div>
+                </div>
+                <div class="generic-box-content position-relative transparent-bg">
+                    <h2 data-aos="fade-up" data-aos-duration="600">Solutions to Address Your <span
+                            class="color-01d0cc">Pain Points</span></h2>
                     <p data-aos="fade-up" data-aos-duration="600">Delipat’s CRM expertise helps you overcome common
                         business hurdles by aligning systems, enhancing team productivity, and enabling real-time data
                         insights. Our customized solutions empower you to
                     </p>
-                    <div class="generic-list d-flex text-left justify-content-center">
+                    <div class="generic-list">
                         <ul class="list-unstyled">
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Boost Sales Productivity</span>
-                                <p class="mb-0"> Automate workflows, track leads, and optimize your sales pipeline
-                                </p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Enhance Customer Engagement</span>
-                                <p class="mb-0">Leverage customer data for personalized marketing and service
-                                </p>
-
-                        </ul>
-                        <ul class="list-unstyled">
-
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Improve Data Accessibility</span>
-                                <p class="mb-0">Access insights across departments for agile decision-making
-                                </p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Achieve Rapid ROI</span>
-                                <p class="mb-0">Implement CRM solutions with measurable outcomes.</p>
-                            </li>
-                        </ul>
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Boost Sales Productivity</span>
+                                    <p class="mb-0"> Automate workflows, track leads, and optimize your sales pipeline
+                                    </p>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Enhance Customer Engagement</span>
+                                    <p class="mb-0">Leverage customer data for personalized marketing and service
+                                    </p>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Improve Data Accessibility</span>
+                                    <p class="mb-0">Access insights across departments for agile decision-making
+                                    </p>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Achieve Rapid ROI</span>
+                                    <p class="mb-0">Implement CRM solutions with measurable outcomes.</p>
+                                </li>
+                            </ul>
                     </div>
-                    <div class="d-flex align-items-center more-details justify-content-center">
+                    <div class="d-flex align-items-center more-details">
                         <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
                             <a href="#">Let’s talk business</a>
                         </div>
-                        <!-- <div class="call-con position-relative d-inline-block" data-aos="fade-up"
-                            data-aos-duration="600">
-                            <img src="assets/images/headphones-icon.png" alt="headphones-icon">
-                            <div class="call-number">
-                                <span class="d-block">Talk to a CRM Expert</span>
-                                <a href="#">+91 1234567890</a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+     <!-- Solutions to Address Your Pain Points -->
 
     <!-- industries we serve starts  -->
     <section class="w-100 float-left clean-con industry-serve">
-        <div class="wrapper">
-            <div class="text-center">
-
-                <div class="generic-box-content position-relative">
-                    <h2 data-aos="fade-up" data-aos-duration="600">Industries
-
-                        <span class="color-01d0cc">We Serve</span>
-                    </h2>
-                    <p data-aos="fade-up" data-aos-duration="600">Our CRM solutions cater to a range of industries, each
-                        with unique challenges and objectives. Explore how Delipat tailors its Salesforce and HubSpot
-                        services for your industry:
-
-                    </p>
-                    <div class="serve-outer-box">
-                    <div class="generic-list d-flex justify-content-center align-items-center">
-                        <ul class="list-unstyled text-left">
+        <div class="wrapper2">
+            <div class="generic-box">
+                <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
+                    <div class="generic-box-img1345">
+                        <figure class="mb-0 position-relative">
+                            <img src="{{asset('frontend/assets/images/solution-side.webp')}}" alt="clean-img" class="trusted-crm">
+                        </figure>
+                    </div>
+                    <!-- <figure class="mb-0 generic-box-img2">
+                        <img src="{{asset('frontend/assets/images/clean-small-img.png')}}" alt="clean-small-img">
+                    </figure> -->
+            </div>
+            <div class="generic-box-content position-relative">
+                <h2 data-aos="fade-up" data-aos-duration="600">Industries<span class="color-01d0cc"> We Serve</span></h2>
+                      
+                <p data-aos="fade-up" data-aos-duration="600">Our CRM solutions cater to a range of industries, each
+                    with unique challenges and objectives. Explore how Delipat tailors its Salesforce and HubSpot
+                    services for your industry:
+                </p>
+                <div class="generic-list">
+                    <ul class="list-unstyled">
                             <li data-aos="fade-up" data-aos-duration="600">
                                 <span class="d-block">Healthcare</span>
                                 <p class="mb-0">Streamlined patient data management
@@ -269,8 +271,6 @@
 
                                 </p>
                             </li>
-                        </ul>
-                        <ul class="list-unstyled text-left">
                             <li data-aos="fade-up" data-aos-duration="600">
                                 <span class="d-block">Retail</span>
                                 <p class="mb-0">Personalized customer journeys and smarter inventory
@@ -282,38 +282,24 @@
                                 <p class="mb-0">Data-driven supply chain and production insights
                                 </p>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="generic-list d-flex justify-content-center align-items-center">
-                        <ul class="list-unstyled text-left">
                             <li data-aos="fade-up" data-aos-duration="600">
                                 <span class="d-block">Technology</span>
                                 <p class="mb-0">Scalable CRM solutions for rapid innovation
                                 </p>
                             </li>
                         </ul>
-                    </div>
                 </div>
-            </div>
-                <div class="d-flex align-items-center more-details justify-content-center">
+                <div class="d-flex align-items-center more-details">
                     <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="{{route('industry')}}">Discover Industry Solutions</a>
+                        <a href="#">Discover Industry Solutions</a>
                     </div>
-                    <!-- <div class="call-con position-relative d-inline-block" data-aos="fade-up"
-                            data-aos-duration="600">
-                            <img src="assets/images/headphones-icon.png" alt="headphones-icon">
-                            <div class="call-number">
-                                <span class="d-block">Talk to a CRM Expert</span>
-                                <a href="#">+91 1234567890</a>
-                            </div>
-                        </div> -->
                 </div>
             </div>
         </div>
-        </div>
+
     </section>
    <!-- industries we serve end  -->
-    <section class="w-100 float-left user-con">
+    <section class="w-100 float-left user-con our-approach-sec">
         <div class="container">
             <div class="team-title text-center mb-4">
                 <h2 data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Our Approach
@@ -324,45 +310,53 @@
             <div class="row mb-5">
                 <!-- Discovery Phase Card -->
                 <div class="col-md-3 mb-4">
-                    <div class="card text-center h-100 as" data-aos="fade-up" data-aos-duration="600">
-                        <div class="card-body">
-                            <span class="processes-number">1</span>
-                            <h3 class="card-title">Discovery</h3>
-                            <p class="card-text">We assess your current systems, analyze key challenges, and define the
-                                roadmap for success.</p>
+                    <div class="approach-card">
+                        <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
+                            <div class="card-body">
+                                <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/discovery.png')}}" alt="discover-icon" class="approach-card-image"></div>
+                                <h3 class="card-title">Discovery</h3>
+                                <p class="card-text">We assess your current systems, analyze key challenges, and define the
+                                    roadmap for success.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Customization Phase Card -->
                 <div class="col-md-3 mb-4">
-                    <div class="card text-center as h-100" data-aos="fade-up" data-aos-duration="600">
-                        <div class="card-body">
-                            <span class="processes-number">2</span>
-                            <h3 class="card-title">Customization</h3>
-                            <p class="card-text">Delipat designs a unique CRM architecture aligned with your goals,
-                                integrating essential tools.</p>
+                     <div class="approach-card">
+                        <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
+                            <div class="card-body">
+                             <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/customization.png')}}" alt="cutomization-icon" class="approach-card-image"></div>
+                                <h3 class="card-title">Customization</h3>
+                                <p class="card-text">Delipat designs a unique CRM architecture aligned with your goals,
+                                    integrating essential tools.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Implementation Phase Card -->
                 <div class="col-md-3 mb-4">
-                    <div class="card text-center as h-100" data-aos="fade-up" data-aos-duration="600">
-                        <div class="card-body">
-                            <span class="processes-number">3</span>
-                            <h3 class="card-title">Implementation</h3>
-                            <p class="card-text">Our team ensures a smooth deployment, including data migration and user
-                                training for effective adoption.</p>
+                    <div class="approach-card">
+                        <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
+                            <div class="card-body">
+                                <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/implementation.png')}}" alt="implementation-icon" class="approach-card-image"></div>
+                                <h3 class="card-title">Implementation</h3>
+                                <p class="card-text">Our team ensures a smooth deployment, including data migration and user
+                                    training for effective adoption.</p>
+                            </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
                 <!-- Ongoing Support Phase Card -->
                 <div class="col-md-3 mb-4">
-                    <div class="card text-center as h-100" data-aos="fade-up" data-aos-duration="600">
-                        <div class="card-body">
-                            <span class="processes-number">4</span>
-                            <h3 class="card-title">Ongoing Support</h3>
-                            <p class="card-text">Post-implementation support includes updates, maintenance, and
-                                optimization to keep your CRM functioning at peak performance.</p>
+                    <div class="approach-card">
+                        <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
+                            <div class="card-body">
+                                <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/ongoing-support.png')}}" alt="ongoing-support" class="approach-card-image"></div>
+                                <h3 class="card-title">Ongoing Support</h3>
+                                <p class="card-text">Post-implementation support includes updates, maintenance, and
+                                    optimization to keep your CRM functioning at peak performance.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -378,44 +372,66 @@
 
 
     <!-- CONTACT-SECTION -->
-    <section class="w-100 float-left contact-con position-relative d-flex align-items-center">
-        <div class="contact-inner-con position-relative w-100">
-            <div class="wrapper">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-6 col-md-7 order-md-0  d-flex flex-column align-items-center ">
-                        <div class="contact-title position-relative">
-                            <h2 class="text-white" data-aos="fade-up" data-aos-duration="600">Get Started with Delipat
+    <section class="w-100 contact_area">
+        <div class="contact-inner-con w-100">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-7 col-md-7 order-md-0 h-100 d-flex flex-column align-items-center ">
+                        <div class="contact-title">
+                            <h2 class="" data-aos="fade-up" data-aos-duration="600">Get Started with Delipat
                                 Today</h2>
-                            <h4 class="text-white" data-aos="fade-up" data-aos-duration="600">Take the First Step
+                            <h4 class="" data-aos="fade-up" data-aos-duration="600">Take the First Step
                                 Towards a Seamless CRM Experience</h4>
-                            <p class="text-white" data-aos="fade-up" data-aos-duration="600">Ready to transform your
+                            <p class="" data-aos="fade-up" data-aos-duration="600">Ready to transform your
                                 business? Connect with our CRM experts to discuss your needs, challenges, and goals.
                                 Let’s tailor a solution that helps you maximize growth and streamline operations with
                                 confidence.</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-5 order-md-0  d-flex justify-content-center" data-aos="fade-up"
+                    <div class="col-lg-5 col-md-5">
+                        <div class="contact-img-div">
+                            <figure class="mb-0 position-relative">
+                                <img src="{{asset('frontend/assets/images/contact-side-image.webp')}}" alt="contact-img" class="contact-img">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 order-md-0" data-aos="fade-up"
                         data-aos-duration="600">
-                        <form class="form-con w-100 frbg" data-aos="fade-up" data-aos-duration="600" method="post"
+                        <form class="form-con contact-form w-100 frbg" data-aos="fade-up" data-aos-duration="600" method="post"
                             id="contactpage">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <input type="text" placeholder="Your Name" name="fname" id="fname">
-                                </li>
-                                <li>
-                                    <input type="tel" placeholder="Phone Number" name="phone" id="phone">
-                                </li>
-                                <li>
-                                    <input type="email" placeholder="Email Address" name="email" id="email">
-                                </li>
-                                <li>
-                                    <input type="text" placeholder="Location" name="location" id="location">
-                                </li>
-                                <li>
-                                    <textarea placeholder="Your Message" name="subject" id="subject"></textarea>
-                                </li>
-                            </ul>
-                            <button class="submit-btn" id="submit">Send Now</button>
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-input-div">
+                                        <input type="text" placeholder="Your Name" name="fname" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-input-div">
+                                        <input type="text" placeholder="Your Name" name="fname" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-input-div">
+                                        <input type="text" placeholder="Your Name" name="fname" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-input-div">
+                                        <input type="text" placeholder="Your Name" name="fname" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-input-div">
+                                        <textarea placeholder="Your Message" name="subject" id="subject" rows="5" cols="50"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-button-div">
+                                        <button class="submit-btn" id="submit">Send Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                           
                         </form>
                     </div>
                 </div>
