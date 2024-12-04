@@ -60,7 +60,8 @@ p{
     border-radius: 8px;
     text-decoration: none;
     display: inline-block;
-    background: var(--accent);
+    /* background: var(--accent); */
+    background-color: #013244;
     text-transform: uppercase;
     transition: all 0.5s ease-in-out;
     padding: 24px 53px 24px 52px;
@@ -79,7 +80,9 @@ p{
 .post-btn:hover,
 .tag-link ul li a:hover,
 .contact-submit-btn:hover{
-    color: var(--accent);
-    background: transparent;
+    /* color: var(--accent); */
+    color: #fff;
+    background-color: var(--accent);
+    /* background: transparent; */
     box-shadow: inset 0 0 0 2px var(--accent);
 }

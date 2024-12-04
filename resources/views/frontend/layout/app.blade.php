@@ -77,15 +77,15 @@
                             @if(!empty($siteSettings->phone))
                                 <li>
                                     <a style="color: white;" href="tel:{{$siteSettings->phone}}">
-                                        <img src="{{asset('frontend/assets/images/phone-icon.png')}}" alt="phone-icon">
+                                        <!-- <img src="{{asset('frontend/assets/images/phone-icon.png')}}" alt="phone-icon"> -->
+                                        <i class="fa fa-mobile" aria-hidden="true"></i>
                                         {{$siteSettings->phone}}
                                     </a>
                                 </li>
                             @endif
 
                                     @if(!empty($siteSettings->email))
-                            <li><a style="color: white;" href="mailto:{{$siteSettings->email}}"><img
-                                        src="{{asset('frontend/assets/images/email-icon.png')}}" alt="email-icon">
+                            <li><a style="color: white;" href="mailto:{{$siteSettings->email}}">    <i class="fa fa-envelope" aria-hidden="true"></i>
                                     {{$siteSettings->email}}</a></li>
                                     @endif
                         </ul>
@@ -123,6 +123,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('service') ? 'active' : '' }}" href="{{route('service')}}">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 {{ Route::is('industry') ? 'active' : '' }}" href="{{route('industry')}}">industry</a>
                         </li>
                     </ul>
                     <!--   Show this only lg screens and up   -->
@@ -287,6 +290,22 @@
                 },
                 1000: {
                     items: 3
+                }
+            }
+        })
+        $('#case-study-slider').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
                 }
             }
         })

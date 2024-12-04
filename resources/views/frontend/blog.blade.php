@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="banner-title">
-                        <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">Our Blogs</h1>
+                        <h1 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Our Blogs</h1>
                         <p class="mb-0" data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit, sed do eiusmod tempor incid
                             idunt ut labore et dolore magna aliqua enim ad minim veniam.</p>

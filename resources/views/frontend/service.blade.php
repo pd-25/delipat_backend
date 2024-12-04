@@ -35,9 +35,9 @@
                 </div>
             </div>
             <div class="service-sec-1">
-                <h2 class="service-h2" data-aos="fade-up" data-aos-duration="600">Empowering Leaders to Drive
-                    Success through Customized <span class="color-01d0cc">CRM Solutions
-                    </span></h2>
+                <h2 class="service-h2 main-header-h2" data-aos="fade-up" data-aos-duration="600">Empowering Leaders to Drive
+                    Success through Customized CRM Solutions
+                   </h2>
                 <p class="empowering-leaders-p center-p" data-aos="fade-up" data-aos-duration="600">At Delipat, we help
                     businesses bridge the gap between customer data and actionable insights. Our CRM solutions,
                     including Salesforce and HubSpot, equip you with the tools needed to build strong client
@@ -62,9 +62,8 @@
 <section class="w-100 float-left team-con">
     <div class="wrapper2">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">Why Delipat for
-                <span class="color-01d0cc"> CRM Development?
-                </span>
+            <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Why Delipat for
+                 CRM Development?
             </h2>
         </div>
         <div class="generic-box">
@@ -114,9 +113,9 @@
 <section class="w-100 float-left clean-con">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">Our Core
-                <span class="color-01d0cc"> CRM Development Services
-                </span>
+            <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Our Core
+                 CRM Development Services
+               
             </h2>
         </div>
         <div class="goals-box text-center position-relative">
@@ -203,12 +202,12 @@
 <!-- Our Core CRM Development Services end -->
 
 <!-- Unlock Your Business Potential with Tailored CRM Solutions starts -->
-<section class="w-100 float-left team-con position-relative">
+<section class="w-100 float-left team-con position-relative business-potential-area">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="unlock-your-business-h2" data-aos="fade-up" data-aos-duration="600">Unlock Your Business
-                Potential with <span class="color-01d0cc">Tailored CRM Solutions 
-                </span></h2>
+            <h2 class="unlock-your-business-h2 main-header-h2" data-aos="fade-up" data-aos-duration="600">Unlock Your Business
+                Potential with Tailored CRM Solutions 
+                </h2>
 
         </div>
         <!-- <div class="generic-list d-flex text-left justify-content-center">
@@ -248,11 +247,11 @@
 
 
 <!-- Business Challenges We Solve starts -->
-<section class="w-100 float-left goals-con faq-box">
+<!-- <section class="w-100 float-left goals-con faq-box">
     <div class="container">
         <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-            <h2>Business Challenges <span class="color-01d0cc">We Solve
-                </span>
+            <h2 class="main-header-h2">Business Challenges We Solve
+               
             </h2>
         </div>
         <div class="aos-init aos-animate" data-aos="fade-up">
@@ -346,105 +345,198 @@
             </div>
         </div>
     </div>
+</section> -->
+<section class="w-100 float-left user-con business-challenges-area">
+    <div class="container">
+        <div class="team-title text-center mb-4">
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Business Challenges We Solve
+            </h2>
+        </div>
+        <div class="row mb-5 align-items-center justify-content-center">
+            <!-- Discovery Phase Card -->
+            <div class="col-xl-5 col-lg-6 col-md-6 col-12 mb-4">
+                <div class="approach-card">
+                    <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
+                        <div class="card-body">
+                            <div class="approach-image-div">
+                                    <img src="{{asset('frontend/assets/images/service/service-card-1.png')}}" alt="sales-operation-image" class="business-challenges-image">
+                               </div>
+                            <h3 class="card-title">Streamline Sales Operations:</h3>
+                            <p class="card-text">Minimize bottlenecks and improve sales effectiveness by automating
+                                processes and managing leads with precision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Customization Phase Card -->
+            <div class="col-xl-5 col-lg-6 col-md-6 col-12 mb-4">
+                 <div class="approach-card">
+                    <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
+                        <div class="card-body">
+                         <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/customization.png')}}" alt="cutomization-icon" class="approach-card-image"></div>
+                            <h3 class="card-title">Enhance Customer Experiences:</h3>
+                            <p class="card-text">Build meaningful relationships through personalized engagement and timely
+                                responses powered by CRM data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Implementation Phase Card -->
+            <div class="col-xl-5 col-lg-6 col-md-6 col-12 mb-4">
+                <div class="approach-card">
+                    <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
+                        <div class="card-body">
+                            <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/implementation.png')}}" alt="implementation-icon" class="approach-card-image"></div>
+                            <h3 class="card-title">Facilitate Data-Driven Decisions:</h3>
+                            <p class="card-text">Use analytics to gain insights into customer behaviors and operational
+                                performance, guiding strategic decisions.</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!-- Ongoing Support Phase Card -->
+            <div class="col-xl-5 col-lg-6 col-md-6 col-12 mb-4">
+                <div class="approach-card">
+                    <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
+                        <div class="card-body">
+                            <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/ongoing-support.png')}}" alt="ongoing-support" class="approach-card-image"></div>
+                            <h3 class="card-title">Scale with Confidence:</h3>
+                            <p class="card-text">As your business grows, our CRM solutions provide the infrastructure to
+                                scale seamlessly without sacrificing quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="generic-btn d-block text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"
+            bis_skin_checked="1">
+            <a href="#">Book a Strategy Session</a>
+        </div>
+
+    </div>
 </section>
 <!--Business Challenges We Solve end -->
 
-<!-- flow chart starts -->
-<section class="w-100 float-left goals-con flowchart-outer-box">
-    <div class="container">
-       
-        <div class="text-center mb-5">
-            <h2 class="" data-aos="fade-up" data-aos-duration="600">Our <span class="color-01d0cc">Process
-                </span></h2>
-            <p class="lead">Comprehensive, End-to-End Support
-            </p>
+ <!--Delipat’s Salesforce Process -->
+ <section class="w-100 float-left clean-con flowchart-sec">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries Our Process
+                  </h2>
+                <p class="lead">Comprehensive, End-to-End Support
+
+                </p>
+            </div>
+        <div class="timeline">
+            <div class="container-1 left-container">
+                <div class="number-div">
+                    <span class="flow-number-span">1</span>
+                </div>
+                <div class="text-box">
+                    <h3 class="card-title saleforce-our-core-h3">Strategic Planning
+                    </h3>
+                    <p class="mb-0 sercvice-card-p-1" data-aos="fade-up" data-aos-duration="600">Understanding your specific goals and challenges, we design a CRM plan tailored to your needs.
+                    </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container-1 right-container">
+                <div class="number-div">
+                    <span class="flow-number-span">2</span>
+                </div>
+                <div class="text-box">
+                    <h3 class="card-title saleforce-our-core-h3">Custom Development</h3>
+                    <p class="mb-0 sercvice-card-p-1" data-aos="fade-up" data-aos-duration="600">We build CRM solutions to align seamlessly with your business processes, enabling smoother workflows and better data management.
+                    </p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container-1 left-container">
+
+                <div class="number-div">
+                    <span class="flow-number-span">3</span>
+                </div>
+                <div class="text-box">
+                    <h3 class="card-title saleforce-our-core-h3">Deployment & Training</h3>
+                    <p class="mb-0 sercvice-card-p-1" data-aos="fade-up" data-aos-duration="600">We provide full support during the launch phase, ensuring your team is confident and capable with the new system.
+                    </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container-1 right-container">
+                <div class="number-div">
+                    <span class="flow-number-span">4</span>
+                </div>
+                <div class="text-box">
+                    <h3 class="card-title saleforce-our-core-h3">Continuous Support</h3>
+                    <p class="mb-0 sercvice-card-p-1" data-aos="fade-up" data-aos-duration="600">Our partnership doesn’t end at deployment. We provide ongoing support to adapt your CRM as your business grows.
+                    </p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
         </div>
-        <div class="flowchart aos-init aos-animate gellery-page-project position-relative" data-aos="fade-up">
-            <div class="box start">
-                <h4>Strategic Planning
-                </h4>
-                <p>Understanding your specific goals and challenges, we design a CRM plan tailored to your needs.
-                </p>
-            </div>
-            <div class="arrow"><img src="{{asset('frontend/assets/images/arrow-down.png')}}" class="flow-arrow-img" alt="down-arrow-image"
-                    loading="lazy"></div>
-            <div class="box process">
-                <h4>Custom Development
-                </h4>
-                <p>We build CRM solutions to align seamlessly with your business processes, enabling smoother
-                    workflows and better data management.
-                </p>
-            </div>
-            <div class="arrow"><img src="{{asset('frontend/assets/images/arrow-down.png')}}" class="flow-arrow-img" alt="down-arrow-image"
-                    loading="lazy"></div>
-            <div class="box decision">
-                <h4 class="flowchart-h4-p">Deployment & Training
-                </h4>
-                <p>We provide full support during the launch phase, ensuring your team is confident and capable with
-                    the new system.
-                </p>
-            </div>
-            <div class="arrow"><img src="{{asset('frontend/assets/images/arrow-down.png')}}" class="flow-arrow-img" alt="down-arrow-image"
-                    loading="lazy"></div>
-            <div class="box process">
-                <h4>Continuous Support
-                </h4>
-                <p>Our partnership doesn’t end at deployment. We provide ongoing support to adapt your CRM as your
-                    business grows.</p>
-            </div>
-        </div>
-        <div class="d-flex align-items-center more-details justify-content-center mt-5" bis_skin_checked="1">
-            <div class="generic-btn d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"
-                bis_skin_checked="1">
+
+        <div class="d-flex align-items-center more-details justify-content-center mt-5">
+            <div class="generic-btn d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
                 <a href="#">Start Your CRM Journey
                 </a>
             </div>
         </div>
     </div>
-</section>
-<!-- flow chart ends -->
+    </section>
+    <!-- Delipat’s Salesforce Process ends -->
 
 <!-- Industries We Serve starts -->
-<section class="w-100 float-left team-con position-relative">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 data-aos="fade-up" data-aos-duration="600">Industries <span class="color-01d0cc">We Serve
-                </span></h2>
-            <p class="lead">Our team at Delipat understands the unique CRM needs across different sectors, ensuring
-                each solution is optimized for industry demands:
+<section class="w-100 float-left team-con industry-serve">
+    <div class="wrapper2">
+        <div class="generic-box">
+            <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
+                <div class="generic-box-img1345">
+                    <figure class="mb-0 position-relative">
+                        <img src="{{asset('frontend/assets/images/we-serve-2.png')}}" alt="clean-img" class="trusted-crm">
+                    </figure>
+                </div>
+                <!-- <figure class="mb-0 generic-box-img2">
+                    <img src="{{asset('frontend/assets/images/clean-small-img.png')}}" alt="clean-small-img">
+                </figure> -->
+        </div>
+        <div class="generic-box-content position-relative">
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries We Serve</h2>
+                  
+            <p data-aos="fade-up" data-aos-duration="600">Our team at Delipat understands the unique CRM needs across different sectors, ensuring
+            each solution is optimized for industry demands:
             </p>
-        </div>
-        <div class="generic-list d-flex text-left justify-content-center">
-            <ul class="list-unstyled">
-                <li data-aos="fade-up" data-aos-duration="600">
-                    <span class="d-block">Healthcare:</span>
-                    <p class="mb-0">Secure patient interactions and efficient data management.
-                    </p>
-                </li>
-                <li data-aos="fade-up" data-aos-duration="600">
-                    <span class="d-block">Finance: </span>
-                    <p class="mb-0">Solutions designed with compliance and client management at their core.
-                    </p>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li data-aos="fade-up" data-aos-duration="600">
-                    <span class="d-block">Retail:</span>
-                    <p class="mb-0">Personalized, data-driven customer engagement to enhance loyalty.</p>
-                </li>
-                <li data-aos="fade-up" data-aos-duration="600">
-                    <span class="d-block">Manufacturing:</span>
-                    <p class="mb-0">Analytics and automation that improve supply chain efficiency.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="d-flex align-items-center more-details justify-content-center mt-5">
-            <div class="generic-btn d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
-                <a href="#">Read more on Industry Solutions
-                </a>
-            </div>
+            <div class="generic-list">
+                <ul class="list-unstyled">
+                        <li data-aos="fade-up" data-aos-duration="600">
+                            <span class="d-block">Healthcare:</span>
+                            <p class="mb-0">Secure patient interactions and efficient data management.
+                            </p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="600">
+                            <span class="d-block">Finance: </span>
+                            <p class="mb-0">Solutions designed with compliance and client management at their core.
+                            </p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="600">
+                            <span class="d-block">Retail:</span>
+                            <p class="mb-0">Personalized, data-driven customer engagement to enhance loyalty.</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="600">
+                            <span class="d-block">Manufacturing:</span>
+                            <p class="mb-0">Analytics and automation that improve supply chain efficiency.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center more-details">
+                    <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
+                        <a href="#">Read more on Industry Solutions</a>
+                    </div>
+                </div>
         </div>
     </div>
+
 </section>
 <!-- Industries We Serve end -->
 
@@ -452,7 +544,7 @@
 <section class="w-100 float-left faq-box ">
     <div class="container">
         <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-            <h2>Frequently Asked <span class="color-01d0cc">Questions</span>
+            <h2 class="main-header-h2">Frequently Asked Questions
             </h2>
         </div>
         <div class="aos-init aos-animate" data-aos="fade-up">

@@ -21,7 +21,7 @@
                                 scalable growth.</p>
                             <div class="d-flex align-items-center more-details">
                                 <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                    <a href="#">Get Started Today
+                                    <a href="industry.blade.php">Get Started Today
                                     </a>
                                 </div>
                                 <div class="call-con position-relative d-inline-block" data-aos="fade-up"
@@ -63,8 +63,7 @@
                     </figure> -->
                 </div>
                 <div class="generic-box-content position-relative">
-                    <h2 data-aos="fade-up" data-aos-duration="600">Trusted CRM Experts with a <span
-                            class="color-01d0cc">Proven Track Record.</span></h2>
+                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Trusted CRM Experts with a Proven Track Record.</h2>
                     <p data-aos="fade-up" data-aos-duration="600">With a certified team and years of experience, we
                         deliver Salesforce and HubSpot solutions tailored to your industry. Our expertise spans CRM
                         setup, implementation, customization, integration, and training, providing end-to-end support to
@@ -113,9 +112,8 @@
             <div class="wrapper">
                 <div class="service-title text-center position-relative">
 
-                    <h2 data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate" style="color: white;">
-                        Our
-                        <span class="color-01d0cc">Services</span>
+                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">
+                        Our Services
                     </h2>
                 </div>
                 <div class="service-inner-con" data-aos="fade-up" data-aos-duration="600">
@@ -196,8 +194,7 @@
                     </div>
                 </div>
                 <div class="generic-box-content position-relative transparent-bg">
-                    <h2 data-aos="fade-up" data-aos-duration="600">Solutions to Address Your <span
-                            class="color-01d0cc">Pain Points</span></h2>
+                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Solutions to Address Your Pain Points</h2>
                     <p data-aos="fade-up" data-aos-duration="600">Delipat’s CRM expertise helps you overcome common
                         business hurdles by aligning systems, enhancing team productivity, and enabling real-time data
                         insights. Our customized solutions empower you to
@@ -243,7 +240,7 @@
                 <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
                     <div class="generic-box-img1345">
                         <figure class="mb-0 position-relative">
-                            <img src="{{asset('frontend/assets/images/solution-side.webp')}}" alt="clean-img" class="trusted-crm">
+                            <img src="{{asset('frontend/assets/images/we-serve-1.png')}}" alt="clean-img" class="trusted-crm">
                         </figure>
                     </div>
                     <!-- <figure class="mb-0 generic-box-img2">
@@ -251,7 +248,7 @@
                     </figure> -->
             </div>
             <div class="generic-box-content position-relative">
-                <h2 data-aos="fade-up" data-aos-duration="600">Industries<span class="color-01d0cc"> We Serve</span></h2>
+                <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries We Serve</h2>
                       
                 <p data-aos="fade-up" data-aos-duration="600">Our CRM solutions cater to a range of industries, each
                     with unique challenges and objectives. Explore how Delipat tailors its Salesforce and HubSpot
@@ -299,17 +296,17 @@
 
     </section>
    <!-- industries we serve end  -->
+
     <section class="w-100 float-left user-con our-approach-sec">
         <div class="container">
             <div class="team-title text-center mb-4">
-                <h2 data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Our Approach
-
-                    <span class="color-01d0cc">is Our Strength</span>
+                <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Our Approach
+                  is Our Strength
                 </h2>
             </div>
             <div class="row mb-5">
                 <!-- Discovery Phase Card -->
-                <div class="col-md-3 mb-4">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4">
                     <div class="approach-card">
                         <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
                             <div class="card-body">
@@ -322,7 +319,7 @@
                     </div>
                 </div>
                 <!-- Customization Phase Card -->
-                <div class="col-md-3 mb-4">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4">
                      <div class="approach-card">
                         <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
                             <div class="card-body">
@@ -335,7 +332,7 @@
                     </div>
                 </div>
                 <!-- Implementation Phase Card -->
-                <div class="col-md-3 mb-4">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4">
                     <div class="approach-card">
                         <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
                             <div class="card-body">
@@ -348,7 +345,7 @@
                     </div>  
                 </div>
                 <!-- Ongoing Support Phase Card -->
-                <div class="col-md-3 mb-4">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4">
                     <div class="approach-card">
                         <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
                             <div class="card-body">
@@ -370,15 +367,14 @@
         </div>
     </section>
 
-
     <!-- CONTACT-SECTION -->
-    <section class="w-100 contact_area">
-        <div class="contact-inner-con w-100">
+    <section class="contact_area1s">
+        <div class="w-100">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-7 col-md-7 order-md-0 h-100 d-flex flex-column align-items-center ">
                         <div class="contact-title">
-                            <h2 class="" data-aos="fade-up" data-aos-duration="600">Get Started with Delipat
+                            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Get Started with Delipat
                                 Today</h2>
                             <h4 class="" data-aos="fade-up" data-aos-duration="600">Take the First Step
                                 Towards a Seamless CRM Experience</h4>
@@ -438,7 +434,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- CONTACT-SECTION -->
 
     <!-- USER SECTION -->
@@ -446,13 +442,12 @@
         <div class="plan-box position-relative">
             <div class="container">
                 <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-                    <h2 data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Case Studies
-
-                        <span class="color-01d0cc">& Success Stories</span>
+                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Case Studies
+                        & Success Stories
                     </h2>
                 </div>
-                <div class="row">
-                    @foreach($blogs as $blog)
+                <!-- <div class="row"> -->
+                    <!-- @foreach($blogs as $blog)
                     <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
                         <div class="blog-item">
                             <figure>
@@ -470,21 +465,57 @@
                             </div>
                         </div>
                     </div>
-                    
-                    @endforeach
-                </div>
+                    @endforeach -->
+                    <div class="owl-carousel owl-theme" id="case-study-slider">
+                        <div class="item">
+                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
+                                <div class="case_study_inner_card">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
+                                <div class="case_study_inner_card">
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
+                                <div class="case_study_inner_card">
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
+                                <div class="case_study_inner_card">
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
             </div>
         </div>
     </section>
     <!-- USER SECTION -->
+
     <!-- BLOG SECTION -->
     <section class="w-100 float-left faq-box position-relative">
         <div class="container">
             <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-
-                <h2 data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Frequently Asked
-
-                    <span class="color-01d0cc">Questions</span>
+                <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Frequently Asked
+                    Questions
                 </h2>
             </div>
             <div class="aos-init aos-animate" data-aos="fade-up">
@@ -568,11 +599,11 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </section>
     <!-- BLOG SECTION -->
 
 @endsection
+<script>
+   
+    </script>

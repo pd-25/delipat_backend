@@ -39,7 +39,7 @@
                 </figure>
             </div>
             <div class="generic-box-content position-relative">
-                <h2 data-aos="fade-up" data-aos-duration="600">Who <span class="color-01d0cc">We Are ?</span></h2>
+                <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Who We Are ?</h2>
                 <p data-aos="fade-up" data-aos-duration="600">Delipat is a leading Salesforce and CRM consulting
                     firm dedicated to empowering businesses with innovative, data-driven solutions. Our team of
                     certified Salesforce and HubSpot consultants brings extensive experience across industries,
@@ -104,7 +104,7 @@
     <div class="wrapper">
         <div class="text-center">
             <div class="generic-box-content-about position-relative">
-                <h2 data-aos="fade-up" data-aos-duration="600">Our <span class="color-01d0cc">Values</span></h2>
+                <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Our Values</h2>
                 <p data-aos="fade-up" data-aos-duration="600">Creating Business Excellence with CRM Expertise</p>
                 <div class="generic-list d-flex text-left justify-content-center mt-5">
                     <ul class="list-unstyled">
@@ -146,7 +146,7 @@
 <section class="w-100 float-left user-con position-relative about-client-con">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 data-aos="fade-up" data-aos-duration="600">Our <span class="color-01d0cc">Journey</span></h2>
+            <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Our Journey</h2>
 
             <p class="lead">Founded by visionary CEO Rajesh Chatterjee, who has more than 15 years of experience
                 with HubSpot and Salesforce implementation, Delipat started with a commitment to challenge the CRM
@@ -210,7 +210,7 @@
 <section class="w-100 float-left team-con position-relative">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 data-aos="fade-up" data-aos-duration="600">Why <span class="color-01d0cc">Choose Delipat?</span>
+            <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Why Choose Delipat?
             </h2>
         </div>
 
@@ -271,9 +271,9 @@
 <section class="w-100 float-left user-con position-relative about-client-con">
     <div class="wrapper">
         <div class="team-title-box text-center mb-5">
-            <h2 data-aos="fade-up" data-aos-duration="600"> Experienced. Certified.
-                Dedicated.
-                <span class="color-01d0cc d-block">Meet the Delipat Team </span>
+            <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2"> Experienced. Certified.
+                Dedicated.<br>
+               Meet the Delipat Team 
             </h2>
             <p>Our team is the backbone of our success. Comprised of CRM experts, developers, and strategists, each
                 member is certified and highly skilled, committed to understanding your unique business challenges
@@ -295,43 +295,72 @@
 <!-- TEAM SECTION -->
 <!-- CONTACT-SECTION -->
  <!-- CONTACT-SECTION -->
- <section class="w-100 float-left contact-con position-relative d-flex align-items-center">
-    <div class="contact-inner-con position-relative w-100">
-        <div class="wrapper">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-7 order-md-0  d-flex flex-column align-items-center ">
-                    <div class="contact-title position-relative">
-                        <h2 class="text-white" data-aos="fade-up" data-aos-duration="600">Get Started with Delipat Today</h2>
-                        <h4 class="text-white" data-aos="fade-up" data-aos-duration="600">Take the First Step Towards a Seamless CRM Experience</h4>
-                        <p class="text-white" data-aos="fade-up" data-aos-duration="600">Ready to transform your business? Connect with our CRM experts to discuss your needs, challenges, and goals. Let’s tailor a solution that helps you maximize growth and streamline operations with confidence.</p>
+ <section class="contact_area1s">
+        <div class="w-100">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-7 col-md-7 order-md-0 h-100 d-flex flex-column align-items-center ">
+                        <div class="contact-title">
+                            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Get Started with Delipat
+                                Today</h2>
+                            <h4 class="" data-aos="fade-up" data-aos-duration="600">Take the First Step
+                                Towards a Seamless CRM Experience</h4>
+                            <p class="" data-aos="fade-up" data-aos-duration="600">Ready to transform your
+                                business? Connect with our CRM experts to discuss your needs, challenges, and goals.
+                                Let’s tailor a solution that helps you maximize growth and streamline operations with
+                                confidence.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-5 order-md-0  d-flex justify-content-center" data-aos="fade-up" data-aos-duration="600">
-                    <form class="form-con w-100 frbg" data-aos="fade-up" data-aos-duration="600" method="post" id="contactpage">
-                        <ul class="list-unstyled">
-                            <li>
-                                <input type="text" placeholder="Your Name" name="fname" id="fname">
-                            </li>
-                            <li>
-                                <input type="tel" placeholder="Phone Number" name="phone" id="phone">
-                            </li>
-                            <li>
-                                <input type="email" placeholder="Email Address" name="email" id="email">
-                            </li>
-                            <li>
-                                <input type="text" placeholder="Location" name="location" id="location">
-                            </li>
-                            <li>
-                                <textarea placeholder="Your Message" name="subject" id="subject"></textarea>
-                            </li>
-                        </ul>
-                        <button class="submit-btn" id="submit">Send Now</button>
-                    </form>
+                    <div class="col-lg-5 col-md-5">
+                        <div class="contact-img-div">
+                            <figure class="mb-0 position-relative">
+                                <img src="{{asset('frontend/assets/images/contact-side-image.webp')}}" alt="contact-img" class="contact-img">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 order-md-0" data-aos="fade-up"
+                        data-aos-duration="600">
+                        <form class="form-con contact-form w-100 frbg" data-aos="fade-up" data-aos-duration="600" method="post"
+                            id="contactpage">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-input-div">
+                                        <input type="text" placeholder="Your Name" name="fname" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-input-div">
+                                        <input type="text" placeholder="Your Name" name="fname" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-input-div">
+                                        <input type="text" placeholder="Your Name" name="fname" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-input-div">
+                                        <input type="text" placeholder="Your Name" name="fname" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-input-div">
+                                        <textarea placeholder="Your Message" name="subject" id="subject" rows="5" cols="50"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-button-div">
+                                        <button class="submit-btn" id="submit">Send Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <!-- CONTACT-SECTION -->
 <!-- CONTACT-SECTION -->
@@ -340,8 +369,8 @@
 <section class="w-100 float-left faq-box ">
     <div class="container">
         <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-            <h2>Frequently Asked
-                <span class="d-block color-01d0cc">Questions</span>
+            <h2 class="main-header-h2">Frequently Asked
+                Questions
             </h2>
         </div>
         <div class="aos-init aos-animate" data-aos="fade-up">
