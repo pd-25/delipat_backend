@@ -8,14 +8,13 @@
 <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" rel="stylesheet">
 
 <!-- BANNER SECTION -->
-<section id="back-top" class="w-100 float-left banner-con home-banner home-banner position-relative">
+<section id="back-top" class="w-100 float-left banner-con common-banner home-banner position-relative">
     <div class="banner-inner-con position-relative">
-        <div class="wrapper2">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="banner-title">
-                        <h1 class="text-white">Gallery</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <h1 class="main-header-h2">Gallery</h1>
                     </div>
                 </div>
             </div>
@@ -24,7 +23,7 @@
 </section>
 
 <!-- GALLERY SECTION -->
-<section class="w-100 float-left gallery-project position-relative">
+<section class="w-100 float-left gallery-project gallery-banner">
     <div class="wrapper">
         <div class="gellery-page-project position-relative">
             <div class="project-box d-flex flex-wrap">

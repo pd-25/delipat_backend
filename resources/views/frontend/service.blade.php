@@ -1,16 +1,13 @@
 @extends('frontend.layout.app')
 @section('content')
   <!-- BANNER SECTION -->
-  <section id="back-top" class="w-100 float-left banner-con home-banner position-relative">
+  <section id="back-top" class="w-100 float-left banner-con common-banner position-relative">
     <div class="banner-inner-con position-relative">
-        <div class="wrapper2">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="banner-title">
-                        <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">Services – Delipat</h1>
-                        <p class="mb-0" data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit, sed do eiusmod tempor incid
-                            idunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+                        <h1 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Services – Delipat</h1>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 order-md-0 order-1">
@@ -26,14 +23,15 @@
 <!-- BANNER SECTION -->
 
 <!-- Empowering Leaders to Drive Success starts -->
-<section class="w-100 float-left clean-con">
-    <div class="wrapper2">
-        <div class="generic-box">
-            <div class="generic-box-img" data-aos="fade-up" data-aos-duration="600">
+<section class="w-100 float-left team-con textbox-center">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-5 col-md-8" data-aos="fade-up" data-aos-duration="600">
                 <div class="service-sec-1">
-                    <img src="{{asset('frontend/assets/images/main-service-1.webp')}}" alt="Empowering-img" class="service-sec-img-1">
+                    <img src="{{asset('frontend/assets/images/empowering-leaders.png')}}" alt="Empowering-img" class="service-sec-img-1">
                 </div>
             </div>
+            <div class="col-lg-7 col-md-10">
             <div class="service-sec-1">
                 <h2 class="service-h2 main-header-h2" data-aos="fade-up" data-aos-duration="600">Empowering Leaders to Drive
                     Success through Customized CRM Solutions
@@ -53,27 +51,29 @@
 
                 </div>
             </div>
+            </div>
+           
         </div>
     </div>
 </section>
 <!-- Empowering Leaders to Drive Success ends -->
 
 <!--Why Delipat for CRM Development? starts -->
-<section class="w-100 float-left team-con">
-    <div class="wrapper2">
-        <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Why Delipat for
-                 CRM Development?
-            </h2>
-        </div>
-        <div class="generic-box">
-            <div class="crm-development-box-img" data-aos="fade-up" data-aos-duration="600">
-                <img src="{{asset('frontend/assets/images/main-service-2.webp')}}" alt="crm-development-img" class="service-sec-img-2">
+<section class="w-100 float-left team-con textbox-center">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-5 col-md-8">
+                <div class="crm-development-box-img" data-aos="fade-up" data-aos-duration="600">
+                    <img src="{{asset('frontend/assets/images/why-delipat.png')}}" alt="crm-development-img" class="service-sec-img-2">
+                </div>
             </div>
-            <div class="crm-development-box-content">
-                <h3 class="crm-service-h3" data-aos="fade-up" data-aos-duration="600">A Strategic CRM Partner for
+           <div class="col-lg-7 col-md-10">
+           <div class="crm-development-box-content">
+                <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Why Delipat for CRM Development?
+                </h2>
+                <h4 class="common-h4" data-aos="fade-up" data-aos-duration="600">A Strategic CRM Partner for
                     Transformative Business Growth
-                </h3>
+                </h4>
                 <p data-aos="fade-up" data-aos-duration="600">With a focus on delivering measurable outcomes,
                     Delipat tailors each CRM solution to fit the distinct needs of your business. We work across
                     industries, offering solutions that scale with you, streamline operations, and drive ROI.
@@ -103,106 +103,114 @@
                     </div>
                 </div>
             </div>
+           </div>
+            
         </div>
     </div>
 </section>
 <!--Why Delipat for CRM Development? end -->
 
-
-<!-- Our Core CRM Development Services starts -->
-<section class="w-100 float-left clean-con">
+<!--Our Core CRM Development Services starts -->
+<section class="w-100 float-left team-con gallery-banner textbox-center ptop-12">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2">Our Core
-                 CRM Development Services
-               
-            </h2>
+            <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2" style="background:#f0f8ff3d;">Our Core
+                    CRM Development Services
+                </h2>
         </div>
-        <div class="goals-box text-center position-relative">
-            <div class="goals-box-item">
-                <div class="core-crm-card-img-box mx-auto" data-aos="fade-up" data-aos-duration="600">
-                    <img src="{{asset('frontend/assets/images/salesforce.png')}}" alt="mission-icon">
-                </div>
-
-                <h4 data-aos="fade-up" data-aos-duration="600">Salesforce CRM Development
-                </h4>
-                <p class="mb-0 sercvice-card-p-1" data-aos="fade-up" data-aos-duration="600">We specialize in
-                    deploying Salesforce solutions that empower you to connect with customers at every stage of the
-                    journey, from lead nurturing to service. Our Salesforce services are crafted to optimize
-                    operational efficiency and improve team collaboration.</p>
-                <div class="generic-list core-crm-list">
-                    <ul class="list-unstyled">
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Tailored CRM Configuration:</span>
-                            <p class="mb-0"> Adapt Salesforce to your specific business processes for maximum
-                                impact.
-                            </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Enhanced Automation:</span>
-                            <p class="mb-0"> Streamline routine tasks, freeing up resources for strategic work.</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Data Unification:</span>
-                            <p class="mb-0">Integrate disparate data sources into a single, unified view for deeper
-                                insights</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="service-card-btn-box more-details">
-                    <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="#">Learn More
-                        </a>
-                    </div>
+        <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5 col-md-8">
+                <div class="crm-development-box-img" data-aos="fade-up" data-aos-duration="600">
+                    <img src="{{asset('frontend/assets/images/salesforce.webp')}}" alt="crm-development-img" class="service-sec-img-2">
                 </div>
             </div>
-            <div class="goals-box-item">
-                <div class="core-crm-card-img-box mx-auto" data-aos="fade-up" data-aos-duration="600">
-                    <img src="{{asset('frontend/assets/images/hubspot.png')}}" alt="vision-icon">
-                </div>
-                <h4 data-aos="fade-up" data-aos-duration="600">HubSpot Development Services
-                </h4>
-                <p class="mb-0 sercvice-card-p-1" data-aos="fade-up" data-aos-duration="600">As a certified HubSpot
-                    development partner, Delipat ensures your HubSpot system aligns perfectly with your inbound
-                    strategy and sales objectives. From building custom workflows to integrating essential marketing
-                    tools, we help you leverage HubSpot’s full potential.
-
-                </p>
-                <div class="generic-list core-crm-list">
-                    <ul class="list-unstyled">
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Inbound Strategy Alignment: </span>
-                            <p class="mb-0">Develop workflows that align with your marketing goals.
-                            </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Comprehensive CRM Customization:</span>
-                            <p class="mb-0">Tailor HubSpot’s CRM to fit your unique sales cycle.
-                            </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Advanced Integration Services:</span>
-                            <p class="mb-0">Connect HubSpot with other critical business applications for seamless
-                                data flow.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="service-card-btn-box more-details">
-                    <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="#">Learn More
-                        </a>
+           <div class="col-lg-7 col-md-10">
+                <div class="crm-development-box-content">
+                    <h3 class="crm-service-h3" data-aos="fade-up" data-aos-duration="600">1. Salesforce CRM Development
+                    </h3>
+                    <p class="mb-2 sercvice-card-p-1" data-aos="fade-up" data-aos-duration="600">We specialize in
+                        deploying Salesforce solutions that empower you to connect with customers at every stage of the
+                        journey, from lead nurturing to service. Our Salesforce services are crafted to optimize
+                        operational efficiency and improve team collaboration.</p>
+                    <div class="generic-list">
+                        <ul class="list-unstyled">
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Tailored CRM Configuration:</span>
+                                    <p class="mb-0"> Adapt Salesforce to your specific business processes for maximum
+                                        impact.
+                                    </p>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Enhanced Automation:</span>
+                                    <p class="mb-0"> Streamline routine tasks, freeing up resources for strategic work.</p>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Data Unification:</span>
+                                    <p class="mb-0">Integrate disparate data sources into a single, unified view for deeper
+                                        insights</p>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="d-flex align-items-center more-details">
+                        <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
+                            <a href="#">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row align-items-center justify-content-center pt-4">
+           <div class="col-lg-7 col-md-10">
+                <div class="crm-development-box-content">
+                    <h3 class="crm-service-h3" data-aos="fade-up" data-aos-duration="600">2. HubSpot Development Services
+                    </h3>
+                    <p class="mb-2 sercvice-card-p-1" data-aos="fade-up" data-aos-duration="600">As a certified HubSpot
+                        development partner, Delipat ensures your HubSpot system aligns perfectly with your inbound
+                        strategy and sales objectives. From building custom workflows to integrating essential marketing
+                        tools, we help you leverage HubSpot’s full potential.
+
+                    </p>
+                    <div class="generic-list">
+                        <ul class="list-unstyled">
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Inbound Strategy Alignment: </span>
+                                    <p class="mb-0">Develop workflows that align with your marketing goals.
+                                    </p>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Comprehensive CRM Customization:</span>
+                                    <p class="mb-0">Tailor HubSpot’s CRM to fit your unique sales cycle.
+                                    </p>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="600">
+                                    <span class="d-block">Advanced Integration Services:</span>
+                                    <p class="mb-0">Connect HubSpot with other critical business applications for seamless
+                                        data flow.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center more-details">
+                            <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-5 col-md-8">
+                <div class="crm-development-box-img" data-aos="fade-up" data-aos-duration="600">
+                    <img src="{{asset('frontend/assets/images/hubspot.webp')}}" alt="crm-development-img" class="service-sec-img-2">
+            </div>
+            </div> 
+            
+        </div>
+    
     </div>
 </section>
-<!-- Our Core CRM Development Services end -->
+<!--Our Core CRM Development Services end -->
 
 <!-- Unlock Your Business Potential with Tailored CRM Solutions starts -->
-<section class="w-100 float-left team-con position-relative business-potential-area">
+<section class="w-100 float-left user-con position-relative business-potential-area">
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="unlock-your-business-h2 main-header-h2" data-aos="fade-up" data-aos-duration="600">Unlock Your Business
@@ -247,106 +255,7 @@
 
 
 <!-- Business Challenges We Solve starts -->
-<!-- <section class="w-100 float-left goals-con faq-box">
-    <div class="container">
-        <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-            <h2 class="main-header-h2">Business Challenges We Solve
-               
-            </h2>
-        </div>
-        <div class="aos-init aos-animate" data-aos="fade-up">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="accordion-section">
-                        <div class="accordion" id="faqAccordion1">
-                            <div class="accordion-card">
-                                <div class="accordion-header" id="headingOne1">
-                                    <a href="#" class="accordion-btn collapsed" data-toggle="collapse"
-                                        data-target="#collapseOne1" aria-expanded="false"
-                                        aria-controls="collapseOne1">
-                                        <h5>Streamline Sales Operations:
-                                        </h5>
-                                    </a>
-                                </div>
-                                <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1"
-                                    data-parent="#faqAccordion1">
-                                    <div class="accordion-body">
-                                        <p>Minimize bottlenecks and improve sales effectiveness by automating
-                                            processes and managing leads with precision.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-card">
-                                <div class="accordion-header" id="headingTwo1">
-                                    <a href="#" class="accordion-btn collapsed" data-toggle="collapse"
-                                        data-target="#collapseTwo1" aria-expanded="false"
-                                        aria-controls="collapseTwo1">
-                                        <h5>Enhance Customer Experiences:
-                                        </h5>
-                                    </a>
-                                </div>
-                                <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo1"
-                                    data-parent="#faqAccordion1">
-                                    <div class="accordion-body">
-                                        <p>Build meaningful relationships through personalized engagement and timely
-                                            responses powered by CRM data.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="accordion-section">
-                        <div class="accordion" id="faqAccordion2">
-                            <div class="accordion-card">
-                                <div class="accordion-header" id="headingOne2">
-                                    <a href="#" class="accordion-btn collapsed" data-toggle="collapse"
-                                        data-target="#collapseOne2" aria-expanded="false"
-                                        aria-controls="collapseOne2">
-                                        <h5>Facilitate Data-Driven Decisions:
-                                        </h5>
-                                    </a>
-                                </div>
-                                <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2"
-                                    data-parent="#faqAccordion2">
-                                    <div class="accordion-body">
-                                        <p>Use analytics to gain insights into customer behaviors and operational
-                                            performance, guiding strategic decisions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-card">
-                                <div class="accordion-header" id="headingTwo2">
-                                    <a href="#" class="accordion-btn collapsed" data-toggle="collapse"
-                                        data-target="#collapseTwo2" aria-expanded="false"
-                                        aria-controls="collapseTwo2">
-                                        <h5>Scale with Confidence:
-                                        </h5>
-                                    </a>
-                                </div>
-                                <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2"
-                                    data-parent="#faqAccordion2">
-                                    <div class="accordion-body">
-                                        <p>As your business grows, our CRM solutions provide the infrastructure to
-                                            scale seamlessly without sacrificing quality.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section> -->
-<section class="w-100 float-left user-con business-challenges-area">
+<section class="w-100 float-left team-con business-challenges-area">
     <div class="container">
         <div class="team-title text-center mb-4">
             <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Business Challenges We Solve
@@ -355,11 +264,11 @@
         <div class="row mb-5 align-items-center justify-content-center">
             <!-- Discovery Phase Card -->
             <div class="col-xl-5 col-lg-6 col-md-6 col-12 mb-4">
-                <div class="approach-card">
+                <div class="approach-card bg-light-blue">
                     <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
                         <div class="card-body">
                             <div class="approach-image-div">
-                                    <img src="{{asset('frontend/assets/images/service/service-card-1.png')}}" alt="sales-operation-image" class="business-challenges-image">
+                            <img src="{{asset('frontend/assets/images/sales-operation.png')}}" alt="discover-icon" class="approach-card-image">
                                </div>
                             <h3 class="card-title">Streamline Sales Operations:</h3>
                             <p class="card-text">Minimize bottlenecks and improve sales effectiveness by automating
@@ -370,10 +279,10 @@
             </div>
             <!-- Customization Phase Card -->
             <div class="col-xl-5 col-lg-6 col-md-6 col-12 mb-4">
-                 <div class="approach-card">
+                 <div class="approach-card bg-light-blue">
                     <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
                         <div class="card-body">
-                         <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/customization.png')}}" alt="cutomization-icon" class="approach-card-image"></div>
+                         <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/customer-experience.png')}}" alt="cutomization-icon" class="approach-card-image"></div>
                             <h3 class="card-title">Enhance Customer Experiences:</h3>
                             <p class="card-text">Build meaningful relationships through personalized engagement and timely
                                 responses powered by CRM data.</p>
@@ -383,10 +292,10 @@
             </div>
             <!-- Implementation Phase Card -->
             <div class="col-xl-5 col-lg-6 col-md-6 col-12 mb-4">
-                <div class="approach-card">
+                <div class="approach-card bg-light-blue">
                     <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
                         <div class="card-body">
-                            <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/implementation.png')}}" alt="implementation-icon" class="approach-card-image"></div>
+                            <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/data-driven-decisions.png')}}" alt="implementation-icon" class="approach-card-image"></div>
                             <h3 class="card-title">Facilitate Data-Driven Decisions:</h3>
                             <p class="card-text">Use analytics to gain insights into customer behaviors and operational
                                 performance, guiding strategic decisions.</p>
@@ -396,10 +305,10 @@
             </div>
             <!-- Ongoing Support Phase Card -->
             <div class="col-xl-5 col-lg-6 col-md-6 col-12 mb-4">
-                <div class="approach-card">
+                <div class="approach-card bg-light-blue">
                     <div class="card text-center h-100" data-aos="fade-up" data-aos-duration="600">
                         <div class="card-body">
-                            <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/ongoing-support.png')}}" alt="ongoing-support" class="approach-card-image"></div>
+                            <div class="approach-image-div">  <img src="{{asset('frontend/assets/images/scale-confidence.png')}}" alt="ongoing-support" class="approach-card-image"></div>
                             <h3 class="card-title">Scale with Confidence:</h3>
                             <p class="card-text">As your business grows, our CRM solutions provide the infrastructure to
                                 scale seamlessly without sacrificing quality.</p>
@@ -419,14 +328,14 @@
 <!--Business Challenges We Solve end -->
 
  <!--Delipat’s Salesforce Process -->
- <section class="w-100 float-left clean-con flowchart-sec">
+ <section class="w-100 float-left team-con flowchart-sec">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries Our Process
                   </h2>
-                <p class="lead">Comprehensive, End-to-End Support
+                <h4 class="common-h4">Comprehensive, End-to-End Support
 
-                </p>
+                </h4>
             </div>
         <div class="timeline">
             <div class="container-1 left-container">
@@ -488,60 +397,56 @@
     <!-- Delipat’s Salesforce Process ends -->
 
 <!-- Industries We Serve starts -->
-<section class="w-100 float-left team-con industry-serve">
-    <div class="wrapper2">
-        <div class="generic-box">
-            <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
-                <div class="generic-box-img1345">
-                    <figure class="mb-0 position-relative">
+<section class="w-100 float-left team-con industry-serve textbox-center">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-8" data-aos="fade-up" data-aos-duration="600">
+                <div class="industry-image-box">
                         <img src="{{asset('frontend/assets/images/we-serve-2.png')}}" alt="clean-img" class="trusted-crm">
-                    </figure>
                 </div>
-                <!-- <figure class="mb-0 generic-box-img2">
-                    <img src="{{asset('frontend/assets/images/clean-small-img.png')}}" alt="clean-small-img">
-                </figure> -->
-        </div>
-        <div class="generic-box-content position-relative">
-            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries We Serve</h2>
-                  
-            <p data-aos="fade-up" data-aos-duration="600">Our team at Delipat understands the unique CRM needs across different sectors, ensuring
-            each solution is optimized for industry demands:
-            </p>
-            <div class="generic-list">
-                <ul class="list-unstyled">
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Healthcare:</span>
-                            <p class="mb-0">Secure patient interactions and efficient data management.
-                            </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Finance: </span>
-                            <p class="mb-0">Solutions designed with compliance and client management at their core.
-                            </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Retail:</span>
-                            <p class="mb-0">Personalized, data-driven customer engagement to enhance loyalty.</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="600">
-                            <span class="d-block">Manufacturing:</span>
-                            <p class="mb-0">Analytics and automation that improve supply chain efficiency.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-flex align-items-center more-details">
-                    <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="#">Read more on Industry Solutions</a>
+            </div>
+            <div class="col-lg-6 col-md-10">
+                <div class="industry-content-box">
+                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries We Serve</h2>
+                    <p data-aos="fade-up" data-aos-duration="600">Our team at Delipat understands the unique CRM needs across different sectors, ensuring
+                    each solution is optimized for industry demands:
+                    </p>
+                    <div class="generic-list">
+                        <ul class="list-unstyled">
+                            <li data-aos="fade-up" data-aos-duration="600">
+                                <span class="d-block">Healthcare:</span>
+                                <p class="mb-0">Secure patient interactions and efficient data management.
+                                </p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="600">
+                                <span class="d-block">Finance: </span>
+                                <p class="mb-0">Solutions designed with compliance and client management at their core.
+                                </p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="600">
+                                <span class="d-block">Retail:</span>
+                                <p class="mb-0">Personalized, data-driven customer engagement to enhance loyalty.</p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="600">
+                                <span class="d-block">Manufacturing:</span>
+                                <p class="mb-0">Analytics and automation that improve supply chain efficiency.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center more-details">
+                        <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
+                            <a href="#">Read more on Industry Solutions</a>
+                        </div>
                     </div>
                 </div>
-        </div>
+            </div>
+        </div>  
     </div>
-
 </section>
 <!-- Industries We Serve end -->
 
 <!-- faq section starts -->
-<section class="w-100 float-left faq-box ">
+<section class="w-100 float-left faq-box faq_area">
     <div class="container">
         <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
             <h2 class="main-header-h2">Frequently Asked Questions

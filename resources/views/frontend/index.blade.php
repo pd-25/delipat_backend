@@ -5,14 +5,14 @@
     <!-- BANNER SECTION -->
     <section id="back-top" class="w-100 float-left banner-con home-banner">
         <div class="banner-inner-con position-relative">
-            <div class="wrapper2">
+            <div class="container">
                 <div class="row justify-conetnt-center align-items-start">
-                    <div class="col-lg-7">
+                    <div class="col-lg-8">
                         <div class="banner-title generic-box-content">
                             <h1 class="banner-text-h1" data-aos="fade-up" data-aos-duration="600">Delipat – Your Premier
                                 Salesforce & HubSpot Consulting Partner
                             </h1>
-                            <h4 class="" data-aos="fade-up" data-aos-duration="600">Unlock CRM Potential with
+                            <h4 class="common-h4" data-aos="fade-up" data-aos-duration="600">Unlock CRM Potential with
                                 Tailored Solutions for Every Business
                             </h4>
                             <p data-aos="fade-up" data-aos-duration="600">Whether you’re a growing startup or an
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 order-lg-0 order-1">
+                    <div class="col-lg-4 order-lg-0 order-1">
                         <div class="banner-img">
                             <figure class="mb-0">
                                 <img src="{{asset('frontend/assets/images/main-banner-image.webp')}}" alt="home-girls-img">
@@ -50,19 +50,15 @@
     <!-- BANNER SECTION -->
     <!-- CLEAN SECTION -->
     <section class="w-100 float-left clean-con">
-        <div class="wrapper2">
-            <div class="generic-box">
-                <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
-                    <div class="generic-box-img1345">
-                        <figure class="mb-0 position-relative">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-8 col-12 mb-3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="trusted-crm-image-box">
                             <img src="{{asset('frontend/assets/images/trusted-crm.png')}}" alt="clean-img" class="trusted-crm">
-                        </figure>
                     </div>
-                    <!-- <figure class="mb-0 generic-box-img2">
-                        <img src="{{asset('frontend/assets/images/clean-small-img.png')}}" alt="clean-small-img">
-                    </figure> -->
                 </div>
-                <div class="generic-box-content position-relative">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="trusted-crm-content-box">
                     <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Trusted CRM Experts with a Proven Track Record.</h2>
                     <p data-aos="fade-up" data-aos-duration="600">With a certified team and years of experience, we
                         deliver Salesforce and HubSpot solutions tailored to your industry. Our expertise spans CRM
@@ -102,6 +98,7 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </section>
@@ -109,7 +106,7 @@
     <!-- SERVICE SECTION -->
     <section class="w-100 float-left  pb-0 service-area">
         <div class="service-inner-box position-relative">
-            <div class="wrapper">
+            <div class="container">
                 <div class="service-title text-center position-relative">
 
                     <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">
@@ -184,16 +181,15 @@
 
     <!-- Solutions to Address Your Pain Points -->
     <section class="w-100 float-left user-con solution-address-sec">
-        <div class="wrapper2">
-            <div class="generic-box">
-                <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
-                    <div class="generic-box-img1345">
-                        <figure class="mb-0 position-relative">
+        <div class="container">
+            <div class=" row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-8 mb-3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="soluion-address-image-box">
                             <img src="{{asset('frontend/assets/images/solution-side.webp')}}" alt="crm-solution" class="solution-image">
-                        </figure>
                     </div>
                 </div>
-                <div class="generic-box-content position-relative transparent-bg">
+                <div class="col-lg-6 col-md-10 transparent-bg">
+                    <div class="solution-address-content-box">
                     <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Solutions to Address Your Pain Points</h2>
                     <p data-aos="fade-up" data-aos-duration="600">Delipat’s CRM expertise helps you overcome common
                         business hurdles by aligning systems, enhancing team productivity, and enabling real-time data
@@ -227,6 +223,7 @@
                             <a href="#">Let’s talk business</a>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,66 +231,63 @@
      <!-- Solutions to Address Your Pain Points -->
 
     <!-- industries we serve starts  -->
-    <section class="w-100 float-left clean-con industry-serve">
-        <div class="wrapper2">
-            <div class="generic-box">
-                <div class="generic-box-img position-relative" data-aos="fade-up" data-aos-duration="600">
-                    <div class="generic-box-img1345">
-                        <figure class="mb-0 position-relative">
+    <section class="clean-con industry-serve">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-8 col-sm-12 mb-3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="industry-box-img m-auto">
                             <img src="{{asset('frontend/assets/images/we-serve-1.png')}}" alt="clean-img" class="trusted-crm">
-                        </figure>
                     </div>
-                    <!-- <figure class="mb-0 generic-box-img2">
-                        <img src="{{asset('frontend/assets/images/clean-small-img.png')}}" alt="clean-small-img">
-                    </figure> -->
-            </div>
-            <div class="generic-box-content position-relative">
-                <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries We Serve</h2>
-                      
-                <p data-aos="fade-up" data-aos-duration="600">Our CRM solutions cater to a range of industries, each
-                    with unique challenges and objectives. Explore how Delipat tailors its Salesforce and HubSpot
-                    services for your industry:
-                </p>
-                <div class="generic-list">
-                    <ul class="list-unstyled">
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Healthcare</span>
-                                <p class="mb-0">Streamlined patient data management
-
-                                </p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Financial Services</span>
-                                <p class="mb-0">Enhanced security and compliance
-
-                                </p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Retail</span>
-                                <p class="mb-0">Personalized customer journeys and smarter inventory
-
-                                </p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Manufacturing</span>
-                                <p class="mb-0">Data-driven supply chain and production insights
-                                </p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Technology</span>
-                                <p class="mb-0">Scalable CRM solutions for rapid innovation
-                                </p>
-                            </li>
-                        </ul>
                 </div>
-                <div class="d-flex align-items-center more-details">
-                    <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="#">Discover Industry Solutions</a>
+                <div class="col-lg-6 col-md-12 col-sm-12  m-auto">
+                    <div class="industry-content-div">
+                        <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries We Serve</h2>
+                            
+                        <p data-aos="fade-up" data-aos-duration="600">Our CRM solutions cater to a range of industries, each
+                            with unique challenges and objectives. Explore how Delipat tailors its Salesforce and HubSpot
+                            services for your industry:
+                        </p>
+                        <div class="generic-list">
+                            <ul class="list-unstyled">
+                                    <li data-aos="fade-up" data-aos-duration="600">
+                                        <span class="d-block">Healthcare</span>
+                                        <p class="mb-0">Streamlined patient data management
+
+                                        </p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="600">
+                                        <span class="d-block">Financial Services</span>
+                                        <p class="mb-0">Enhanced security and compliance
+
+                                        </p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="600">
+                                        <span class="d-block">Retail</span>
+                                        <p class="mb-0">Personalized customer journeys and smarter inventory
+
+                                        </p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="600">
+                                        <span class="d-block">Manufacturing</span>
+                                        <p class="mb-0">Data-driven supply chain and production insights
+                                        </p>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="600">
+                                        <span class="d-block">Technology</span>
+                                        <p class="mb-0">Scalable CRM solutions for rapid innovation
+                                        </p>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center more-details">
+                        <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
+                            <a href="#">Discover Industry Solutions</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
    <!-- industries we serve end  -->
 
@@ -368,7 +362,7 @@
     </section>
 
     <!-- CONTACT-SECTION -->
-    <section class="contact_area1s">
+    <section class="contact_area w-100 team-con float-left">
         <div class="w-100">
             <div class="container">
                 <div class="row d-flex align-items-center">
@@ -376,7 +370,7 @@
                         <div class="contact-title">
                             <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Get Started with Delipat
                                 Today</h2>
-                            <h4 class="" data-aos="fade-up" data-aos-duration="600">Take the First Step
+                            <h4 class="common-h4" data-aos="fade-up" data-aos-duration="600">Take the First Step
                                 Towards a Seamless CRM Experience</h4>
                             <p class="" data-aos="fade-up" data-aos-duration="600">Ready to transform your
                                 business? Connect with our CRM experts to discuss your needs, challenges, and goals.
@@ -442,8 +436,7 @@
         <div class="plan-box position-relative">
             <div class="container">
                 <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Case Studies
-                        & Success Stories
+                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Videos
                     </h2>
                 </div>
                 <!-- <div class="row"> -->
@@ -511,7 +504,7 @@
     <!-- USER SECTION -->
 
     <!-- BLOG SECTION -->
-    <section class="w-100 float-left faq-box position-relative">
+    <section class="w-100 float-left faq-box faq_area">
         <div class="container">
             <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
                 <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Frequently Asked

@@ -1,16 +1,16 @@
 @extends('frontend.layout.app')
 @section('content')
-<section id="back-top" class="w-100 float-left banner-con home-banner position-relative">
+<section id="back-top" class="w-100 float-left banner-con common-banner position-relative">
     <div class="banner-inner-con position-relative">
-        <div class="wrapper2">
-            <div class="row">
+        <div class="container">
+            <div class="row align-items-center">
                 <div class="col-lg-7 col-md-7">
                     <div class="banner-title">
-                        <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">Solution By Industry –
+                        <h1 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Solution By Industry –
                             Delipat</h1>
-                        <p class="mb-0" data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet,
+                        <!-- <p class="mb-0" data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit, sed do eiusmod tempor incid
-                            idunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+                            idunt ut labore et dolore magna aliqua enim ad minim veniam.</p> -->
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 order-md-0 order-1">
@@ -26,30 +26,28 @@
 <!-- BANNER SECTION -->
 
 <!-- Industry-Specific CRM Solutions for Every Business Need starts -->
-<section class="w-100 float-left padding-box">
+<section class="w-100 float-left team-con solution-by-area textbox-center">
     <div class="container">
-        <div class="crm-development-title">
-            <h2 class="service-h2" data-aos="fade-up" data-aos-duration="600">Industry-Specific CRM Solutions for
-                <span class="color-01d0cc">Every Business Need
-                </span>
-            </h2>
-        </div>
         <div class="generic-box-1">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-4 col-md-8 col-sm-12 h-100 pb-5">
                     <div class="industry-sec-1">
-                        <img src="{{asset('frontend/assets/images/industry-business-need.webp')}}" alt="business-need"
+                        <img src="{{asset('frontend/assets/images/industry-specific-crm-2.webp')}}" alt="business-need"
                             class="service-sec-img-1">
                     </div>
                 </div>
-                <div class="col-lg-5 offset-lg-1 col-md-8 col-sm-12">
-
-                    <p class="center-p" data-aos="fade-up" data-aos-duration="600">At Delipat, we
-                        deliver custom CRM solutions that meet the unique needs of your industry. Whether you're in
-                        healthcare, retail, finance, or any other sector, we offer tailored Salesforce and HubSpot
-                        development services to help you streamline operations, increase customer engagement, and
-                        drive sustainable growth.
-                    </p>
+                <div class="col-lg-5 offset-lg-1 col-md-8 col-sm-12 h-100">
+                    <div class="solution_by_content_div">
+                    <h2 class="service-h2 main-header-h2" data-aos="fade-up" data-aos-duration="600">Industry-Specific CRM Solutions for
+                Every Business Need
+            </h2>
+                        <p class="center-p" data-aos="fade-up" data-aos-duration="600">At Delipat, we
+                            deliver custom CRM solutions that meet the unique needs of your industry. Whether you're in
+                            healthcare, retail, finance, or any other sector, we offer tailored Salesforce and HubSpot
+                            development services to help you streamline operations, increase customer engagement, and
+                            drive sustainable growth.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,9 +59,9 @@
 <section class="w-100 float-left team-con industry-sec ">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Healthcare
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+               Healthcare
+                
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -107,7 +105,7 @@
             </div>
             <div class="col-lg-4 col-md-8 col-sm-12 h-100 offset-lg-1">
                 <div class="crm-development-box-img" data-aos="fade-up" data-aos-duration="600">
-                    <img src="{{asset('frontend/assets/images/health.webp')}}" alt="healthcare-image" class="service-sec-img-2"
+                    <img src="{{asset('frontend/assets/images/healthcare.webp')}}" alt="healthcare-image" class="service-sec-img-2"
                         loading="lazy">
                 </div>
             </div>
@@ -121,13 +119,11 @@
 <!--Healthcare end -->
 
 <!--Finance starts -->
-<section class="w-100 float-left clean-con industry-sec">
+<section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Finance
-
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+             Finance
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -189,9 +185,8 @@
 <section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Retail
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+                Retail
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -244,12 +239,11 @@
 <!--Retail end -->
 
 <!--Manufacturing starts -->
-<section class="w-100 float-left clean-con industry-sec">
+<section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Manufacturing
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+              Manufacturing
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -305,15 +299,14 @@
 <section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Education
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+               Education
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-4 col-md-8 col-sm-12 h-100  offset-lg-1 order-1">
                 <div class="crm-development-box-img" data-aos="fade-up" data-aos-duration="600">
-                    <img src="{{asset('frontend/assets/images/education.webp')}}" alt="education-image"
+                    <img src="{{asset('frontend/assets/images/education.png')}}" alt="education-image"
                         class="service-sec-img-2" loading="lazy">
                 </div>
             </div>
@@ -360,12 +353,11 @@
 <!--Education end -->
 
 <!--Real Estate starts -->
-<section class="w-100 float-left clean-con industry-sec">
+<section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Real Estate
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+               Real Estate
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -422,9 +414,8 @@
 <section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Technology
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+              Technology
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -477,12 +468,11 @@
 <!--Technology end -->
 
 <!--Professional Services starts -->
-<section class="w-100 float-left clean-con industry-sec">
+<section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Professional Services
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+                Professional Services
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -539,9 +529,8 @@
 <section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Hospitality
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+             Hospitality
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -593,12 +582,11 @@
 <!--Hospitality end -->
 
 <!--Legal starts -->
-<section class="w-100 float-left clean-con industry-sec">
+<section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Legal
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+              Legal
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -655,9 +643,8 @@
 <section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Government
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+               Government
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
@@ -709,18 +696,17 @@
 <!--Government end -->
 
 <!--Other Industries -->
-<section class="w-100 float-left clean-con industry-sec">
+<section class="w-100 float-left team-con industry-sec">
     <div class="container">
         <div class="crm-development-title">
-            <h2 data-aos="fade-up" data-aos-duration="600">
-                <span class="color-01d0cc">Other Industries
-                </span>
+            <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">
+               Other Industries
             </h2>
         </div>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-4 col-md-8 col-sm-12 h-100 pb-5">
                 <div class="crm-development-box-img" data-aos="fade-up" data-aos-duration="600">
-                    <img src="{{asset('frontend/assets/images/other-services.webp')}}" alt="other-industries-image"
+                    <img src="{{asset('frontend/assets/images/other-industries.webp')}}" alt="other-industries-image"
                         class="service-sec-img-2" loading="lazy">
                 </div>
             </div>
@@ -754,10 +740,8 @@
 <section class="w-100 float-left industry-last-sec">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="begin-salesforce-journey-h2" data-aos="fade-up" data-aos-duration="600">Let Delipat Help You
-                Unlock the Power of
-                <span class="color-01d0cc">CRM for Your Industry
-                </span>
+            <h2 class="begin-salesforce-journey-h2 main-header-h2" data-aos="fade-up" data-aos-duration="600">Let Delipat Help You
+                Unlock the Power of CRM for Your Industry
             </h2>
 
         </div>

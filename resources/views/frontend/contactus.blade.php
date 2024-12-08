@@ -1,24 +1,15 @@
 @extends('frontend.layout.app')
 @section('content')
-<section id="back-top" class="w-100 float-left banner-con home-banner position-relative">
+<section id="back-top" class="w-100 float-left banner-con common-banner position-relative">
     <div class="banner-inner-con position-relative">
-        <div class="wrapper2">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="banner-title">
-                        <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">Contact Us</h1>
-                        <p class="mb-0" data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit, sed do eiusmod tempor incid
-                            idunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+                        <h1 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Contact Us</h1>
                     </div>
                 </div>
-                <!-- <div class="col-lg-5 col-md-5 order-md-0 order-1">
-                    <div class="banner-img" data-aos="fade-up" data-aos-duration="600">
-                      
-                    </div>
-                </div> -->
             </div>
-            <!-- wrapper -->
         </div>
     </div>
 </section>
@@ -28,7 +19,7 @@
     <div class="wrapper">
         <div class="contact-box2 w-100 float-left">
             <div class="contact-form">
-                <h2 class="mb-0" data-aos="fade-up" data-aos-duration="600">Get in Touch with Delipat’s CRM Experts</h2>
+                <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Get in Touch with Delipat’s CRM Experts</h2>
                 <p data-aos="fade-up" data-aos-duration="600">Have questions about our CRM solutions? <br>
                     Need more information on Salesforce or HubSpot services? <br>
                     Our team is ready to assist you and provide the insights you need to make informed decisions.
@@ -72,7 +63,7 @@
                 </form>
             </div>
             <div class="contact-info">
-                <h2 data-aos="fade-up" data-aos-duration="600">INFo</h2>
+                <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">INFo</h2>
                 <ul class="list-unstyled mb-0">
                     <li data-aos="fade-up" data-aos-duration="600">
                         <div class="contact-info-item">
@@ -114,4 +105,5 @@
    
     </div>
 </section>
+
 @endsection

@@ -34,7 +34,7 @@
     </div> -->
     <!-- TOP BAR CON -->
     <div class="w-100 float-left top-bar-con">
-        <div class="wrapper">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="socisl-con d-flex align-items-center justify-content-md-start justify-content-center">
@@ -96,10 +96,10 @@
         </div>
     </div>
     <!-- TOP BAR CON -->
-    <!-- HEADER -->
+    <!-- HEADER --> 
     <header class="w-100 float-left header-con">
-        <div class="wrapper">
-            <nav class="navbar navbar-expand-lg navbar-dark px-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark px-0  dropdown">
                 <a class="navbar-brand d-lg-none" href="{{route('index')}}">
                     <img src="{{asset('Storage/'.$siteSettings->logo1)}}" alt="mobile-logo">
                 </a>
@@ -123,10 +123,46 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('service') ? 'active' : '' }}" href="{{route('service')}}">services</a>
+                            <div class="megamenu">
+                                <div class="container">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="megamenu-items">
+                                                <h3 class="heading">Salesforce Services</h3>
+                                                <ul class="megamenuitems-ul">
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 1</a></li>
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 2</a></li>
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="megamenu-items">
+                                                <h3 class="heading">Hubspot Services</h3>
+                                                <ul>
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 1</a></li>
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 2</a></li>
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="megamenu-items">
+                                                <h3 class="heading">Others Services</h3>
+                                                <ul class="megamenuitems-ul">
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 1</a></li>
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 2</a></li>
+                                                    <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('industry') ? 'active' : '' }}" href="{{route('industry')}}">industry</a>
-                        </li>
+                        </li> -->
                     </ul>
                     <!--   Show this only lg screens and up   -->
                     <a class="navbar-brand d-none d-lg-block" href="{{route('index')}}">
@@ -245,6 +281,9 @@
             </div>
         </div>
     </div>
+
+
+    
     <!-- COPYRIGHT CON -->
     <script src="{{asset('frontend/assets/js/jquery-3.6.0.min.js')}}"></script>
     <script src="{{asset('frontend/assets/js/popper.min.js')}}"></script>
@@ -275,7 +314,7 @@
         })
         $('#service-slider').owlCarousel({
             loop: true,
-            margin: 38,
+            margin: 30,
             nav: true,
             navText: ["<img src='{{asset('frontend/assets/images/left-arrow.png')}}'>", "<img src='{{asset('frontend/assets/images/right-arrow.png')}}'>"],
             responsive: {
@@ -288,9 +327,10 @@
                 800: {
                     items: 2
                 },
-                1000: {
+                1100: {
                     items: 3
                 }
+
             }
         })
         $('#case-study-slider').owlCarousel({
@@ -309,6 +349,8 @@
                 }
             }
         })
+
+      
     </script>
     <script>
         AOS.init();

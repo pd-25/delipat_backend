@@ -3,6 +3,12 @@
         width: 100%;
     }
 }
+@media only screen and (min-width: 1200px) {
+   .container{
+    max-width: 1440px!important;
+    padding: 0 80px!important;
+   }
+}
 @media only screen and (max-width: 1800px){
     .single-blog-con:after {
         right: 4%;
@@ -258,7 +264,8 @@
         padding: 15px 56px;
     }
     .team-con {
-        padding: 90px 0 90px;
+        /* padding: 90px 0 90px; */
+        padding: 30px 30px;
     }
     .team-title h2 {
         margin-bottom: 74px;
@@ -535,7 +542,7 @@
         padding: 0 15px;
     }
     .header-con .navbar-brand figure img{
-        width: 235px;
+        width: auto;
     }
     .header-con .navbar-dark .navbar-nav {
         gap: 45px;
@@ -681,7 +688,7 @@
         width: 85%;
     }
     .contact-title h2 {
-        margin-bottom: 28px;
+        /* margin-bottom: 28px; */
     }
     .contact-inner-con{
         padding-top: 80px;
@@ -1170,7 +1177,7 @@
         grid-template-columns: 100%;
     }
     .service-item figure img {
-        width: 200px !important;
+        width: 100% !important;
         height: 197px;
     }
     .service-inner-box::before {
@@ -1252,7 +1259,8 @@
         margin-bottom: 54px;
     }
     .team-con {
-        padding: 50px 0 50px;
+        /* padding: 50px 0 50px; */
+        padding: 28px 0 28px;
     }
     .project-con {
         padding: 70px 0;
@@ -1495,6 +1503,12 @@
     .solution-address-sec{
         text-align: center;
     }
+    .common-banner {
+        min-height: 258px;
+    }
+    .textbox-center{
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 767px) {
     .not-found-title h2 {
@@ -1679,8 +1693,9 @@
         margin-bottom: 34px;
     }
     .service-item img[alt="service-img"] {
-        width: auto !important;
+        width: 100%!important;
         margin: 0 auto;
+        object-fit: cover;
     }
     .service-item {
         margin: 0 auto;
@@ -1896,10 +1911,44 @@
     }
     .salesforce-core-development .service-card-btn-box {
         position: static;
-        /* bottom: 15px;
-        right: auto;
-        left: auto;
-        width: 100%; */
+    }
+    /* === flowchart === */
+    .container-1 {
+        padding: 10px 9px;
+
+    }
+   .timeline{
+    margin: 50px auto;
+   }
+   .timeline::after{
+    left: 31px;
+   }
+   .container-1{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+   }
+    .right-container{
+        left: 0;
+    }
+    .left-container .number-div, .right-container .number-div{
+        /* left: 10px; */
+        left: 18px;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #ffff;
+        border-left: 0;
+        left: -15px;
+    }
+    .contact_area {
+      text-align: center;
+    }
+    .common-h4{
+        font-size: 17px;
+    }
+    .gallery-banner {
+        background-size: contain;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 575px) {
@@ -2091,7 +2140,7 @@
         padding-bottom: 50px;
     }
     h2 {
-        font-size: 22px;
+        font-size: 26px;
         line-height: 32px;
     }
     .generic-list {

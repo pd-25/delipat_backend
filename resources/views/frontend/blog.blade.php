@@ -3,16 +3,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 <!-- BANNER SECTION -->
-<section id="back-top" class="w-100 float-left banner-con home-banner position-relative">
+<section id="back-top" class="w-100 float-left banner-con common-banner position-relative">
     <div class="banner-inner-con position-relative">
-        <div class="wrapper2">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="banner-title">
                         <h1 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Our Blogs</h1>
-                        <p class="mb-0" data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit, sed do eiusmod tempor incid
-                            idunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
                     </div>
                 </div>
             </div>
