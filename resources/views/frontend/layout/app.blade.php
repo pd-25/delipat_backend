@@ -101,7 +101,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark px-0  dropdown">
                 <a class="navbar-brand d-lg-none" href="{{route('index')}}">
-                    <img src="{{asset('Storage/'.$siteSettings->logo1)}}" alt="mobile-logo">
+                    <img src="{{asset('storage/'.$siteSettings->logo1)}}" alt="mobile-logo">
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -209,7 +209,7 @@
                     <!--   Show this only lg screens and up   -->
                     <a class="navbar-brand d-none d-lg-block" href="{{route('index')}}">
                         <figure class="mb-0">
-                            <img src="{{asset('Storage/'.$siteSettings->logo1)}}" alt="logo-img">
+                            <img src="{{asset('storage/'.$siteSettings->logo1)}}" alt="logo-img">
                         </figure>
                     </a>
                     <ul class="navbar-nav">
