@@ -127,66 +127,6 @@
 
    
 
-    <!-- industries we serve starts  -->
-    <section class="clean-con industry-serve">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-8 col-sm-12 mb-3" data-aos="fade-up" data-aos-duration="600">
-                    <div class="industry-box-img m-auto">
-                            <img src="{{asset('frontend/assets/images/we-serve-1.png')}}" alt="clean-img" class="trusted-crm">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12  m-auto">
-                    <div class="industry-content-div">
-                        <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Industries We Serve</h2>
-                            
-                        <p data-aos="fade-up" data-aos-duration="600">Our CRM solutions cater to a range of industries, each
-                            with unique challenges and objectives. Explore how Delipat tailors its Salesforce and HubSpot
-                            services for your industry:
-                        </p>
-                        <div class="generic-list">
-                            <ul class="list-unstyled">
-                                    <li data-aos="fade-up" data-aos-duration="600">
-                                        <span class="d-block">Healthcare</span>
-                                        <p class="mb-0">Streamlined patient data management
-
-                                        </p>
-                                    </li>
-                                    <li data-aos="fade-up" data-aos-duration="600">
-                                        <span class="d-block">Financial Services</span>
-                                        <p class="mb-0">Enhanced security and compliance
-
-                                        </p>
-                                    </li>
-                                    <li data-aos="fade-up" data-aos-duration="600">
-                                        <span class="d-block">Retail</span>
-                                        <p class="mb-0">Personalized customer journeys and smarter inventory
-
-                                        </p>
-                                    </li>
-                                    <li data-aos="fade-up" data-aos-duration="600">
-                                        <span class="d-block">Manufacturing</span>
-                                        <p class="mb-0">Data-driven supply chain and production insights
-                                        </p>
-                                    </li>
-                                    <li data-aos="fade-up" data-aos-duration="600">
-                                        <span class="d-block">Technology</span>
-                                        <p class="mb-0">Scalable CRM solutions for rapid innovation
-                                        </p>
-                                    </li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center more-details">
-                        <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="#">Discover Industry Solutions</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   <!-- industries we serve end  -->
 
     <section class="w-100 float-left user-con our-approach-sec">
         <div class="container">
