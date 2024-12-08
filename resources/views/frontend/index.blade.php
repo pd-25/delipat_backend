@@ -21,7 +21,7 @@
                                 scalable growth.</p>
                             <div class="d-flex align-items-center more-details">
                                 <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                    <a href="industry.blade.php">Get Started Today
+                                    <a href="{{route('contactus')}}">Get Started Today
                                     </a>
                                 </div>
                                 <div class="call-con position-relative d-inline-block" data-aos="fade-up"
@@ -87,13 +87,13 @@
                     </div>
                     <div class="d-flex align-items-center more-details">
                         <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="#">Talk to a CRM Expert </a>
+                            <a href="{{route('contactus')}}">Talk to a CRM Expert </a>
                         </div>
                         <div class="call-con position-relative d-inline-block" data-aos="fade-up"
                             data-aos-duration="600">
                             <!-- <img src="assets/images/headphones-icon.png" alt="headphones-icon"> -->
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Know us More </a>
+                                <a href="{{route('about')}}">Know us More </a>
                             </div>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
                     </div>
                     <div class="d-flex align-items-center more-details">
                         <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="#">Let’s talk business</a>
+                            <a href="{{route('contactus')}}">Let’s talk business</a>
                         </div>
                     </div>
                     </div>
@@ -282,7 +282,7 @@
                     </div>
                     <div class="d-flex align-items-center more-details">
                         <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="#">Discover Industry Solutions</a>
+                            <a href="{{route('industry')}}">Discover Industry Solutions</a>
                         </div>
                     </div>
                 </div>
@@ -355,7 +355,7 @@
 
             <div class="generic-btn d-block text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"
                 bis_skin_checked="1">
-                <a href="#">Book a Strategy Session</a>
+                <a href="{{route('contactus')}}">Book a Strategy Session</a>
             </div>
 
         </div>

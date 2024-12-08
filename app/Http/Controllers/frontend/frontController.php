@@ -39,8 +39,8 @@ class frontController extends Controller
     return view('frontend.blog', compact('blogs','pagemeta'));
 }
 public function case_study()
-{    $pagemeta = MetaData::where('page_name', 'case-studies')->first();
-    $blogs = Blog::where('type','case-study')->latest()->paginate(10);
+{    $pagemeta = MetaData::where('page_name', 'case-study')->first();
+    $blogs = Blog::where('type','case-studies')->latest()->paginate(10);
     return view('frontend.casestudy', compact('blogs','pagemeta'));
 }
 public function showblog($slug)
