@@ -51,8 +51,11 @@ body{
 .header-con .navbar-dark .navbar-nav .nav-link.active{
     color: var(--accent);
 }
-.nav-item.dropdown .dropdown-menu{
-    margin-top: -4px;
+.nav-item.dropdown .dropdown-menu {
+    margin-top: 14px;
+    min-width: 40rem !important;
+    padding: 10px;
+    text-align: center;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu{
     background: var(--accent);
@@ -154,7 +157,7 @@ body{
     padding: 11px 0;
 }
 .header-con .navbar-brand figure {
-    left: 50%;
+    left: 40px;
     top: -45px;
     position: absolute;
     transform: translateX(-50%);
@@ -1403,7 +1406,7 @@ span.error{
     padding-bottom: 191px;
 }
 .gallery-banner{
-    background-image: url(../images/generic-banner.jpg);
+    /* background-image: url(../images/generic-banner.jpg); */
     background-size: cover
 }
 .sub-banner .banner-img {
@@ -2935,7 +2938,7 @@ nav>.navbar-collapse>ul>li:hover .megamenu{
     /* background-size: 100% 100%; */
   }
   .gallery-banner{
-    background: url(../images/gallery-banner.webp) no-repeat;
+    /* background: url(../images/gallery-banner.webp) no-repeat; */
     background-size: cover;
     /* min-height: 340px; */
     /* min-height: 100%; */

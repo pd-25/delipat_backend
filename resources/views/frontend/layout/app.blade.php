@@ -121,7 +121,7 @@
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('about') ? 'active' : '' }}" href="{{route('about')}}">ABOUT US </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('service') ? 'active' : '' }}" href="{{route('service')}}">services</a>
                             <div class="megamenu">
                                 <div class="container">
@@ -159,10 +159,52 @@
                                     </div>
                                 </div>
                             </div>
+                        </li> --}}
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle {{ Route::is('service') ? 'active' : '' }}" id="navbarDropdown" role="button" data-toggle="dropdown"  href="{{route('service')}}"
+                                aria-haspopup="true" aria-expanded="false" > 
+                                Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-lg-4 col-sm-12">
+                                        <div class="megamenu-items">
+                                            <h3 class="heading">Salesforce Services</h3>
+                                            <ul class="megamenuitems-ul">
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 1</a></li>
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 2</a></li>
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <div class="megamenu-items">
+                                            <h3 class="heading">Hubspot Services</h3>
+                                            <ul>
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 1</a></li>
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 2</a></li>
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <div class="megamenu-items">
+                                            <h3 class="heading">Others Services</h3>
+                                            <ul class="megamenuitems-ul">
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 1</a></li>
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 2</a></li>
+                                                <li class="megamenuitems-li"><a class="megamenu-link" href="#">Link 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <!-- <li class="nav-item">
+
+                        <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('industry') ? 'active' : '' }}" href="{{route('industry')}}">industry</a>
-                        </li> -->
+                        </li>
                     </ul>
                     <!--   Show this only lg screens and up   -->
                     <a class="navbar-brand d-none d-lg-block" href="{{route('index')}}">
@@ -171,10 +213,16 @@
                         </figure>
                     </a>
                     <ul class="navbar-nav">
+                       
+
+                        <li class="nav-item dropdown">
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('gallery') ? 'active' : '' }}" href="{{route('gallery')}}">Gallery</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <a class="nav-link p-0 {{ Route::is('case-study') ? 'active' : '' }}" href="{{route('case-study')}}">Case Studies</a>
+
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('blog') ? 'active' : '' }}" href="{{route('blog')}}">Blog</a>
 
@@ -204,9 +252,9 @@
                     <ul class="list-unstyled mb-0">
                         <li><a href="{{route('index')}}">HOME</a></li>
                         <li><a href="{{route('about')}}">ABOUT US</a></li>
-                        <li><a href="#">services</a></li>
+                        <li><a href="{{route('service')}}">services</a></li>
                         <li><a href="{{route('gallery')}}">Gallery</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="{{route('blog')}}">Blog</a></li>
                         <li><a href="{{route('contactus')}}">CONTACT US</a></li>
                     </ul>
                 </div>

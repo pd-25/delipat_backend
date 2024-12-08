@@ -831,9 +831,12 @@
     #accordion .card-body {
         padding: 0 48px 30px 30px;
     }
-    .nav-item.dropdown .dropdown-menu {
-        margin-top: 8px;
-      }
+    
+        .nav-item.dropdown .dropdown-menu {
+            margin-top: 8px;
+            min-width: 10rem !important;
+            text-align: left;
+        }
     .header-con .nav-link.dropdown-toggle{
         padding: 0;
     }

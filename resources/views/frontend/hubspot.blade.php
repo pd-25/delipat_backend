@@ -48,61 +48,7 @@
         </div>
     </section>
     <!-- BANNER SECTION -->
-    <!-- CLEAN SECTION -->
-    <section class="w-100 float-left clean-con">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-8 col-12 mb-3" data-aos="fade-up" data-aos-duration="600">
-                    <div class="trusted-crm-image-box">
-                            <img src="{{asset('frontend/assets/images/trusted-crm.png')}}" alt="clean-img" class="trusted-crm">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="trusted-crm-content-box">
-                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Trusted CRM Experts with a Proven Track Record.</h2>
-                    <p data-aos="fade-up" data-aos-duration="600">With a certified team and years of experience, we
-                        deliver Salesforce and HubSpot solutions tailored to your industry. Our expertise spans CRM
-                        setup, implementation, customization, integration, and training, providing end-to-end support to
-                        accelerate your business success.
-                    </p>
-                    <div class="generic-list">
-                        <ul class="list-unstyled">
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Full Suite of Services</span>
-                                <p class="mb-0">Implementation, integration, customization, and more</p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Certified Consultants</span>
-                                <p class="mb-0">Salesforce and HubSpot expertise at every level.</p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Industry-Specific Solutions</span>
-                                <p class="mb-0">Tailored strategies for finance, healthcare, retail, and more.</p>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="600">
-                                <span class="d-block">Global Reach, Local Focus</span>
-                                <p class="mb-0"> Supporting businesses worldwide with personalized care.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="d-flex align-items-center more-details">
-                        <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="#">Talk to a CRM Expert </a>
-                        </div>
-                        <div class="call-con position-relative d-inline-block" data-aos="fade-up"
-                            data-aos-duration="600">
-                            <!-- <img src="assets/images/headphones-icon.png" alt="headphones-icon"> -->
-                            <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Know us More </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- CLEAN SECTION -->
+   
     <!-- SERVICE SECTION -->
     <section class="w-100 float-left  pb-0 service-area">
         <div class="service-inner-box position-relative">
@@ -179,56 +125,7 @@
     </section>
     <!-- SERVICE SECTION -->
 
-    <!-- Solutions to Address Your Pain Points -->
-    <section class="w-100 float-left user-con solution-address-sec">
-        <div class="container">
-            <div class=" row justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-8 mb-3" data-aos="fade-up" data-aos-duration="600">
-                    <div class="soluion-address-image-box">
-                            <img src="{{asset('frontend/assets/images/solution-side.webp')}}" alt="crm-solution" class="solution-image">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-10 transparent-bg">
-                    <div class="solution-address-content-box">
-                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">Solutions to Address Your Pain Points</h2>
-                    <p data-aos="fade-up" data-aos-duration="600">Delipat’s CRM expertise helps you overcome common
-                        business hurdles by aligning systems, enhancing team productivity, and enabling real-time data
-                        insights. Our customized solutions empower you to
-                    </p>
-                    <div class="generic-list">
-                        <ul class="list-unstyled">
-                                <li data-aos="fade-up" data-aos-duration="600">
-                                    <span class="d-block">Boost Sales Productivity</span>
-                                    <p class="mb-0"> Automate workflows, track leads, and optimize your sales pipeline
-                                    </p>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="600">
-                                    <span class="d-block">Enhance Customer Engagement</span>
-                                    <p class="mb-0">Leverage customer data for personalized marketing and service
-                                    </p>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="600">
-                                    <span class="d-block">Improve Data Accessibility</span>
-                                    <p class="mb-0">Access insights across departments for agile decision-making
-                                    </p>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="600">
-                                    <span class="d-block">Achieve Rapid ROI</span>
-                                    <p class="mb-0">Implement CRM solutions with measurable outcomes.</p>
-                                </li>
-                            </ul>
-                    </div>
-                    <div class="d-flex align-items-center more-details">
-                        <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="#">Let’s talk business</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <!-- Solutions to Address Your Pain Points -->
+   
 
     <!-- industries we serve starts  -->
     <section class="clean-con industry-serve">
@@ -439,26 +336,8 @@
                     <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Videos
                     </h2>
                 </div>
-                <!-- <div class="row"> -->
-                    <!-- @foreach($blogs as $blog)
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
-                        <div class="blog-item">
-                            <figure>
-                                <img src="{{asset('storage/' . $blog->image)}}"   style="width: 100%;"   alt="{{ $blog->title }}">
-                            </figure>
-                            <div class="blog-item-content">
-                                <a href="{{ route('blog.show', $blog->slug) }}">
-                                    <h4>{{ $blog->title }}</h4>
-                                </a>
-                                <p>{{ Str::limit($blog->short_description, 100) }}</p>
-                                <ul class="list-unstyled mb-0 position-relative">
-                                    <li><i class="fas fa-user"></i> By : Admin</li>
-                                    <li><i class="fas fa-calendar-alt"></i> {{ $blog->created_at->format('M d, Y') }}</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach -->
+                
+                    
                     <div class="owl-carousel owl-theme" id="case-study-slider">
                         <div class="item">
                             <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">

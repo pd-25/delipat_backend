@@ -1,18 +1,23 @@
 @extends('frontend.layout.app')
 @section('content')
-<section id="back-top" class="w-100 float-left banner-con home-banner position-relative">
+
+<!-- BANNER SECTION -->
+<section id="back-top" class="w-100 float-left banner-con common-banner position-relative">
     <div class="banner-inner-con position-relative">
-        <div class="wrapper2">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="banner-title">
-                        <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h1>
+                    <!-- <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h1> -->
+                    <h1 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h1>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- BANNER SECTION -->
 <!-- SINGLE BLOG SECTION -->
 <section class="w-100 float-left single-blog-con position-relative">
     <div class="wrapper">
@@ -20,7 +25,7 @@
             <div class="col-lg-8 col-md-8">
                 <div class="single-blog-details" data-aos="fade-up" data-aos-duration="600">
                     <figure>
-                        <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}">
+                        <img src="{{ asset('storage/' . $blog->image) }}" style="width:100%" alt="{{ $blog->title }}">
                     </figure>
                     <h2 data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h2>
                     <ul class="list-unstyled position-relative d-flex admin-con" data-aos="fade-up" data-aos-duration="600">

@@ -38,6 +38,11 @@ class frontController extends Controller
     $blogs = Blog::where('type','blog')->latest()->paginate(10);
     return view('frontend.blog', compact('blogs','pagemeta'));
 }
+public function case_study()
+{    $pagemeta = MetaData::where('page_name', 'case-studies')->first();
+    $blogs = Blog::where('type','case-study')->latest()->paginate(10);
+    return view('frontend.casestudy', compact('blogs','pagemeta'));
+}
 public function showblog($slug)
 {
     $blog = Blog::where('slug', $slug )->firstOrFail();
@@ -101,4 +106,13 @@ public function showcasestudies($slug)
     return view('frontend.single_blog', compact('blog', 'relatedBlogs', 'tags','pagemeta'));
 }
 
+public function hubspot()
+{
+    // If $pagemeta is needed, retrieve it as done in other methods.
+    $pagemeta = MetaData::where('page_name', 'hubspot')->first();
+
+    return view('frontend.hubspot', compact('pagemeta'));        
+}
+
+    
 }
