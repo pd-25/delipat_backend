@@ -267,11 +267,12 @@
                     <div class="footer-phone">
                         <a href="tel:{{$siteSettings->phone}}">{{$siteSettings->phone}}</a>
                     </div>
-                    @endif
-                    <span class="d-block">Our online scheduling and payment system is safe.</span>
+                    {{-- <span class="d-block">Our online scheduling and payment system is safe.</span> --}}
                     <div class="online-btn">
-                        <a href="#">Request With Online Form</a>
+                        <a href="tel:{{$siteSettings->phone}}">Call Now</a>
                     </div>
+                    @endif
+                    
                 </div>
                 <div class="site-map">
                     <h4>Work Days</h4>
