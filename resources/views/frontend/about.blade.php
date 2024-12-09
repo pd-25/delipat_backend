@@ -378,7 +378,7 @@
 
 <!-- USER SECTION -->
 
-<section class="w-100 float-left faq-box faq_area">
+<section class="w-100 float-left faq-box  video-gradient-sec">
     <div class="container">
         <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
             <h2 class="main-header-h2">Frequently Asked

@@ -2237,7 +2237,7 @@ span.error{
 }
 /****** 404 PAGE CSS****//********* FAQ SECTION ****/
 .faq-box {
-    padding: 35px 0px 57px;
+    padding: 35px 0px 140px;
 }
 .faq-box h5 {
     /* font-size: 20px; */
@@ -2682,7 +2682,7 @@ margin-bottom: 130px;
     border: none;
 }
 .video-gradient-sec{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(191,250,248,0.7315301120448179) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(191,250,248,0.7315301120448179) 100%);
     width: 100%;
 }
 

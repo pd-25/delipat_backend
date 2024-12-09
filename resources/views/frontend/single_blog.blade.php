@@ -81,7 +81,7 @@
         </div>
     </div>
 </section>
-<section class="w-100 float-left faq-box position-relative">
+<section class="w-100 float-left faq-box  video-gradient-sec">
     <div class="container">
         <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
             <h2 class="aos-init aos-animate">Frequently Asked
