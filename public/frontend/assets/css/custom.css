@@ -157,7 +157,7 @@ body{
     padding: 11px 0;
 }
 .header-con .navbar-brand figure {
-    left: 34px;
+    left: 50%S;
     top: -45px;
     position: absolute;
     transform: translateX(-50%);

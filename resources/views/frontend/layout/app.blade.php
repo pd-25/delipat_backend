@@ -161,7 +161,7 @@
                             </div>
                         </li> --}}
 
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle {{ Route::is('service') ? 'active' : '' }}" id="navbarDropdown" role="button" data-toggle="dropdown"  href="{{route('service')}}"
                                 aria-haspopup="true" aria-expanded="false" > 
                                 Services
@@ -200,6 +200,9 @@
                                     </div>
                                 </div>
                             </div>
+                        </li> --}}
+                        <li class="nav-item">
+                            <a class="nav-link p-0 {{ Route::is('service') ? 'active' : '' }}" href="{{route('service')}}">Services</a>
                         </li>
 
                         <li class="nav-item">
