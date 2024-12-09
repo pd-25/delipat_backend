@@ -216,9 +216,9 @@
                        
 
                         <li class="nav-item dropdown">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('gallery') ? 'active' : '' }}" href="{{route('gallery')}}">Gallery</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('case-study') ? 'active' : '' }}" href="{{route('case-study')}}">Case Studies</a>
 
@@ -267,7 +267,7 @@
                     @endif
                     <span class="d-block">Our online scheduling and payment system is safe.</span>
                     <div class="online-btn">
-                        <a href="#">Reques With Online Form</a>
+                        <a href="#">Request With Online Form</a>
                     </div>
                 </div>
                 <div class="site-map">

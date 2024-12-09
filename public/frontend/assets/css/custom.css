@@ -1053,10 +1053,10 @@ span.error{
 /**** BLOG SECTION ****/
 /**** FOOTER SECTION****/
 .footer-con {
-    padding-top: 158px;
+    padding-top: 100px;
     padding-bottom: 60px;
     /* background: #262626; */
-    background-color: #013244;
+    background-color: #fff;
     margin-top: -66px;
 }
 .footer-box {
@@ -1065,7 +1065,7 @@ span.error{
     grid-template-columns: 26.8% 17.8% 27.5% 20%;
 }
 .site-map h4{
-    color: var(--white-color);
+    color: var(--blue-color);
     font-size: 22px;
     line-height: 22px;
     position: relative;
@@ -1085,12 +1085,12 @@ span.error{
 .site-map p {
     line-height: 22px;
     padding-right: 51px;
-    color: #fff;
+    color: var(--blue-color);
 }
 .site-map ul li a{
     position: relative;
     text-decoration: none;
-    color: #fff;
+    color: var(--blue-color);
 }
 .site-map ul li{
     margin-bottom: 2px;
@@ -1108,8 +1108,7 @@ span.error{
 .footer-phone a{
     font-size: 30px;
     line-height: 30px;
-    /* color: var(--primary--color); */
-    color: #fff;
+    color: var(--blue-color);
     display: inline-block;
     text-decoration: none;
     margin-bottom: 13px;
@@ -1119,15 +1118,15 @@ span.error{
     line-height: 22px;
     padding-right: 74px;
     margin-bottom: 32px;
-    color: rgb(255, 255, 255);
+    color: var(--blue-color);
 }
 .online-btn a {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     line-height: 16px;
     text-decoration: none;
-    border: 1px solid var(--primary--color);
-    color: rgb(255 255 255 / 60%);
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
     padding: 21px 28px 21px 29px;
     border-radius: 30px;
     display: inline-block;
@@ -1136,6 +1135,7 @@ span.error{
 .online-btn a:hover{
     color: var(--white-color);
     background: var(--primary--color);
+    border: 1px solid transparent;
 }
 .schedule {
     display: flex;
@@ -1145,7 +1145,7 @@ span.error{
     padding-bottom: 2px;
 }
 .schedule li{
-    color: rgb(255, 255, 255);
+    color: var(--blue-color);
 }
 .site-map .schedule:last-child{
     padding-bottom: 13px;
@@ -1238,7 +1238,7 @@ span.error{
 }
 .footer-con:after {
     content: "";
-    top: -66px;
+    top: -30px;
     right: 0;
     width: 189px;
     height: 218px;
@@ -2237,7 +2237,7 @@ span.error{
 }
 /****** 404 PAGE CSS****//********* FAQ SECTION ****/
 .faq-box {
-    padding: 100px 0px 165px;
+    padding: 35px 0px 57px;
 }
 .faq-box h5 {
     /* font-size: 20px; */
@@ -2681,7 +2681,10 @@ margin-bottom: 130px;
     outline: none;
     border: none;
 }
-
+.video-gradient-sec{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(191,250,248,0.7315301120448179) 100%);
+    width: 100%;
+}
 
 /* ===== flow chart design === */
 .flowchart-sec{

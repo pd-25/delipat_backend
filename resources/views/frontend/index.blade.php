@@ -432,8 +432,8 @@
     <!-- CONTACT-SECTION -->
 
     <!-- USER SECTION -->
-    <section class="w-100 float-left user-con position-relative">
-        <div class="plan-box position-relative">
+    <section class="w-100 float-left clean-con video-gradient-sec">
+        <div class="">
             <div class="container">
                 <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
                     <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Videos

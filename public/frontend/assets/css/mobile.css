@@ -211,8 +211,8 @@
         padding: 5px 0;
     }
     .clean-con {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     h2 {
         font-size: 36px;
@@ -308,8 +308,8 @@
         bottom: 152px;
     }
     .user-con {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     .plan-box::after {
         top: 167px;
@@ -383,8 +383,12 @@
     .salesforce-banner .crm-development-title{
         padding-bottom: 30px;
     }
-    
-
+    .header-con .navbar-dark .navbar-nav .nav-link{
+        font-size: 14px;
+    }
+    .header-con .navbar-dark .navbar-nav {
+        gap: 31px!important;
+    }
 
 }
 @media only screen and (max-width: 1199px) {
