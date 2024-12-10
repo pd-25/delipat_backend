@@ -7,6 +7,7 @@ use App\Models\Blog;
 use App\Models\GalleryImage;
 use App\Models\MetaData;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class frontController extends Controller
 { 
@@ -112,6 +113,20 @@ public function hubspot()
     $pagemeta = MetaData::where('page_name', 'hubspot')->first();
 
     return view('frontend.hubspot', compact('pagemeta'));        
+}
+public function youtubeVideos()
+{
+    $apiKey = "AIzaSyDJmryfxg7LFrsZl4tL3tmC_j58wd9ED9g"; // Replace with your API Key
+    $channelId = "UCcFHbtQkU3q4oq-5V9E-7nw"; // Replace with your Channel ID
+    $apiUrl = "https://www.googleapis.com/youtube/v3/search?key=$apiKey&channelId=$channelId&part=snippet&type=video&order=date&maxResults=10";
+
+    $response = Http::get($apiUrl);
+
+    if ($response->ok()) {
+        $videos = $response->json()['items'];
+        dd($videos);
+        return view('frontend.layout.videos', compact('videos'));
+    } 
 }
 
     

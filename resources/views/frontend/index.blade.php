@@ -432,75 +432,8 @@
     <!-- CONTACT-SECTION -->
 
     <!-- USER SECTION -->
-    <section class="w-100 float-left user-con position-relative">
-        <div class="plan-box position-relative">
-            <div class="container">
-                <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Videos
-                    </h2>
-                </div>
-                <!-- <div class="row"> -->
-                    <!-- @foreach($blogs as $blog)
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="600">
-                        <div class="blog-item">
-                            <figure>
-                                <img src="{{asset('storage/' . $blog->image)}}"   style="width: 100%;"   alt="{{ $blog->title }}">
-                            </figure>
-                            <div class="blog-item-content">
-                                <a href="{{ route('blog.show', $blog->slug) }}">
-                                    <h4>{{ $blog->title }}</h4>
-                                </a>
-                                <p>{{ Str::limit($blog->short_description, 100) }}</p>
-                                <ul class="list-unstyled mb-0 position-relative">
-                                    <li><i class="fas fa-user"></i> By : Admin</li>
-                                    <li><i class="fas fa-calendar-alt"></i> {{ $blog->created_at->format('M d, Y') }}</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach -->
-                    <div class="owl-carousel owl-theme" id="case-study-slider">
-                        <div class="item">
-                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
-                                <div class="case_study_inner_card">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
-                                <div class="case_study_inner_card">
-                                    <iframe 
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
-                                <div class="case_study_inner_card">
-                                    <iframe 
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
-                                <div class="case_study_inner_card">
-                                    <iframe 
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- </div> -->
-            </div>
-        </div>
-    </section>
+    <x-you-tube-videos />
+
     <!-- USER SECTION -->
 
     <!-- BLOG SECTION -->
