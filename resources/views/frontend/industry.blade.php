@@ -95,7 +95,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Call us now for Healthcare CRM Solutions
+                                <a href="tel:+918159876853">Call us now for Healthcare CRM Solutions
                                 </a>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Discover Financial CRM Solutions
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Discover Financial CRM Solutions
                                 </a>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Enhance Your Retail CRM
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Enhance Your Retail CRM
                                 </a>
                             </div>
                         </div>
@@ -283,7 +283,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Explore Manufacturing CRM Solutions
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Explore Manufacturing CRM Solutions
                                 </a>
                             </div>
                         </div>
@@ -340,7 +340,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Streamline Education CRM
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Streamline Education CRM
                                 </a>
                             </div>
                         </div>
@@ -398,7 +398,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Boost Your Real Estate CRM
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Boost Your Real Estate CRM
                                 </a>
                             </div>
                         </div>
@@ -455,7 +455,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Discover Technology CRM Solutions
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Discover Technology CRM Solutions
                                 </a>
                             </div>
                         </div>
@@ -513,7 +513,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Enhance Professional Services CRM
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Enhance Professional Services CRM
                                 </a>
                             </div>
                         </div>
@@ -569,7 +569,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Optimize Hospitality CRM
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Optimize Hospitality CRM
                                 </a>
                             </div>
                         </div>
@@ -627,7 +627,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Improve Legal CRM Efficiency
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Improve Legal CRM Efficiency
                                 </a>
                             </div>
                         </div>
@@ -683,7 +683,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Revolutionize Government CRM
+                                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Revolutionize Government CRM
                                 </a>
                             </div>
                         </div>
@@ -740,7 +740,7 @@
 <section class="w-100 float-left industry-last-sec">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="begin-salesforce-journey-h2 main-header-h2" data-aos="fade-up" data-aos-duration="600">Let Delipat Help You
+            <h2 class="begin-salesforce-journey-h2 main-header-h2" style="color: #fff;" data-aos="fade-up" data-aos-duration="600">Let Delipat Help You
                 Unlock the Power of CRM for Your Industry
             </h2>
 
@@ -748,7 +748,7 @@
         <div class="salesforce-journey-content text-center">
             <div class="crm-development-box-content">
 
-                <p data-aos="fade-up" class="center-p" data-aos-duration="600">Our expertise in CRM solutions spans multiple
+                <p data-aos="fade-up" class="center-p" data-aos-duration="600" style="color: #fff">Our expertise in CRM solutions spans multiple
                     industries, enabling us to tailor each service to your needs and deliver tangible business
                     results. Whether you are looking to improve sales, enhance customer relationships, or streamline
                     operations, Delipat has the expertise and tools to drive success.
@@ -757,7 +757,7 @@
         </div>
         <div class="d-flex align-items-center more-details justify-content-center mt-5">
             <div class="generic-btn d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
-                <a href="#">Request a Consultation Today
+                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Request a Consultation Today
                 </a>
             </div>
         </div>

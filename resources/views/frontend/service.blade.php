@@ -45,7 +45,7 @@
 
                 <div class="d-flex align-items-center more-details">
                     <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="#">Request a Custom Consultation Now
+                        <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Request a Custom Consultation Now
                         </a>
                     </div>
 
@@ -99,7 +99,7 @@
                 </div>
                 <div class="d-flex align-items-center more-details">
                     <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="#">Speak with a CRM Expert</a>
+                        <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Speak with a CRM Expert</a>
                     </div>
                 </div>
             </div>
@@ -245,7 +245,7 @@
         <div class="d-flex align-items-center more-details justify-content-center mt-5" bis_skin_checked="1">
             <div class="generic-btn d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"
                 bis_skin_checked="1">
-                <a href="#">Get Your tailored Consultation Today
+                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Get Your tailored Consultation Today
                 </a>
             </div>
         </div>
@@ -320,7 +320,7 @@
 
         <div class="generic-btn d-block text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"
             bis_skin_checked="1">
-            <a href="#">Book a Strategy Session</a>
+            <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Book a Strategy Session</a>
         </div>
 
     </div>
@@ -388,7 +388,7 @@
 
         <div class="d-flex align-items-center more-details justify-content-center mt-5">
             <div class="generic-btn d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
-                <a href="#">Start Your CRM Journey
+                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Start Your CRM Journey
                 </a>
             </div>
         </div>
@@ -435,7 +435,7 @@
                     </div>
                     <div class="d-flex align-items-center more-details">
                         <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="#">Read more on Industry Solutions</a>
+                            <a href="{{route('industry')}}">Read more on Industry Solutions</a>
                         </div>
                     </div>
                 </div>

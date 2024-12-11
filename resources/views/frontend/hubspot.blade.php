@@ -60,8 +60,8 @@
                     </h2>
                 </div>
                 <div class="service-inner-con" data-aos="fade-up" data-aos-duration="600">
-                    <div class="owl-carousel owl-theme" id="service-slider">
-                        <div class="item">
+                    <div class=" row d-flex justify-content-center">
+                        <div class="item col-md-4 mb-4">
                             <div class="service-item text-center">
                                 <figure>
                                     <img src="{{asset('frontend/assets/images/service/service-card-1.png')}}" alt="service-img">
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item col-md-4 mb-4 ">
                             <div class="service-item text-center slider-service-box">
                                 <figure>
                                     <img src="{{asset('frontend/assets/images/service/service-card-2.png')}}" alt="service-img">
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item col-md-4 mb-4">
                             <div class="service-item text-center">
                                 <figure>
                                     <img src="{{asset('frontend/assets/images/service/service-card-3.png')}}" alt="service-img">
@@ -116,8 +116,63 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="item col-md-4 mb-4">
+                            <div class="service-item text-center">
+                                <figure>
+                                    <img src="{{asset('frontend/assets/images/service/service-card-1.png')}}" alt="service-img">
+                                </figure>
+                                <h3>Salesforce Consulting & Implementation
+                                </h3>
+                                <p class="mb-4">From initial setup to advanced customizations, we help you leverage
+                                    Salesforce to its
+                                    full potential. Our solutions include Sales, Service, Marketing Cloud, and Pardot,
+                                    all designed to drive ROI and enhance customer experience.</p>
+                                <!-- <a href="#"><img src="assets/images/left-angle.png" alt="left-angle"></a> -->
+                                <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
+                                    <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Explore<br>
+                                        Salesforce Solutions</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-4 mb-4">
+                            <div class="service-item text-center slider-service-box">
+                                <figure>
+                                    <img src="{{asset('frontend/assets/images/service/service-card-2.png')}}" alt="service-img">
+                                </figure>
+                                <h3>HubSpot Consulting & Optimization
+                                </h3>
+                                <p>HubSpot offers robust inbound marketing, sales, and customer service capabilities.
+                                    Our certified consultants optimize HubSpot to align with your growth goals, ensuring
+                                    seamless integrations and effective lead nurturing.
+                                </p>
+                                <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
+                                    <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Learn
+                                        About <br> HubSpot Services</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-4 mb-4">
+                            <div class="service-item text-center">
+                                <figure>
+                                    <img src="{{asset('frontend/assets/images/service/service-card-3.png')}}" alt="service-img">
+                                </figure>
+                                <h3>Integration & Automation Solutions
+                                </h3>
+                                <p>Connect your CRM with essential third-party tools like Mailchimp, DocuSign, and more.
+                                    Streamline processes and increase team productivity through seamless integration and
+                                    automation.
+                                </p>
+                                <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
+                                    <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Start<br>
+                                        Your Integration</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
 
             </div>
@@ -268,62 +323,15 @@
     
     <!-- CONTACT-SECTION -->
 
+       <!-- CONTACT-SECTION -->
+
     <!-- USER SECTION -->
-    <section class="w-100 float-left user-con position-relative">
-        <div class="plan-box position-relative">
-            <div class="container">
-                <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
-                    <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Videos
-                    </h2>
-                </div>
-                
-                    
-                    <div class="owl-carousel owl-theme" id="case-study-slider">
-                        <div class="item">
-                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
-                                <div class="case_study_inner_card">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
-                                <div class="case_study_inner_card">
-                                    <iframe 
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
-                                <div class="case_study_inner_card">
-                                    <iframe 
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card case-study-card" data-aos="fade-up" data-aos-duration="600">
-                                <div class="case_study_inner_card">
-                                    <iframe 
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- </div> -->
-            </div>
-        </div>
-    </section>
+    <x-you-tube-videos />
+
     <!-- USER SECTION -->
 
     <!-- BLOG SECTION -->
-    <section class="w-100 float-left faq-box faq_area">
+    <section class="w-100 float-left faq-box  video-gradient-sec">
         <div class="container">
             <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
                 <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Frequently Asked
@@ -414,5 +422,7 @@
         </div>
     </section>
     <!-- BLOG SECTION -->
+<style>
 
+    </style>
 @endsection

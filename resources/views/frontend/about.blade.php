@@ -44,7 +44,7 @@
 
                 <div class="d-flex align-items-center more-details">
                     <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                        <a href="#">Connect with Us Today!
+                        <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Connect with Us Today!
                         </a>
                     </div>
 
@@ -196,7 +196,7 @@
         <div class="our-jounney-btn-box more-details" bis_skin_checked="1">
             <div class="generic-btn d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"
                 bis_skin_checked="1">
-                <a href="#">Start Your Project Today</a>
+                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Start Your Project Today</a>
             </div>
 
         </div>
@@ -271,7 +271,7 @@
         <div class="d-flex align-items-center more-details justify-content-center mt-5" bis_skin_checked="1">
             <div class="generic-btn d-inline-block aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"
                 bis_skin_checked="1">
-                <a href="contact.html">CONTACT US Today</a>
+                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">CONTACT US Today</a>
             </div>
 
         </div>
@@ -281,7 +281,7 @@
 </section>
 <!-- GOALS SECTION -->
 <!-- TEAM SECTION -->
-<section class="w-100 float-left team-con experienced_certified_area">
+{{-- <section class="w-100 float-left team-con experienced_certified_area">
     <div class="wrapper">
         <div class="team-title-box text-center mb-5">
             <h2 data-aos="fade-up" data-aos-duration="600" class="main-header-h2"> Experienced. Certified.
@@ -304,7 +304,7 @@
 
     
     </div>
-</section>
+</section> --}}
 <!-- TEAM SECTION -->
 <!-- CONTACT-SECTION -->
  <!-- CONTACT-SECTION -->

@@ -10,7 +10,9 @@
                     <div class="col-lg-8">
                         <div class="banner-title generic-box-content">
                             <h1 class="banner-text-h1" data-aos="fade-up" data-aos-duration="600">Delipat – Your Premier
-                                Salesforce & HubSpot Consulting Partner
+                                <img style="width:10%" src="{{ asset('frontend/assets/img/Salesforce_logo.png') }}" alt="delipat-salesforce" class="img-fluid">
+                                &                                 <img style="width:11%" src="{{ asset('frontend/assets/img/HubSpot_Logo.png') }}" alt="delipat-hubspot" class="img-fluid">
+                                Consulting Partner
                             </h1>
                             <h4 class="common-h4" data-aos="fade-up" data-aos-duration="600">Unlock CRM Potential with
                                 Tailored Solutions for Every Business
@@ -21,7 +23,7 @@
                                 scalable growth.</p>
                             <div class="d-flex align-items-center more-details">
                                 <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                    <a href="{{route('contactus')}}">Get Started Today
+                                    <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Talk to a Consultant
                                     </a>
                                 </div>
                                 <div class="call-con position-relative d-inline-block" data-aos="fade-up"
@@ -29,7 +31,9 @@
                                     <img src="{{asset('frontend/assets/images/headphones-icon.png')}}" alt="headphones-icon">
                                     <div class="call-number">
                                         <span class="d-block">Consult with Us Now</span>
-                                        <a href="#">+91 1234567890</a>
+                                        <a href="tel:+918159876853">
+                                            +91 81598 76853
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +91,7 @@
                     </div>
                     <div class="d-flex align-items-center more-details">
                         <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="{{route('contactus')}}">Talk to a CRM Expert </a>
+                            <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Talk to a CRM Expert </a>
                         </div>
                         <div class="call-con position-relative d-inline-block" data-aos="fade-up"
                             data-aos-duration="600">
@@ -220,7 +224,7 @@
                     </div>
                     <div class="d-flex align-items-center more-details">
                         <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="{{route('contactus')}}">Let’s talk business</a>
+                            <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Let’s talk business</a>
                         </div>
                     </div>
                     </div>
@@ -355,7 +359,7 @@
 
             <div class="generic-btn d-block text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"
                 bis_skin_checked="1">
-                <a href="{{route('contactus')}}">Book a Strategy Session</a>
+                <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Book a Strategy Session</a>
             </div>
 
         </div>

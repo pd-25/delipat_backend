@@ -1238,22 +1238,23 @@ span.error{
 }
 .footer-con:after {
     content: "";
-    top: -30px;
+    top: -37px;
     right: 0;
-    width: 189px;
+    width: 171px;
     height: 218px;
     position: absolute;
-    background: url(../images/footer-icon-1-removebg-preview.png) no-repeat center;
+    background: url(../img/Salesforce_logo.png) no-repeat center;
     animation: mover 1s infinite alternate;
+    background-size: contain;
 }
 .footer-con:before {
     content: "";
     top: 104px;
-    left: 0;
+    left: 15px;
     width: 210px;
     height: 255px;
     position: absolute;
-    background: url(../images/footer-icon-2-removebg-preview.png) no-repeat center;
+    background: url(../img/HubSpot_Logo.png) no-repeat center;
     animation: mover 1s infinite alternate;
 }
 /* .footer-box::after {
@@ -2858,7 +2859,7 @@ margin-bottom: 130px;
     background-size: cover;
     min-height: 100%;
     width: 100%;
-    background-size: 100% 100%;
+    background-size: 100% 123%;
 }
 
 .faq_area{
@@ -2935,7 +2936,7 @@ nav>.navbar-collapse>ul>li:hover .megamenu{
   .common-banner{
     background: url(../images/common-banner.webp) no-repeat;
     background-size: cover;
-    min-height: 340px;
+    min-height: 230px;
     /* min-height: 100%; */
     width: 100%;
     /* background-size: 100% 100%; */
