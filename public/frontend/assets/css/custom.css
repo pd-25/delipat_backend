@@ -2634,7 +2634,7 @@ margin-bottom: 130px;
 }
 .form-con  input, .form-con  textarea {
     width: 100%;
-    color: var(--white-color);
+    /* color: var(--background-bg); */
     font-size: 14px;
     background: transparent;
     border: 1px solid #b3b3b3;
@@ -2972,4 +2972,17 @@ padding: 9px;
         padding: 9px;
     }
 
+}
+
+.form-field {
+    width: 100%;
+/* color: var(--white-color); */
+font-size: 14px;
+background: transparent;
+border: 1px solid #b3b3b3;
+/* padding: 11px 20px; */
+font-family: 'Montserrat', sans-serif;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+outline: none;
+height: 50px;
 }
