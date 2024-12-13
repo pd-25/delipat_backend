@@ -7,6 +7,7 @@ use App\Http\Controllers\admin\dashboard\DashboardController;
 use App\Http\Controllers\admin\gallery\GalleryImageController;
 use App\Http\Controllers\admin\metadata\MetaDataController;
 use App\Http\Controllers\admin\sitesetting\siteSettingController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('admin/login', [AuthController::class, 'showLogin'])->name('admin.showlogin');
@@ -21,6 +22,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('blogs', BlogController::class);
     Route::resource('seo-settings', MetaDataController::class);
     Route::resource('case-studies', casestudiesController::class);
+    route::resource('services', ServiceController::class);
 
 
 });

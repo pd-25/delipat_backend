@@ -8,6 +8,12 @@
                 <span>Dashboard</span>
             </a>
         </li>
+        <li class="nav-item {{ Route::is('services.*') ? 'active' : '' }}">
+            <a class="nav-link " href="{{ route('services.index') }}">
+                <i class="ri-group-fill"></i>
+                <span>Services</span>
+            </a>
+        </li>
         <li class="nav-item {{ Route::is('blogs.*') ? 'active' : '' }}">
             <a class="nav-link " href="{{ route('blogs.index') }}">
                 <i class="ri-group-fill"></i>

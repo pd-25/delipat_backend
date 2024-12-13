@@ -205,9 +205,7 @@
                             <a class="nav-link p-0 {{ Route::is('service') ? 'active' : '' }}" href="{{route('service')}}">Services</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link p-0 {{ Route::is('industry') ? 'active' : '' }}" href="{{route('industry')}}">industry</a>
-                        </li>
+                        
                     </ul>
                     <!--   Show this only lg screens and up   -->
                     <a class="navbar-brand d-none d-lg-block" href="{{route('index')}}">
@@ -219,13 +217,18 @@
                        
 
                         <li class="nav-item dropdown">
-                        <!-- <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('gallery') ? 'active' : '' }}" href="{{route('gallery')}}">Gallery</a>
-                        </li> -->
+                        </li>  --}}
+
                         <li class="nav-item">
+                            <a class="nav-link p-0 {{ Route::is('industry') ? 'active' : '' }}" href="{{route('industry')}}">industry</a>
+                        </li>
+
+                        {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('case-study') ? 'active' : '' }}" href="{{route('case-study')}}">Case Studies</a>
 
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('blog') ? 'active' : '' }}" href="{{route('blog')}}">Blog</a>
 
@@ -247,18 +250,30 @@
             <div class="footer-box position-relative">
                 <div class="site-map">
                     <h4>About Us</h4>
-                    <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                    <p class="mb-0">
+                        Delipat specializes in Salesforce and HubSpot consulting, offering tailored solutions to optimize CRM & CMS strategies, streamline workflows, and drive business growth through expert guidance and support.
+                    </p>
                 </div>
                 <div class="site-map">
                     <h4>Quick Links</h4>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="{{route('index')}}">HOME</a></li>
-                        <li><a href="{{route('about')}}">ABOUT US</a></li>
-                        <li><a href="{{route('service')}}">services</a></li>
-                        <li><a href="{{route('gallery')}}">Gallery</a></li>
-                        <li><a href="{{route('blog')}}">Blog</a></li>
-                        <li><a href="{{route('contactus')}}">CONTACT US</a></li>
+                        <li><a href="{{route('index')}}">Home</a></li>
+                        <li><a href="{{route('about')}}">About Us</a></li>
+                        <li><a href="{{route('service')}}">Services</a></li>
+                        {{-- <li><a href="{{route('gallery')}}">Gallery</a></li> --}}
+                        {{-- <li><a href="{{route('blog')}}">Blog</a></li> --}}
+                        <li><a href="{{route('contactus')}}">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="site-map">
+                    <h4>Important Links</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        {{-- <li><a href="{{route('gallery')}}">Gallery</a></li> --}}
+                        <li><a href="#">Site Map</a></li>
+                        {{-- <li><a href="{{route('contactus')}}">CONTACT US</a></li> --}}
                     </ul>
                 </div>
                 <div class="site-map">
@@ -267,24 +282,19 @@
                     <div class="footer-phone">
                         <a href="tel:{{$siteSettings->phone}}">{{$siteSettings->phone}}</a>
                     </div>
+                    <div class="d-flex ">
                     {{-- <span class="d-block">Our online scheduling and payment system is safe.</span> --}}
-                    <div class="online-btn">
+                    <div class="online-btn mr-2">
                         <a href="tel:{{$siteSettings->phone}}">Call Now</a>
+                    </div>
+                    <div class="online-btn">
+                        <a href="https://delipat.com/pay-now/">Pay Now</a>
+                    </div>
                     </div>
                     @endif
                     
                 </div>
-                <div class="site-map">
-                    <h4>Work Days</h4>
-                    <ul class="list-unstyled schedule">
-                        <li>Mon - sat</li>
-                        <li>09am - 05pm</li>
-                    </ul>
-                    <ul class="list-unstyled mb-0 schedule">
-                        <li>Sunday</li>
-                        <li>Closed</li>
-                    </ul>
-                </div>
+              
             </div>
         </div>
     </footer>

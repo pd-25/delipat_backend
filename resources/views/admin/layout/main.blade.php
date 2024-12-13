@@ -92,17 +92,20 @@
 
     @yield('script')
     <script>
-        $(document).ready(function() {
-            $('#summernote').summernote({
-                height: 300, // Set the height of the editor
-                callbacks: {
-                    onChange: function(contents, $editable) {
-                        // Update the hidden input with the editor's content
-                        $('#description').val(contents);
-                    }
-                }
-            });
-        });
+       $(document).ready(function() {
+    // Initialize Summernote for all elements with the class "summernote"
+    $('.summernote').summernote({
+        height: 300, // Set the height of the editor
+        callbacks: {
+            onChange: function(contents, $editable) {
+                // Update a hidden input with the editor's content
+                // This assumes there is a corresponding hidden input for each summernote instance
+                $(this).closest('.form-group').find('input[type="hidden"]').val(contents);
+            }
+        }
+    });
+});
+
         document.addEventListener('DOMContentLoaded', function() {
             var messageAlert = document.getElementById('message-alert');
             if (messageAlert) { // Check if the element exists
