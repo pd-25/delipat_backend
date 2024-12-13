@@ -129,5 +129,7 @@ public function youtubeVideos()
     } 
 }
 
-    
+    public function thankyou(){
+        return view('frontend.thankyou');
+    }
 }

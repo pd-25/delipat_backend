@@ -413,30 +413,30 @@
                 </div>
                 <div class="col-lg-12 col-md-12 order-md-0" data-aos="fade-up" data-aos-duration="600">
                     <form class="form-con contact-form w-100 frbg" data-aos="fade-up" data-aos-duration="600"
-                        method="post" id="contactpage"
-                        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"
-                        onSubmit={handleSubmit}>
-                        <input type="hidden" name="oid" defaultValue="00D5i000002Qa7p">
-                        <input type="hidden" name="retURL" defaultValue="https://delipat.com/thank-you">
+                        method="POST" id="contactpage"
+                        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                        onsubmit="handleSubmit(event)">
+                        <input type="hidden" name="oid" value="00D5i000002Qa7p">
+                        <input type="hidden" name="retURL" value="https://delipat.com/thank-you">
                         <div class="row">
-
                             <div class="col-md-6 col-12">
                                 <div class="form-input-div">
-                                    <input type="text" placeholder="First Name" id="first_name" maxLength={40}
+                                    <input type="text" placeholder="First Name" id="first_name" maxlength="40"
                                         name="first_name">
                                 </div>
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="form-input-div">
-                                    <input type="text" placeholder="Last Name" id="last_name" maxLength={80}
-                                        name="last_name" size={20}>
+                                    <input type="text" placeholder="Last Name" id="last_name" maxlength="80"
+                                        name="last_name" size="20">
                                 </div>
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="row">
-                                    <div class="col-4 col-md-2 ">
+                                    <div class="col-4 col-md-2">
                                         <select id="00N5i00000TVZps" class="form-field" name="00N5i00000TVZps"
                                             title="Country Code">
+                                            <option value="" disabled selected>Select Country Code</option>
                                             <option value="">--None--</option>
                                             <option value="+93	       Afghanistan">+93 Afghanistan</option>
                                             <option value="+355	Albania">+355 Albania</option>
@@ -584,52 +584,38 @@
                                             <option value="+260	Zambia">+260 Zambia</option>
                                         </select>
                                     </div>
-
                                     <div class="col-8 col-md-10 pl-0">
-
                                         <div class="form-input-div">
-                                            <input placeholder="Your Phone Number" id="phone" maxLength="40"
-                                                name="phone" size="20" type="number">
 
+                                            <input placeholder="Your Phone Number" id="phone" maxlength="40"
+                                                name="phone" size="20" type="tel">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="form-input-div">
-                                    <input placeholder="email" 
-                                        
-                                        id="email"
-                                        maxLength={80}
-                                        name="email"
-                                        size={20}
-                                        type="email"
-                                        >
-                                        
+                                    <input placeholder="email" id="email" maxlength="80" name="email" size="20"
+                                        type="email">
                                 </div>
                             </div>
                             <div class="col-md-12 col-12">
                                 <div class="form-input-div">
-                                    <textarea placeholder="Your Message" name="description" id="description" rows="5"
-                                        cols="50"></textarea>
+                                    <textarea placeholder="Enter your message" name="description" id="description"
+                                        rows="5" cols="50"></textarea>
                                 </div>
                             </div>
-
-                            <input
-                                type="hidden"
-                                id="00N5i00000TVZqC"
-                                name="00N5i00000TVZqC"
-                                defaultValue="DeliPat Home Page"
-                                title="Lead Coming From"
-                            >
+                            <input type="hidden" id="00N5i00000TVZqC" name="00N5i00000TVZqC" value="DeliPat Home Page"
+                                title="Lead Coming From">
                             <div class="col-12">
-                                <div class="form-button-div" style="background: #013144;">
-                                    <input class="submit-btn" type="submit" name="Submit Now" id="submit">
+                                <div class="form-button-div">
+                                    <input class="submit-btn" type="submit" name="Submit Now" id="submit"
+                                        style="background: #013144; color: #fff; border: none; padding: 10px 20px; font-size: 16px; border-radius: 8px; cursor: pointer;">
                                 </div>
                             </div>
                         </div>
-
                     </form>
+
                 </div>
             </div>
         </div>
