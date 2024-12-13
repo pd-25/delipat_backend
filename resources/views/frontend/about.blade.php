@@ -214,12 +214,11 @@
         <div class="row text-center g-4">
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="why-choose-card">
-                        <div class="why-choose-delipat-image-div">
-                            <img src="{{asset('frontend/assets/images/about-page/why-choose-delipat/salesforce-certified-consultants.png')}}" alt="project" class="why-choose-img"
-                        loading="lazy">
+                        <div class="why-choose-delipat-image-div whhybac" style="background:url('{{asset('frontend/assets/images/about-page/why-choose-delipat/salesforce-certified-consultants.png')}}')">
+                            <h5 class="card-title choose-delipat-h5">Salesforce-Certified Consultants</h5>
+                           
                         </div>
                         <div class="why-choose-card-content">
-                            <h5 class="card-title choose-delipat-h5">Salesforce-Certified Consultants</h5>
                             <p class="card-text">With certifications across Salesforce and HubSpot, we ensure that
                                 you’re working with skilled experts committed to delivering exceptional service.</p>
                         </div>
@@ -228,12 +227,12 @@
 
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="why-choose-card">
-                        <div class="why-choose-delipat-image-div">
-                                <img src="{{asset('frontend/assets/images/about-page/why-choose-delipat/proven-results-driven-solutions.png')}}" alt="project" class="why-choose-img"
-                            loading="lazy">
+                        <div class="why-choose-delipat-image-div whhybac" style="background: url('{{asset('frontend/assets/images/about-page/why-choose-delipat/proven-results-driven-solutions.png')}}') no-repeat center;">
+                               
+                            <h5 class="card-title choose-delipat-h5">Proven, Results-Driven Solutions</h5>
+
                         </div>
                         <div class="why-choose-card-content">
-                            <h5 class="card-title choose-delipat-h5">Proven, Results-Driven Solutions</h5>
                             <p class="card-text">Our focus is on achieving measurable outcomes—whether you’re looking to
                                 increase sales, enhance customer satisfaction, or optimize internal workflows.</p>
                         </div>
@@ -242,12 +241,11 @@
 
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="why-choose-card">
-                        <div class="why-choose-delipat-image-div">
-                                <img src="{{asset('frontend/assets/images/about-page/why-choose-delipat/end-to-end-support.png')}}" alt="project" class="why-choose-img"
-                            loading="lazy">
+                        <div class="why-choose-delipat-image-div whhybac" style="background: url('{{asset('frontend/assets/images/about-page/why-choose-delipat/end-to-end-support.png')}}')">
+                            <h5 class="card-title choose-delipat-h5">End-to-End <br> Support</h5>
                         </div>
                         <div class="why-choose-card-content">
-                            <h5 class="card-title choose-delipat-h5">End-to-End Support</h5>
+                           
                             <p class="card-text">From initial consultation to post-implementation support, we’re here to
                                 guide you at every step, ensuring your CRM system evolves with your needs.</p>
                         </div>
@@ -256,12 +254,11 @@
 
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="why-choose-card">
-                        <div class="why-choose-delipat-image-div">
-                                <img src="{{asset('frontend/assets/images/about-page/why-choose-delipat/reliable-transparent.png')}}" alt="project" class="why-choose-img"
-                            loading="lazy">
+                        <div class="why-choose-delipat-image-div whhybac" style="background:url('{{asset('frontend/assets/images/about-page/why-choose-delipat/reliable-transparent.png')}}')">
+                            <h5 class="card-title choose-delipat-h5">Reliable <br>& Transparent</h5>
+                              
                         </div>
                         <div class="why-choose-card-content">
-                            <h5 class="card-title choose-delipat-h5">Reliable & Transparent</h5>
                             <p class="card-text">With our commitment to high-quality service, we pride ourselves on
                                 exceeding client expectations in every project.</p>
                         </div>
