@@ -36,6 +36,7 @@ class Service extends Model
         'sec2_service5_icon',
         'sec2_service6_heading',
         'sec2_service6_description',
+        'sec2_service6_icon',
         'sec3_heading',
         'sec3_service1_heading',
         'sec3_service1_description',

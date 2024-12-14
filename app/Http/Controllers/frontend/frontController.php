@@ -111,10 +111,10 @@ public function showcasestudies($slug)
 public function singleService($service_slug)
 {
     // If $pagemeta is needed, retrieve it as done in other methods.
-    $pagemeta = MetaData::where('page_name', 'hubspot')->first();
+    $pagemeta = Service::where('slug', $service_slug)->first();
     $service = Service::with('faqs')->where('slug', $service_slug)->first();
 
-    return view('frontend.singleService', compact('pagemeta', 'service'));        
+    return view('frontend.single_service', compact('pagemeta', 'service'));        
 }
 public function youtubeVideos()
 {

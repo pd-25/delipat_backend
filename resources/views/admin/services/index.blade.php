@@ -29,7 +29,7 @@
                     <tbody>
                         @foreach ($services as $service)
                             <tr>
-                                <td>{{ $service->title }}</td>
+                                <td>{{ substr($service->sec1_heading, 0, 14) }}...</td>
                                 <td>{{ $service->slug }}</td>
                                 <td>{{ $service->meta_title }}</td>
                                 <td class="d-flex">
