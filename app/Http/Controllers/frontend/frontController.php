@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\GalleryImage;
 use App\Models\MetaData;
+use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
@@ -107,12 +108,13 @@ public function showcasestudies($slug)
     return view('frontend.single_blog', compact('blog', 'relatedBlogs', 'tags','pagemeta'));
 }
 
-public function hubspot()
+public function singleService($service_slug)
 {
     // If $pagemeta is needed, retrieve it as done in other methods.
     $pagemeta = MetaData::where('page_name', 'hubspot')->first();
+    $service = Service::with('faqs')->where('slug', $service_slug)->first();
 
-    return view('frontend.hubspot', compact('pagemeta'));        
+    return view('frontend.singleService', compact('pagemeta', 'service'));        
 }
 public function youtubeVideos()
 {

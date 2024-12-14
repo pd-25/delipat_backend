@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use App\Models\ServiceFaq;
+use Illuminate\Support\Facades\Storage;
+
 class ServiceController extends Controller
 {
 
@@ -94,9 +96,7 @@ class ServiceController extends Controller
                 $data[$icon] = $request->file($icon)->store('service_icons', 'public');
             }
         }
-    
         $service = Service::create($data);
-        dd($service);
         if ($request->has('faqs')) {
             foreach ($request->faqs as $faq) {
                 $service->faqs()->create($faq);
@@ -122,74 +122,104 @@ class ServiceController extends Controller
     public function edit(Service $service)
     {
         $service->load('faqs');
-        return view('services.edit', compact('service'));
+        return view('admin.services.edit', compact('service'));
     }
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, Service $service)
-    {
-        $request->validate([
-            'slug' => 'required|unique:services,slug,' . $service->id,
-            'meta_title' => 'required|string',
-            'meta_description' => 'required|string',
-            'headerscript' => 'nullable|string',
-            'short_description' => 'nullable|string',
-            'sec1_heading' => 'nullable|string',
-            'sec1_description' => 'nullable|string',
-            'sec1_image' => 'nullable|string',
+{
+    $request->validate([
+        'slug' => 'required|unique:services,slug,' . $service->id,
+        'meta_title' => 'required|string',
+        'meta_description' => 'required|string',
+        'headerscript' => 'nullable|string',
+        'short_description' => 'nullable|string',
+        'sec1_heading' => 'nullable|string',
+        'sec1_description' => 'nullable|string',
+        'sec1_image' => 'nullable|image|max:2048',
 
-            'sec2_heading' => 'nullable|string',
-            'sec2_service1_heading' => 'nullable|string',
-            'sec2_service1_description' => 'nullable|string',
-            'sec2_service1_icon' => 'nullable|string',
-            'sec2_service2_heading' => 'nullable|string',
-            'sec2_service2_description' => 'nullable|string',
-            'sec2_service2_icon' => 'nullable|string',
-            'sec2_service3_heading' => 'nullable|string',
-            'sec2_service3_description' => 'nullable|string',
-            'sec2_service3_icon' => 'nullable|string',
-            'sec2_service4_heading' => 'nullable|string',
-            'sec2_service4_description' => 'nullable|string',
-            'sec2_service4_icon' => 'nullable|string',
-            'sec2_service5_heading' => 'nullable|string',
-            'sec2_service5_description' => 'nullable|string',
-            'sec2_service5_icon' => 'nullable|string',
-            'sec2_service6_heading' => 'nullable|string',
-            'sec2_service6_description' => 'nullable|string',
-            'sec2_service6_icon' => 'nullable|string',
-            'sec3_heading' => 'nullable|string',
-            'sec3_service1_heading' => 'nullable|string',
-            'sec3_service1_description' => 'nullable|string',
-            'sec3_service1_icon' => 'nullable|string',
-            'sec3_service2_heading' => 'nullable|string',
-            'sec3_service2_description' => 'nullable|string',
-            'sec3_service2_icon' => 'nullable|string',
-            'sec3_service3_heading' => 'nullable|string',
-            'sec3_service3_description' => 'nullable|string',
-            'sec3_service3_icon' => 'nullable|string',
-            'sec3_service4_heading' => 'nullable|string',
-            'sec3_service4_description' => 'nullable|string',
-            'sec3_service4_icon' => 'nullable|string',
+        'sec2_heading' => 'nullable|string',
+        'sec2_service1_heading' => 'nullable|string',
+        'sec2_service1_description' => 'nullable|string',
+        'sec2_service1_icon' => 'nullable|image|max:2048',
+        'sec2_service2_heading' => 'nullable|string',
+        'sec2_service2_description' => 'nullable|string',
+        'sec2_service2_icon' => 'nullable|image|max:2048',
+        'sec2_service3_heading' => 'nullable|string',
+        'sec2_service3_description' => 'nullable|string',
+        'sec2_service3_icon' => 'nullable|image|max:2048',
+        'sec2_service4_heading' => 'nullable|string',
+        'sec2_service4_description' => 'nullable|string',
+        'sec2_service4_icon' => 'nullable|image|max:2048',
+        'sec2_service5_heading' => 'nullable|string',
+        'sec2_service5_description' => 'nullable|string',
+        'sec2_service5_icon' => 'nullable|image|max:2048',
+        'sec2_service6_heading' => 'nullable|string',
+        'sec2_service6_description' => 'nullable|string',
+        'sec2_service6_icon' => 'nullable|image|max:2048',
 
-            
-            'faqs' => 'nullable|array',
-            'faqs.*.question' => 'required_with:faqs|string',
-            'faqs.*.answer' => 'required_with:faqs|string',
-        ]);
+        'sec3_heading' => 'nullable|string',
+        'sec3_service1_heading' => 'nullable|string',
+        'sec3_service1_description' => 'nullable|string',
+        'sec3_service1_icon' => 'nullable|image|max:2048',
+        'sec3_service2_heading' => 'nullable|string',
+        'sec3_service2_description' => 'nullable|string',
+        'sec3_service2_icon' => 'nullable|image|max:2048',
+        'sec3_service3_heading' => 'nullable|string',
+        'sec3_service3_description' => 'nullable|string',
+        'sec3_service3_icon' => 'nullable|image|max:2048',
+        'sec3_service4_heading' => 'nullable|string',
+        'sec3_service4_description' => 'nullable|string',
+        'sec3_service4_icon' => 'nullable|image|max:2048',
 
-        $service->update($request->except('faqs'));
+        'faqs' => 'nullable|array',
+        'faqs.*.question' => 'required_with:faqs|string',
+        'faqs.*.answer' => 'required_with:faqs|string',
+    ]);
 
-        if ($request->has('faqs')) {
-            $service->faqs()->delete(); // Clear old FAQs
-            foreach ($request->faqs as $faq) {
-                $service->faqs()->create($faq); // Add new FAQs
+    // Update the service fields
+    $data = $request->except(['sec1_image', 'sec2_service1_icon', 'sec2_service2_icon', 'sec2_service3_icon', 'sec2_service4_icon', 'sec2_service5_icon', 'sec2_service6_icon', 'sec3_service1_icon', 'sec3_service2_icon', 'sec3_service3_icon', 'sec3_service4_icon', 'faqs']);
+    
+    // Handle file uploads for section images and icons
+    $fieldsWithImages = [
+        'sec1_image',
+        'sec2_service1_icon',
+        'sec2_service2_icon',
+        'sec2_service3_icon',
+        'sec2_service4_icon',
+        'sec2_service5_icon',
+        'sec2_service6_icon',
+        'sec3_service1_icon',
+        'sec3_service2_icon',
+        'sec3_service3_icon',
+        'sec3_service4_icon',
+    ];
+
+    foreach ($fieldsWithImages as $field) {
+        if ($request->hasFile($field)) {
+            // Delete old image if exists
+            if ($service->$field) {
+                Storage::delete($service->$field);
             }
+            // Store new image
+            $data[$field] = $request->file($field)->store('service_icons', 'public');
         }
-
-        return redirect()->route('services.index')->with('success', 'Service updated successfully.');
     }
+    $service->update($data);
+
+    // Update FAQs
+    if ($request->filled('faqs')) {
+        $service->faqs()->delete(); // Remove existing FAQs
+        foreach ($request->faqs as $faq) {
+            $service->faqs()->create($faq); // Add new FAQs
+        }
+    }
+
+    return redirect()->route('services.index')->with('success', 'Service updated successfully.');
+}
+
 
     /**
      * Remove the specified resource from storage.

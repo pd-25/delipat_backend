@@ -17,7 +17,7 @@ Route::get('/case-studies',[frontController::class, 'case_study'])->name('case-s
 Route::get('/case-studies/{slug}', [frontController::class, 'showblog'])->name('case-study.show');
 Route::get( '/industry',[frontController::class, 'industry'])->name('industry');
 Route::get( '/contact-us',[frontController::class, 'contactus'])->name('contactus');
-Route::get( '/hub-spot',[frontController::class, 'hubspot'])->name('hubspot');
+Route::get( '/service/{service_slug}',[frontController::class, 'singleService'])->name('singleService');
 Route::get('/thank-you',[frontController::class, 'thankyou'])->name('thankyou');
 
 // Auth::routes();
