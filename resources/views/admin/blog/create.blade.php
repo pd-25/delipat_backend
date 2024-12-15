@@ -30,7 +30,7 @@
 
                 <div class="mb-3">
                     <label for="description" class="form-label">Description</label>
-                    <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+                    <textarea class="form-control summernote" id="description" name="description" rows="4" required></textarea>
                 </div>
 
                 <div class="mb-3">
@@ -38,10 +38,10 @@
                     <input type="file" class="form-control" id="image" name="image" required>
                 </div>
 
-                <div class="mb-3">
+                {{-- <div class="mb-3">
                     <label for="tags" class="form-label">Tags (Comma Separated)</label>
                     <input type="text" class="form-control" id="tags" name="tags[]">
-                </div>
+                </div> --}}
 
                 <div class="mb-3">
                     <label for="meta_title" class="form-label">Meta Title</label>
@@ -88,5 +88,6 @@
             container.insertAdjacentHTML('beforeend', newFaq);
             faqIndex++;
         });
+        
     </script>
 @endsection

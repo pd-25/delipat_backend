@@ -8,13 +8,13 @@
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="banner-title">
-                    <!-- <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h1> -->
-                    <h1 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h1>
-                    </div>
+                        <!-- <h1 class="text-white" data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h1> -->
+                        <h1 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h1>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <!-- BANNER SECTION -->
@@ -28,11 +28,12 @@
                         <img src="{{ asset('storage/' . $blog->image) }}" style="width:100%" alt="{{ $blog->title }}">
                     </figure>
                     <h2 data-aos="fade-up" data-aos-duration="600">{{ $blog->title }}</h2>
-                    <ul class="list-unstyled position-relative d-flex admin-con" data-aos="fade-up" data-aos-duration="600">
+                    <ul class="list-unstyled position-relative d-flex admin-con" data-aos="fade-up"
+                        data-aos-duration="600">
                         <li><i class="fas fa-user"></i> By : Admin</li>
                         <li><i class="fas fa-calendar-alt"></i> {{ $blog->created_at->format('M d, Y') }}</li>
                     </ul>
-                    <p data-aos="fade-up" data-aos-duration="600">{{ $blog->description }}</p>
+                    <div data-aos="fade-up" data-aos-duration="600">{!! $blog->description !!}</div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4">
@@ -42,37 +43,39 @@
                         <input type="text" placeholder="Type Keywords">
                     </div>
                 </div> --}}
-                <div class="single-generic-box" data-aos="fade-up" data-aos-duration="600">
+                {{-- <div class="single-generic-box" data-aos="fade-up" data-aos-duration="600">
                     <h3>Tags</h3>
                     <div class="tag-link">
-    <ul class="list-unstyled mb-0">
-        @foreach($blog->tags as $tag)
-            <li><a href="#">{{ trim($tag) }}</a></li>
-        @endforeach
-    </ul>
-</div>
+                        <ul class="list-unstyled mb-0">
+                            @foreach($blog->tags as $tag)
+                            <li><a href="#">{{ trim($tag) }}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
 
-                </div>
+                </div> --}}
                 <div class="single-generic-box mb-0" data-aos="fade-up" data-aos-duration="600">
                     <h3>Popular Posts</h3>
                     <div class="recant-post">
                         <ul class="list-unstyled mb-0">
                             @foreach($relatedBlogs as $related)
-                                <li>
-                                    <div class="recant-post-box position-relative">
-                                        <figure class="mb-0">
-                                            <img src="{{ asset('storage/' . $related->image) }}" alt="{{ $related->title }}">
-                                        </figure>
-                                        <div class="recant-post-content">
-                                            <a href="{{ route('blog.show', $related->slug) }}">
-                                                <h4>{{ $related->title }}</h4>
-                                            </a>
-                                            <div class="recant-calander">
-                                                <i class="fas fa-calendar-alt"></i> {{ $related->created_at->format('M d, Y') }}
-                                            </div>
+                            <li>
+                                <div class="recant-post-box position-relative">
+                                    <figure class="mb-0">
+                                        <img src="{{ asset('storage/' . $related->image) }}"
+                                            alt="{{ $related->title }}">
+                                    </figure>
+                                    <div class="recant-post-content">
+                                        <a href="{{ route('blog.show', $related->slug) }}">
+                                            <h4>{{ $related->title }}</h4>
+                                        </a>
+                                        <div class="recant-calander">
+                                            <i class="fas fa-calendar-alt"></i> {{ $related->created_at->format('M d,
+                                            Y') }}
                                         </div>
                                     </div>
-                                </li>
+                                </div>
+                            </li>
                             @endforeach
                         </ul>
                     </div>
@@ -94,21 +97,21 @@
                     <div class="accordion-section">
                         <div class="accordion" id="faqAccordion">
                             @foreach($blog->faqs as $faq)
-                                <div class="accordion-card">
-                                    <div class="accordion-header" id="heading{{ $loop->index }}">
-                                        <a href="#" class="accordion-btn collapsed" data-toggle="collapse"
-                                            data-target="#collapse{{ $loop->index }}" aria-expanded="false"
-                                            aria-controls="collapse{{ $loop->index }}">
-                                            <h5>{{ $faq->question }}</h5>
-                                        </a>
-                                    </div>
-                                    <div id="collapse{{ $loop->index }}" class="collapse"
-                                        aria-labelledby="heading{{ $loop->index }}" data-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            <p>{{ $faq->answer }}</p>
-                                        </div>
+                            <div class="accordion-card">
+                                <div class="accordion-header" id="heading{{ $loop->index }}">
+                                    <a href="#" class="accordion-btn collapsed" data-toggle="collapse"
+                                        data-target="#collapse{{ $loop->index }}" aria-expanded="false"
+                                        aria-controls="collapse{{ $loop->index }}">
+                                        <h5>{{ $faq->question }}</h5>
+                                    </a>
+                                </div>
+                                <div id="collapse{{ $loop->index }}" class="collapse"
+                                    aria-labelledby="heading{{ $loop->index }}" data-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>{{ $faq->answer }}</p>
                                     </div>
                                 </div>
+                            </div>
                             @endforeach
                         </div>
                     </div>
