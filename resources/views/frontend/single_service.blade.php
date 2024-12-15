@@ -177,7 +177,7 @@
         </div>
 
         <div class="generic-btn d-block text-center" data-aos="fade-up" data-aos-duration="600">
-            <a href="https://calendly.com/expertsalesforce/30min/">Book a Strategy Session</a>
+            <a href="https://calendly.com/expertsalesforce/30min/">Talk to a Consultant</a>
         </div>
     </div>
 </section>

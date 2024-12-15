@@ -150,7 +150,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .header-con .navbar-dark .navbar-nav{
-    gap: 80px;
+    gap: 50px;
     align-items: center;
 }
 .header-con{
@@ -160,7 +160,7 @@ body{
     left: 50%;
     top: -45px;
     position: absolute;
-    transform: translateX(-30%);
+    transform: translateX(-47%);
 }
 .header-con .navbar-dark .navbar-brand {
     z-index: 1;

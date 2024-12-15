@@ -204,7 +204,10 @@
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('service') ? 'active' : '' }}" href="{{route('service')}}">Services</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 {{ request()->is('service/salesforce-consulting-optimization') ? 'active' : '' }}" href="{{ url('/service/salesforce-consulting-optimization') }}">Salesforce</a>
 
+                        </li>
                         
                     </ul>
                     <!--   Show this only lg screens and up   -->
@@ -214,13 +217,15 @@
                         </figure>
                     </a>
                     <ul class="navbar-nav">
-                       
-
-                        <li class="nav-item dropdown">
+                        
+                        {{-- <li class="nav-item dropdown"> --}}
                         {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('gallery') ? 'active' : '' }}" href="{{route('gallery')}}">Gallery</a>
                         </li>  --}}
+                        <li class="nav-item">
+                            <a class="nav-link p-0 {{ request()->is('service/hubspot-consulting-optimization') ? 'active' : '' }}" href="{{ url('/service/hubspot-consulting-optimization') }}">HubSpot</a>
 
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('industry') ? 'active' : '' }}" href="{{route('industry')}}">industry</a>
                         </li>

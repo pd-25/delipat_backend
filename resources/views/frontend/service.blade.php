@@ -153,7 +153,7 @@
                     </div>
                     <div class="d-flex align-items-center more-details">
                         <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                            <a href="#">Learn More</a>
+                            <a href="url('/service/salesforce-consulting-optimization')">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
-                                <a href="#">Learn More</a>
+                                <a href="url('/service/hubspot-consulting-optimization')">Learn More</a>
                             </div>
                         </div>
                     </div>
