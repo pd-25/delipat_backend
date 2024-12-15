@@ -46,7 +46,7 @@
                         <textarea name="headerscript" id="headerscript" class="form-control">{{ old('headerscript') }}</textarea>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group my-2">
                         <label for="feature_image">Feature Image</label>
                         <input type="file" name="feature_image" id="feature_image" class="form-control-file">
                     </div>
@@ -63,6 +63,10 @@
                     <div class="form-group">
                         <label for="feature_button">Feature Button</label>
                         <input type="text" name="feature_button" id="feature_button" class="form-control" value="{{ old('feature_button') }}">
+                </div>
+                <div class="form-group">
+                    <label for="feature_link">Feature Link (if using statcic link) </label>
+                    <input type="text" name="feature_link" id="feature_link" class="form-control" value="{{ old('feature_link') }}">
                 </div>
 
                 <!-- Step 2: Section 1 -->
