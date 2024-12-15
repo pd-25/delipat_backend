@@ -466,6 +466,18 @@
 
     <!-- BLOG SECTION -->
 <style>
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.service-item {
 
+    width: 360px;
+    min-height: 470px;
+    position: relative;
+}
     </style>
 @endsection
