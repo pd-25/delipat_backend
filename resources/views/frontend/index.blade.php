@@ -138,8 +138,7 @@
                             <!-- <a href="#"><img src="assets/images/left-angle.png" alt="left-angle"></a> -->
                             <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
                                 data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
-                                <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="{{route('singleService',$service->slug)}}">Explore<br>
-                                    Salesforce Solutions</a>
+                                <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="{{route('singleService',$service->slug)}}">{!! $service->feature_button !!}</a>
                             </div>
                         </div>
                     </div>

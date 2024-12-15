@@ -17,6 +17,7 @@ class Service extends Model
         'feature_image',
         'feature_heading',
         'short_description',
+        'feature_button',
         'sec1_heading',
         'sec1_description',
         'sec1_image',

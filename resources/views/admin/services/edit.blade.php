@@ -69,6 +69,11 @@
                         <label for="short_description">Short Description</label>
                         <textarea id="short_description" name="short_description" class="form-control">{{ old('short_description', $service->short_description) }}</textarea>
                     </div>
+                    <div class="form-group">
+                        <label for="feature_button">Feature Button</label>
+                        <input type="text" id="feature_button" name="feature_button" class="form-control" value="{{ old('feature_button', $service->feature_button) }}">
+                        @error('feature_button') <span class="text-danger">{{ $message }}</span> @enderror
+                    </div>
                 </div>
 
                 <!-- Step 2: Section 1 -->

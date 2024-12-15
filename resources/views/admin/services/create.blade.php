@@ -60,6 +60,9 @@
                         <label for="short_description">Short Description</label>
                         <textarea name="short_description" id="short_description" class="form-control">{{ old('short_description') }}</textarea>
                     </div>
+                    <div class="form-group">
+                        <label for="feature_button">Feature Button</label>
+                        <input type="text" name="feature_button" id="feature_button" class="form-control" value="{{ old('feature_button') }}">
                 </div>
 
                 <!-- Step 2: Section 1 -->
