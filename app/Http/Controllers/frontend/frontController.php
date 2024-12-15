@@ -135,4 +135,30 @@ public function youtubeVideos()
     public function thankyou(){
         return view('frontend.thankyou');
     }
+
+
+    public function privacy() {  
+        $pagemeta = (object)[
+            'meta_title' => 'Privacy Policy - Delipat',
+            'meta_description' => 'Read our Privacy Policy to understand how we manage and protect your data.'
+        ];
+        return view('frontend.sitepolicy.privacy', compact('pagemeta'));
+    }
+    
+    public function terms() {
+        $pagemeta = (object)[
+            'meta_title' => 'Terms and Conditions - Delipat',
+            'meta_description' => 'Review our Terms and Conditions for using Delipat services and website.'
+        ];
+        return view('frontend.sitepolicy.terms', compact('pagemeta'));
+    }
+    
+    public function refund() {
+        $pagemeta = (object)[
+            'meta_title' => 'Refund Policy - Delipat',
+            'meta_description' => 'Learn about Delipat’s Refund Policy, eligibility, and the refund process.'
+        ];
+        return view('frontend.sitepolicy.refund', compact('pagemeta'));
+    }
+    
 }

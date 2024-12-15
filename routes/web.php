@@ -19,6 +19,11 @@ Route::get( '/industry',[frontController::class, 'industry'])->name('industry');
 Route::get( '/contact-us',[frontController::class, 'contactus'])->name('contactus');
 Route::get( '/service/{service_slug}',[frontController::class, 'singleService'])->name('singleService');
 Route::get('/thank-you',[frontController::class, 'thankyou'])->name('thankyou');
+Route::get('/privacy-policy',[frontController::class, 'privacy'])->name('privacy');
+Route::get('/terms-and-Conditions',[frontController::class, 'terms'])->name('terms');
+Route::get('/privacy-policy',[frontController::class, 'privacy'])->name('privacy');
+Route::get('/refund-policy',[frontController::class, 'refund'])->name('refund');
+
 
 // Auth::routes();
 

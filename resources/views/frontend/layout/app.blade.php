@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{{asset('frontend/assets/css/superclasses.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/assets/css/custom.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/assets/css/custom-style.css')}}">
-
+ 
     <link rel="stylesheet" href="{{asset('frontend/assets/css/mobile.css')}}">
 </head>
 
@@ -273,9 +273,9 @@
                 <div class="site-map">
                     <h4>Important Links</h4>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
+                        <li><a href="{{route('terms')}}">Terms & Conditions</a></li>
+                        <li><a href="{{route('refund')}}">Refund Policy</a></li>
                         {{-- <li><a href="{{route('gallery')}}">Gallery</a></li> --}}
                         <li><a href="#">Site Map</a></li>
                         {{-- <li><a href="{{route('contactus')}}">CONTACT US</a></li> --}}
