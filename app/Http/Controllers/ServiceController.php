@@ -39,6 +39,8 @@ class ServiceController extends Controller
             'meta_title' => 'required|string',
             'meta_description' => 'required|string',
             'headerscript' => 'nullable|string',
+            'feature_image' => 'nullable|image|max:2048',
+            'feature_heading'=>'nullable|string',
             'short_description' => 'nullable|string',
             'sec1_heading' => 'nullable|string',
             'sec1_description' => 'nullable|string',
@@ -88,7 +90,7 @@ class ServiceController extends Controller
         // Extract Data
         $data = $request->except(
             'faqs', 
-            'sec1_image', 
+            'sec1_image', 'feature_image',
             'sec2_service1_icon', 'sec2_service2_icon', 'sec2_service3_icon', 
             'sec2_service4_icon', 'sec2_service5_icon', 'sec2_service6_icon', 
             'sec3_service1_icon', 'sec3_service2_icon', 'sec3_service3_icon', 
@@ -96,9 +98,15 @@ class ServiceController extends Controller
         );
     
         // Handle Section 1 Image Upload
+        
         if ($request->hasFile('sec1_image')) {
             $data['sec1_image'] = $request->file('sec1_image')->store('service_images', 'public');
         }
+        
+        if ($request->hasFile('feature_image')) {
+            $data['feature_image'] = $request->file('feature_image')->store('service_images', 'public');
+        }
+        
     
         // Handle Icons Upload
         $icons = [
@@ -158,6 +166,8 @@ class ServiceController extends Controller
             'meta_title' => 'required|string',
             'meta_description' => 'required|string',
             'headerscript' => 'nullable|string',
+            'feature_image' => 'nullable|image|max:2048',
+            'feature_heading'=>'nullable|string',
             'short_description' => 'nullable|string',
             'sec1_heading' => 'nullable|string',
             'sec1_description' => 'nullable|string',
@@ -207,7 +217,7 @@ class ServiceController extends Controller
     
         // Update the service fields excluding images and FAQs
         $data = $request->except([
-            'sec1_image',
+            'sec1_image', 'feature_image',
             'sec2_service1_icon', 'sec2_service2_icon', 'sec2_service3_icon', 'sec2_service4_icon', 
             'sec2_service5_icon', 'sec2_service6_icon',
             'sec3_service1_icon', 'sec3_service2_icon', 'sec3_service3_icon', 'sec3_service4_icon',
@@ -216,22 +226,36 @@ class ServiceController extends Controller
     
         // Handle image uploads
         $fieldsWithImages = [
-            'sec1_image',
+            'sec1_image', 'feature_image',
             'sec2_service1_icon', 'sec2_service2_icon', 'sec2_service3_icon', 'sec2_service4_icon',
             'sec2_service5_icon', 'sec2_service6_icon',
             'sec3_service1_icon', 'sec3_service2_icon', 'sec3_service3_icon', 'sec3_service4_icon',
         ];
     
+        $fieldsWithImages = [
+            'sec1_image', 'feature_image',
+            'sec2_service1_icon', 'sec2_service2_icon', 'sec2_service3_icon', 'sec2_service4_icon',
+            'sec2_service5_icon', 'sec2_service6_icon',
+            'sec3_service1_icon', 'sec3_service2_icon', 'sec3_service3_icon', 'sec3_service4_icon',
+        ];
+        
         foreach ($fieldsWithImages as $field) {
             if ($request->hasFile($field)) {
                 // Delete the old image if it exists
                 if ($service->$field) {
-                    Storage::delete($service->$field);
+                    // Check if the file exists in either 'service_icons' or 'service_images' and delete
+                    if (Storage::exists($service->$field)) {
+                        Storage::delete($service->$field);
+                    }
                 }
                 // Store the new image
-                $data[$field] = $request->file($field)->store('service_icons', 'public');
+                $data[$field] = $request->file($field)->store(
+                    in_array($field, ['sec1_image', 'feature_image']) ? 'service_images' : 'service_icons',
+                    'public'
+                );
             }
         }
+        
     
         // Update service record in the database
         $service->update($data);
@@ -263,7 +287,7 @@ public function destroy(Service $service)
 {
     // Define fields with images to be deleted
     $fieldsWithImages = [
-        'sec1_image',
+        'sec1_image','feature_image',
         'sec2_service1_icon', 'sec2_service2_icon', 'sec2_service3_icon', 'sec2_service4_icon',
         'sec2_service5_icon', 'sec2_service6_icon',
         'sec3_service1_icon', 'sec3_service2_icon', 'sec3_service3_icon', 'sec3_service4_icon',
@@ -271,19 +295,24 @@ public function destroy(Service $service)
 
     // Delete associated image files
     foreach ($fieldsWithImages as $field) {
-        if ($service->$field) {
-            // Use Storage::disk('public')->delete() for deleting files from the 'public' disk
-            Storage::disk('public')->delete($service->$field);
+        if (!empty($service->$field)) {
+            // Check if the file exists in the 'public' disk before deleting
+            if (Storage::disk('public')->exists($service->$field)) {
+                Storage::disk('public')->delete($service->$field);
+            }
         }
     }
 
-  
-    $service->faqs()->delete();
+    // Delete related FAQs
+    if ($service->faqs()->exists()) {
+        $service->faqs()->delete();
+    }
 
     // Delete the service
     $service->delete();
 
     return redirect()->route('services.index')->with('success', 'Service deleted successfully.');
 }
+
 
 }

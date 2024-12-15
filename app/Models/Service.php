@@ -14,6 +14,8 @@ class Service extends Model
         'meta_title',
         'meta_description',
         'headerscript',
+        'feature_image',
+        'feature_heading',
         'short_description',
         'sec1_heading',
         'sec1_description',

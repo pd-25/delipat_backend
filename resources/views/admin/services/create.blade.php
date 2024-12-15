@@ -47,6 +47,16 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="feature_image">Feature Image</label>
+                        <input type="file" name="feature_image" id="feature_image" class="form-control-file">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feature_heading">Feature Heading</label>
+                        <input type="text" name="feature_heading" id="feature_heading" class="form-control" value="{{ old('feature_heading') }}">
+                    </div>
+
+                    <div class="form-group">
                         <label for="short_description">Short Description</label>
                         <textarea name="short_description" id="short_description" class="form-control">{{ old('short_description') }}</textarea>
                     </div>

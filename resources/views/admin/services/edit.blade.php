@@ -49,6 +49,21 @@
                         <textarea id="headerscript" name="headerscript" class="form-control">{{ old('headerscript', $service->headerscript) }}</textarea>
                     </div>
 
+                    <!-- Feature Image -->
+                    <div class="form-group">
+                        <label for="feature_image">Feature Image</label>
+                        <input type="file" id="feature_image" name="feature_image" class="form-control">
+                        @if ($service->feature_image)
+                            <img src="{{ asset('storage/' . $service->feature_image) }}" alt="Feature Image" style="max-width: 200px; margin-top: 10px;">
+                        @endif
+                    </div>
+
+                    <!-- Feature Heading -->
+                    <div class="form-group">
+                        <label for="feature_heading">Feature Heading</label>
+                        <input type="text" id="feature_heading" name="feature_heading" class="form-control" value="{{ old('feature_heading', $service->feature_heading) }}">
+                    </div>
+
                     <!-- Short Description -->
                     <div class="form-group">
                         <label for="short_description">Short Description</label>
