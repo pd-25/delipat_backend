@@ -125,64 +125,26 @@
             </div>
             <div class="service-inner-con" data-aos="fade-up" data-aos-duration="600">
                 <div class="owl-carousel owl-theme" id="service-slider">
+                    @foreach($services as $service)
                     <div class="item">
                         <div class="service-item text-center">
                             <figure>
-                                <img src="{{asset('frontend/assets/images/service/service-card-1.png')}}"
+                                <img src="{{asset('storage/'.$service->feature_image)}}"
                                     alt="service-img">
                             </figure>
-                            <h3>Salesforce Consulting & Implementation
+                            <h3>{{$service->feature_heading}}</h3>
                             </h3>
-                            <p class="mb-4">From initial setup to advanced customizations, we help you leverage
-                                Salesforce to its
-                                full potential. Our solutions include Sales, Service, Marketing Cloud, and Pardot,
-                                all designed to drive ROI and enhance customer experience.</p>
+                            <p class="mb-4">{{$service->short_description}}</p>
                             <!-- <a href="#"><img src="assets/images/left-angle.png" alt="left-angle"></a> -->
                             <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
                                 data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
-                                <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Explore<br>
+                                <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="{{route('singleService',$service->slug)}}">Explore<br>
                                     Salesforce Solutions</a>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="service-item text-center slider-service-box">
-                            <figure>
-                                <img src="{{asset('frontend/assets/images/service/service-card-2.png')}}"
-                                    alt="service-img">
-                            </figure>
-                            <h3>HubSpot Consulting & Optimization
-                            </h3>
-                            <p>HubSpot offers robust inbound marketing, sales, and customer service capabilities.
-                                Our certified consultants optimize HubSpot to align with your growth goals, ensuring
-                                seamless integrations and effective lead nurturing.
-                            </p>
-                            <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
-                                data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
-                                <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Learn
-                                    About <br> HubSpot Services</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="service-item text-center">
-                            <figure>
-                                <img src="{{asset('frontend/assets/images/service/service-card-3.png')}}"
-                                    alt="service-img">
-                            </figure>
-                            <h3>Integration & Automation Solutions
-                            </h3>
-                            <p>Connect your CRM with essential third-party tools like Mailchimp, DocuSign, and more.
-                                Streamline processes and increase team productivity through seamless integration and
-                                automation.
-                            </p>
-                            <div class="generic-btn position-btn-div d-block text-center aos-init aos-animate"
-                                data-aos="fade-up" data-aos-duration="600" bis_skin_checked="1">
-                                <a style="width: auto; border-radius:8px ;" class=" position-btn-a" href="#">Start<br>
-                                    Your Integration</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                   
 
                 </div>
             </div>

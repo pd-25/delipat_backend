@@ -17,7 +17,8 @@ class frontController extends Controller
     {
         $blogs = Blog::take(3)->get();
         $pagemeta = MetaData::where('page_name', 'home')->first();
-        return view('frontend.index', compact('blogs','pagemeta'));
+        $services = Service::get();
+        return view('frontend.index', compact('blogs','pagemeta','services'));
     }
     public function about()
     {
