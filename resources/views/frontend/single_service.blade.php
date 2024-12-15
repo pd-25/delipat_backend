@@ -479,5 +479,10 @@
     min-height: 470px;
     position: relative;
 }
+@media only screen and (max-width: 767px) {
+    .service-item {
+        min-height: 400px;
+    }
+}
     </style>
 @endsection
