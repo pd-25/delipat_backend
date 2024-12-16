@@ -78,7 +78,7 @@
                                 <li>
                                     <a style="color: white;" href="tel:{{$siteSettings->phone}}">
                                         <!-- <img src="{{asset('frontend/assets/images/phone-icon.png')}}" alt="phone-icon"> -->
-                                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                                        <img src="{{asset('frontend/assets/img/whatsapp.png')}}" style="width: 20px; padding: 0px; margin: -2px 0px 0px 0px;"> |  <img src="{{asset('frontend/assets/img/viber.png')}}" style="width: 16px; padding: 0px; margin: -3px 0px 0px 0px;">
                                         {{$siteSettings->phone}}
                                     </a>
                                 </li>
@@ -201,9 +201,9 @@
                                 </div>
                             </div>
                         </li> --}}
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('service') ? 'active' : '' }}" href="{{route('service')}}">Services</a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ request()->is('service/salesforce-consulting-Implementation') ? 'active' : '' }}" href="{{ url('/service/salesforce-consulting-Implementation') }}">Salesforce</a>
 
@@ -234,10 +234,10 @@
                             <a class="nav-link p-0 {{ Route::is('case-study') ? 'active' : '' }}" href="{{route('case-study')}}">Case Studies</a>
 
                         </li> --}}
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('blog') ? 'active' : '' }}" href="{{route('blog')}}">Blog</a>
 
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('contactus') ? 'active' : '' }}" href="{{route('contactus')}}">Contact Us</a>
                         </li>

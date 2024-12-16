@@ -233,12 +233,11 @@
                                     <div class="col-4 col-md-2">
                                         <select id="00N5i00000TVZps" class="form-field" name="00N5i00000TVZps"
                                             title="Country Code">
-                                            <option value="" disabled selected>Select Country Code</option>
-                                            <option value="">--None--</option>
+                                            <option value="" disabled >Select Country Code</option>
                                             <option value="+93	       Afghanistan">+93 Afghanistan</option>
                                             <option value="+355	Albania">+355 Albania</option>
                                             <option value="+213	Algeria">+213 Algeria</option>
-                                            <option value="+1	       United States">+1 United States</option>
+                                            <option value="+1	       United States" selected>+1 United States</option>
                                             <option value="+376	Andorra">+376 Andorra</option>
                                             <option value="+244	Angola">+244 Angola</option>
                                             <option value="+1	       Antigua and Barbuda">+1 Antigua and Barbuda

@@ -227,7 +227,7 @@
 
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="why-choose-card">
-                        <div class="why-choose-delipat-image-div whhybac" style="background: url('{{asset('frontend/assets/images/about-page/why-choose-delipat/proven-results-driven-solutions.png')}}') no-repeat center;">
+                        <div class="why-choose-delipat-image-div whhybac" style="background:url('{{asset('frontend/assets/images/about-page/why-choose-delipat/salesforce-certified-consultants.png')}}')">
                                
                             <h5 class="card-title choose-delipat-h5">Proven, Results-Driven Solutions</h5>
 
@@ -241,7 +241,7 @@
 
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="why-choose-card">
-                        <div class="why-choose-delipat-image-div whhybac" style="background: url('{{asset('frontend/assets/images/about-page/why-choose-delipat/end-to-end-support.png')}}')">
+                        <div class="why-choose-delipat-image-div whhybac" style="background:url('{{asset('frontend/assets/images/about-page/why-choose-delipat/salesforce-certified-consultants.png')}}')">
                             <h5 class="card-title choose-delipat-h5">End-to-End <br> Support</h5>
                         </div>
                         <div class="why-choose-card-content">
@@ -254,7 +254,7 @@
 
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="why-choose-card">
-                        <div class="why-choose-delipat-image-div whhybac" style="background:url('{{asset('frontend/assets/images/about-page/why-choose-delipat/reliable-transparent.png')}}')">
+                        <div class="why-choose-delipat-image-div whhybac" style="background:url('{{asset('frontend/assets/images/about-page/why-choose-delipat/salesforce-certified-consultants.png')}}')">
                             <h5 class="card-title choose-delipat-h5">Reliable <br>& Transparent</h5>
                               
                         </div>
@@ -353,12 +353,11 @@
                                     <div class="col-4 col-md-2">
                                         <select id="00N5i00000TVZps" class="form-field" name="00N5i00000TVZps"
                                             title="Country Code">
-                                            <option value="" disabled selected>Select Country Code</option>
-                                            <option value="">--None--</option>
+                                            <option value="" disabled >Select Country Code</option>
                                             <option value="+93	       Afghanistan">+93 Afghanistan</option>
                                             <option value="+355	Albania">+355 Albania</option>
                                             <option value="+213	Algeria">+213 Algeria</option>
-                                            <option value="+1	       United States">+1 United States</option>
+                                            <option value="+1	       United States" selected>+1 United States</option>
                                             <option value="+376	Andorra">+376 Andorra</option>
                                             <option value="+244	Angola">+244 Angola</option>
                                             <option value="+1	       Antigua and Barbuda">+1 Antigua and Barbuda

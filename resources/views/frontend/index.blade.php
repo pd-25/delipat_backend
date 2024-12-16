@@ -10,9 +10,9 @@
                 <div class="col-lg-8">
                     <div class="banner-title generic-box-content">
                         <h1 class="banner-text-h1" data-aos="fade-up" data-aos-duration="600">Delipat – Your Premier
-                            <img style="width:10%" src="{{ asset('frontend/assets/img/Salesforce_logo.png') }}"
+                            <img style="border-radius: 10%; width: 10%; padding: 3px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);" src="{{ asset('frontend/assets/img/Salesforce_logo.png') }}"
                                 alt="delipat-salesforce" class="img-fluid">
-                            & <img style="width:11%" src="{{ asset('frontend/assets/img/HubSpot_Logo.png') }}"
+                            & <img style="border-radius: 10%;width: 11%;padding: 3px;box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);" src="{{ asset('frontend/assets/img/HubSpot_Logo.png') }}"
                                 alt="delipat-hubspot" class="img-fluid">
                             Consulting Partner
                         </h1>
@@ -397,12 +397,11 @@
                                     <div class="col-4 col-md-2">
                                         <select id="00N5i00000TVZps" class="form-field" name="00N5i00000TVZps"
                                             title="Country Code">
-                                            <option value="" disabled selected>Select Country Code</option>
-                                            <option value="">--None--</option>
+                                            <option value="" disabled >Select Country Code</option>
                                             <option value="+93	       Afghanistan">+93 Afghanistan</option>
                                             <option value="+355	Albania">+355 Albania</option>
                                             <option value="+213	Algeria">+213 Algeria</option>
-                                            <option value="+1	       United States">+1 United States</option>
+                                            <option value="+1	       United States" selected>+1 United States</option>
                                             <option value="+376	Andorra">+376 Andorra</option>
                                             <option value="+244	Angola">+244 Angola</option>
                                             <option value="+1	       Antigua and Barbuda">+1 Antigua and Barbuda

@@ -48,12 +48,11 @@
                                 <div class="col-4 ">
                                     <select id="00N5i00000TVZps" class="form-field" name="00N5i00000TVZps"
                                         title="Country Code">
-                                        <option value="" disabled selected>Select Country Code</option>
-                                        <option value="">--None--</option>
-                                        <option value="+93	       Afghanistan">+93 Afghanistan</option>
-                                        <option value="+355	Albania">+355 Albania</option>
-                                        <option value="+213	Algeria">+213 Algeria</option>
-                                        <option value="+1	       United States">+1 United States</option>
+                                        <option value="" disabled >Select Country Code</option>
+                                            <option value="+93	       Afghanistan">+93 Afghanistan</option>
+                                            <option value="+355	Albania">+355 Albania</option>
+                                            <option value="+213	Algeria">+213 Algeria</option>
+                                            <option value="+1	       United States" selected>+1 United States</option>
                                         <option value="+376	Andorra">+376 Andorra</option>
                                         <option value="+244	Angola">+244 Angola</option>
                                         <option value="+1	       Antigua and Barbuda">+1 Antigua and Barbuda
@@ -232,7 +231,7 @@
                 <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600">INFo</h2>
                 <ul class="list-unstyled mb-0">
                     <li data-aos="fade-up" data-aos-duration="600">
-                        <div class="contact-info-item">
+                        <div class="contact-info-item" style="    margin-top: -13px;">
                             <figure class="mb-0">
                                 <img src="{{asset('frontend/assets/images/contact-location-icon.png')}}"
                                     alt="contact-location-icon">
@@ -265,6 +264,18 @@
                             <div class="contact-info-content">
                                 <h5>Email</h5>
                                 <a href="mailto:Info@letsclean.com">info@delipat.com</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="600">
+                        <div class="contact-info-item">
+                            <figure class="mb-0">
+                                <img src="{{asset('frontend/assets/img/whatsapp.png')}}" style="width: 32px;"
+                                    alt="contact-email-icon">
+                            </figure>
+                            <div class="contact-info-content">
+                                <h5>Whatsapp</h5>
+                                <a href="https://wa.me/918159876853">+91 81598 76853</a>
                             </div>
                         </div>
                     </li>
