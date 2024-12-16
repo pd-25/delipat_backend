@@ -150,7 +150,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .header-con .navbar-dark .navbar-nav{
-    gap: 50px;
+    gap: 80px;
     align-items: center;
 }
 .header-con{
@@ -1251,13 +1251,14 @@ span.error{
 }
 .footer-con:before {
     content: "";
-    top: 104px;
+    top: 50%;
     left: 15px;
     width: 210px;
     height: 255px;
     position: absolute;
     background: url(../img/HubSpot_Logo.png) no-repeat center;
     animation: mover 1s infinite alternate;
+    background-size: contain;
 }
 /* .footer-box::after {
     content: "";

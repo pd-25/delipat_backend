@@ -213,7 +213,7 @@
                     <!--   Show this only lg screens and up   -->
                     <a class="navbar-brand d-none d-lg-block" href="{{route('index')}}">
                         <figure class="mb-0">
-                            <img src="{{asset('storage/'.$siteSettings->logo1)}}" alt="delipat" style="max-width:200px">
+                            <img src="{{asset('storage/'.$siteSettings->logo1)}}" alt="delipat" style="max-width:190px">
                         </figure>
                     </a>
                     <ul class="navbar-nav">
