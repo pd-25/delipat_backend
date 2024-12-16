@@ -1240,9 +1240,9 @@ span.error{
 }
 .footer-con:after {
     content: "";
-    top: -37px;
-    right: 0;
-    width: 171px;
+    top: -12%;
+    right: 2px;
+    width: 150px;
     height: 218px;
     position: absolute;
     background: url(../img/Salesforce_logo.png) no-repeat center;
