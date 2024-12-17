@@ -12,7 +12,7 @@
                             <h1 class="banner-text-h1" data-aos="fade-up" data-aos-duration="600">{{$service->sec1_heading}}</h1>
                             </h1>
                             
-                            <p data-aos="fade-up banner-p" data-aos-duration="600">{!! $service->sec1_description !!}</p>
+                            <p data-aos="fade-up" data-aos-duration="600" class="banner-p aos-init aos-animate">{!! $service->sec1_description !!}</p>
                             <div class="d-flex align-items-center more-details">
                             <div class="generic-btn d-inline-block" data-aos="fade-up" data-aos-duration="600">
                                 <a href="https://calendly.com/expertsalesforce/30min/" target="_blank">Talk to a
