@@ -19,7 +19,7 @@
                         <h4 class="common-h4" data-aos="fade-up" data-aos-duration="600">Unlock CRM Potential with
                             Tailored Solutions for Every Business
                         </h4>
-                        <p data-aos="fade-up" data-aos-duration="600">Whether you’re a growing startup or an
+                        <p data-aos="fade-up" data-aos-duration="600" class="banner-p">Whether you’re a growing startup or an
                             established enterprise, Delipat's CRM consulting
                             services ensure you achieve operational excellence, streamlined customer management, and
                             scalable growth.</p>

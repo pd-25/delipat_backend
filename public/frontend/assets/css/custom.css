@@ -1062,7 +1062,7 @@ span.error{
 .footer-box {
     gap: 30px;
     display: grid;
-    grid-template-columns: 28% 22% 22% 28%;
+    grid-template-columns: 28% 22% 16% 28%;
 
 }
 .site-map h4{
@@ -2989,4 +2989,10 @@ font-family: 'Montserrat', sans-serif;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 outline: none;
 height: 50px;
+}
+/* --------------- 17/12/2024 --------------- */
+.home-banner .banner-p{
+    color: #191919!important;
+    font-size: 20px!important;
+    Line-height: 30px!important;
 }
