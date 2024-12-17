@@ -2598,7 +2598,7 @@ margin-bottom: 130px;
     object-fit: cover; 
 }
 .our-approach-sec{
-    background: url(../images/curve-banner-two.png) no-repeat;
+    background: url(../img/Banner1.png) no-repeat;
     background-size: cover;
     min-height: 100%;
     width: 100%;
@@ -2692,6 +2692,9 @@ margin-bottom: 130px;
 
 /* ===== flow chart design === */
 .flowchart-sec{
+    /* background: url(../images/unlock-your-business-potential.webp) no-repeat;
+    background-size: cover;
+    width: 100%; */
     background: linear-gradient(0deg, rgba(203,235,234,0.7455357142857143) 0%, rgba(252,251,251,1) 100%);
 }
 .timeline {
