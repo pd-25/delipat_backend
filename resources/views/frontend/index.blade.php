@@ -16,8 +16,7 @@
                                 alt="delipat-hubspot" class="img-fluid">
                             Consulting Partner
                         </h1>
-                        <h4 class="common-h4" data-aos="fade-up" data-aos-duration="600">Unlock CRM Potential with
-                            Tailored Solutions for Every Business
+                        <h4 class="common-h4" data-aos="fade-up" data-aos-duration="600">Ignite Growth & Efficiency with Tailored Solutions for Every Business
                         </h4>
                         <p data-aos="fade-up" data-aos-duration="600" class="banner-p">Whether you’re a growing startup or an
                             established enterprise, Delipat's CRM consulting

@@ -740,8 +740,7 @@
 <section class="w-100 float-left industry-last-sec">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="begin-salesforce-journey-h2 main-header-h2" style="color: #fff;" data-aos="fade-up" data-aos-duration="600">Let Delipat Help You
-                Unlock the Power of CRM for Your Industry
+            <h2 class="begin-salesforce-journey-h2 main-header-h2" style="color: #fff;" data-aos="fade-up" data-aos-duration="600">Let Delipat Help You Explore the Power of CRM for Your Industry
             </h2>
 
         </div>
