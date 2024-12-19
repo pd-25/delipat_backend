@@ -615,12 +615,5 @@
         </div>
     </div>
 </section>
-<style>
-    .video-gradient-sec::before {
-  
-    margin-top: -6%;
-
-}
-</style>
 
 @endsection
