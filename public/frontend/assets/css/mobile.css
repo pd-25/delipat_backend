@@ -2003,8 +2003,8 @@
         width: 100%;
     }
     .client-info ul {
-        gap: 4px;
-        flex-direction: column;
+        gap: 20zpx;
+        /* flex-direction: column; */
     }
     .banner-con:before{
         display: none;
