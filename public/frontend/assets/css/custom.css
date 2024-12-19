@@ -1321,7 +1321,7 @@ span.error{
 }
 .client-name h4{
     font-size: 22px;
-    line-height: 22px;
+    line-height: 24spx;
     margin-bottom: 2px;
     color: var(--primary--color);
     font-weight: 500;
@@ -1329,6 +1329,7 @@ span.error{
 }
 .client-name span {
     color: rgb(0 0 0 / 60%);
+    line-height: 1.3rem;
 }
 .client-name {
     padding-left: 18px;
