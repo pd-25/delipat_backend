@@ -1315,6 +1315,11 @@ span.error{
 .client-info {
     display: flex;
     align-items: center;
+    
+}
+.client-review-box.client-info {
+    display: flex;
+    align-items: center;
     background: white;
     padding: 10px;
     border-radius: 10px;
