@@ -337,6 +337,7 @@
     }
     .client-review-content {
         padding: 45px 26px;
+        min-height: 361px;
     }
     .blog-con {
         padding-top: 120px;
