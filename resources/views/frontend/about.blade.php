@@ -537,7 +537,7 @@
         </div>
 </div>
 
-<!-- CONTACT-SECTION -->
+<x-testimonials />
 
 <!-- USER SECTION -->
 
@@ -615,4 +615,12 @@
         </div>
     </div>
 </section>
+<style>
+    .video-gradient-sec::before {
+  
+    margin-top: -6%;
+
+}
+</style>
+
 @endsection

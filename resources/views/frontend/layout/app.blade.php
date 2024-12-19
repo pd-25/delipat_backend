@@ -263,10 +263,10 @@
                     <h4>Quick Links</h4>
                     <ul class="list-unstyled mb-0">
                         <li><a href="{{route('index')}}">Home</a></li>
-                        <li><a href="{{route('about')}}">About Us</a></li>
+                        <!-- <li><a href="{{route('about')}}">About Us</a></li> -->
                         <li><a href="{{route('service')}}">Services</a></li>
                         {{-- <li><a href="{{route('gallery')}}">Gallery</a></li> --}}
-                        {{-- <li><a href="{{route('blog')}}">Blog</a></li> --}}
+                        <li><a href="{{route('blog')}}">Blog</a></li>
                         <li><a href="{{route('contactus')}}">Contact Us</a></li>
                     </ul>
                 </div>
@@ -276,7 +276,7 @@
                         <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
                         <li><a href="{{route('terms')}}">Terms & Conditions</a></li>
                         <li><a href="{{route('refund')}}">Refund Policy</a></li>
-                        {{-- <li><a href="{{route('gallery')}}">Gallery</a></li> --}}
+                       
                         <li><a href="#">Site Map</a></li>
                         {{-- <li><a href="{{route('contactus')}}">CONTACT US</a></li> --}}
                     </ul>
@@ -366,7 +366,7 @@
             loop: true,
             margin: 30,
             nav: true,
-            navText: ["<img src='{{asset('frontend/assets/images/left-arrow.png')}}'>", "<img src='assets/images/right-arrow.png')}}'>"],
+            navText: ["<img src='{{asset('frontend/assets/images/left-arrow.png')}}'>", "<img src='{{asset('frontend/assets/images/right-arrow.png')}}')}}'>"],
             responsive: {
                 0: {
                     items: 1
