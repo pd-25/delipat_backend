@@ -18,7 +18,7 @@
                                     <img src="{{ asset('frontend/assets/images/star-img.png') }}" alt="star-img">
                                 </figure>
                             </div>
-                            <div class="client-info">
+                            <div class="client-info bvvc">
                                 <figure class="mb-0">
                                     <img src="{{ asset('storage/' . $testimonial->image) }}" alt="client-img">
                                 </figure>

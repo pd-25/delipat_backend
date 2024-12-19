@@ -1317,9 +1317,8 @@ span.error{
     align-items: center;
     
 }
-.client-review-box.client-info {
-    display: flex;
-    align-items: center;
+.bvvc {
+    
     background: white;
     padding: 10px;
     border-radius: 10px;
