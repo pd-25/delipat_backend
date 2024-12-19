@@ -31,7 +31,7 @@ class testimonialController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'required|image',
             'name' => 'required|string|max:255',
             'designation' => 'nullable|string|max:255',
             'comment' => 'required|string',
@@ -66,7 +66,7 @@ class testimonialController extends Controller
         $testimonial = Testimonial::findOrFail($id);
 
         $request->validate([
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image',
             'name' => 'required|string|max:255',
             'designation' => 'nullable|string|max:255',
             'comment' => 'required|string',
