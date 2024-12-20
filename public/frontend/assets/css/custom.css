@@ -1356,8 +1356,9 @@ span.error{
     left: 0;
     width: 29px;
     height: 28px;
-    background: var(--white-color);
+    background: #013144;
     clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+    box-shadow: 0px 0px 5px 0px inset #979797;
 }
 .owl-carousel .owl-nav button{
     top: 50%;
