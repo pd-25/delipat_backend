@@ -537,7 +537,7 @@
         </div>
 </div>
 
-<!-- CONTACT-SECTION -->
+<x-testimonials />
 
 <!-- USER SECTION -->
 
@@ -615,4 +615,5 @@
         </div>
     </div>
 </section>
+
 @endsection

@@ -337,6 +337,7 @@
     }
     .client-review-content {
         padding: 45px 26px;
+        min-height: 361px;
     }
     .blog-con {
         padding-top: 120px;
@@ -363,7 +364,7 @@
     }
     .banner-inner-con {
         padding-top: 100px;
-        /* padding-bottom: 100px; */
+        padding-bottom: 100px;
     }
     .sub-banner .banner-inner-con.sub-banner {
         padding-top: 200px;
@@ -570,8 +571,8 @@
         font-size: 24px;
     }
     .banner-inner-con {
-        padding-top: 200px;
-        /* padding-bottom: 180px; */
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .banner-img img {
         width: 94%;
@@ -2037,9 +2038,8 @@
         width: 100%;
     }
     .client-info ul {
-        gap: 10px;
-        flex-direction: row;
-        width: 100%;
+        gap: 20px;
+        /* flex-direction: column; */
     }
     .banner-con:before{
         display: none;

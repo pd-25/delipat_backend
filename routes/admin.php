@@ -7,6 +7,7 @@ use App\Http\Controllers\admin\dashboard\DashboardController;
 use App\Http\Controllers\admin\gallery\GalleryImageController;
 use App\Http\Controllers\admin\metadata\MetaDataController;
 use App\Http\Controllers\admin\sitesetting\siteSettingController;
+use App\Http\Controllers\admin\testimonial\testimonialController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('seo-settings', MetaDataController::class);
     Route::resource('case-studies', casestudiesController::class);
     route::resource('services', ServiceController::class);
+    Route::resource('testimonials', testimonialController::class);
 
 
 });
