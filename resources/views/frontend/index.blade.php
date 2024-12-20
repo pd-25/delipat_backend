@@ -268,8 +268,8 @@
 <!-- industries we serve end  -->
 
 <section 
-    class="w-100 float-left user-con our-approach-sec" 
-    style="background: url('{{ asset('frontend/assets/images/curve-banner-two.png') }}') no-repeat center center; background-size: cover;">
+    class="w-100 float-left user-con our-approach-sec our-approach-sec-2" 
+    style="">
     <div class="container">
         <div class="team-title text-center mb-4">
             <h2 class="main-header-h2" data-aos="fade-up" data-aos-duration="600" class="aos-init aos-animate">Our
