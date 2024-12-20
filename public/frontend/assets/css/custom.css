@@ -186,6 +186,7 @@ body{
     background-image: url(../images/main-banner-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 700px;
 }
 /* .banner-inner-con:after, */
 .contact-con:after {
@@ -463,7 +464,7 @@ span.error{
     padding: 11px 10px 14px 10px;
     /* width: 350px; */
     width: 100%;
-    min-height: 650px;
+    min-height: 680px;
     position: relative;
 }
 .position-btn-div{
@@ -2005,7 +2006,8 @@ span.error{
 }
 .service-item figure img {
     border-radius: 10px;
-    width: 330px !important;
+    /* width: 330px !important; */
+    width: 100%!important;
     height: 239px;
     object-fit: cover;
 }
@@ -2276,7 +2278,7 @@ span.error{
     content: "\f068";
     position: absolute;
     top: 0;
-    right: 0;
+    right: -15px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: var(--blue-color);
@@ -2555,10 +2557,10 @@ line-height: 1.3;
     line-height: 30px;
 }
 .industry-last-sec{
-    background: -webkit-linear-gradient(270deg, hsla(197, 97%, 14%, 1) 38%, hsla(0, 0%, 97%, 1) 100%);
-    background: linear-gradient(270deg, hsla(197, 97%, 14%, 1) 38%, hsla(0, 0%, 97%, 1) 100%);
-background: -moz-linear-gradient(270deg, hsla(197, 97%, 14%, 1) 38%, hsla(0, 0%, 97%, 1) 100%);
-
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,51,70,1) 100%);
+   
+background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,51,70,1) 100%);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,51,70,1) 100%);
 padding-top: 90px;
 padding-bottom: 90px;
 margin-bottom: 130px;
@@ -2867,6 +2869,7 @@ margin-bottom: 130px;
     min-height: 100%;
     width: 100%;
     background-size: 100% 130%;
+    background-position: 70% 35%;
 }
 
 .faq_area{

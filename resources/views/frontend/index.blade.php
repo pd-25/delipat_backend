@@ -10,9 +10,9 @@
                 <div class="col-lg-8">
                     <div class="banner-title generic-box-content">
                         <h1 class="banner-text-h1" data-aos="fade-up" data-aos-duration="600">Delipat – Your Premier
-                            <img style="border-radius: 10%; width: 10%; padding: 3px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);" src="{{ asset('frontend/assets/img/Salesforce_logo.png') }}"
+                            <img style="border-radius: 10%; width: 10%; padding: 3px;" src="{{ asset('frontend/assets/img/Salesforce_logo.png') }}"
                                 alt="delipat-salesforce" class="img-fluid">
-                            & <img style="border-radius: 10%;width: 11%;padding: 3px;box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);" src="{{ asset('frontend/assets/img/HubSpot_Logo.png') }}"
+                            & <img style="border-radius: 10%;width: 11%;padding: 3px;" src="{{ asset('frontend/assets/img/HubSpot_Logo.png') }}"
                                 alt="delipat-hubspot" class="img-fluid">
                             Consulting Partner
                         </h1>
