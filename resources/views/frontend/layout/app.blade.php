@@ -33,11 +33,11 @@
         </div>
     </div> -->
     <!-- TOP BAR CON -->
-    <div class="w-100 float-left top-bar-con">
+    <div class="w-100 float-left top-bar-con lower-nav">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
-                    <div class="socisl-con d-flex align-items-center justify-content-md-start justify-content-center">
+                    <div class="socisl-con d-flex align-items-center justify-content-md-start justify-content-center h-100">
                         <span class="text-white d-inline-block text-uppercase">Follow Us:</span>
                         <ul class="list-unstyled mb-0 d-flex">
                             @if(!empty($siteSettings->facebooklink))
@@ -70,6 +70,11 @@
                         </ul>
                     </div>
                 </div>
+                <!-- <div class="col-lg-3 col-md-none d-md-none d-lg-block">
+                    <div class="top-nav-image-box">
+                        <img src="{{asset('frontend/assets/img/ridge-partner-desktop.jpeg')}}" class="top-nav-image" loading="lazy" alt="salesforce-ridge-partner">
+                    </div>
+                </div> -->
                 <div
                     class="col-lg-6 col-md-6 col-12 d-flex justify-content-md-end align-items-center justify-content-center">
                     <div class="client-info">
@@ -103,7 +108,9 @@
                 <a class="navbar-brand d-lg-none" href="{{route('index')}}">
                     <img src="{{asset('storage/'.$siteSettings->logo1)}}" alt="mobile-logo">
                 </a>
-
+                <div class="top-nav-image-box-mobile">
+                        <img src="{{asset('frontend/assets/img/ridge-partner-mobile.jpeg')}}" class="top-nav-image-monile"  alt="salesforce-ridge-partner">
+                    </div>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -250,7 +257,7 @@
     @yield('content')
  
     <!-- FOOTER SECTION -->
-    <footer class="w-100 float-left footer-con position-relative experienced_certified_area">
+    <footer class="w-100 float-left footer-con position-relative experienced_certified_area footer-area">
         <div class="wrapper">
             <div class="footer-box position-relative">
                 <div class="site-map">
@@ -297,7 +304,9 @@
                     </div>
                     </div>
                     @endif
-                    
+                    <div class="footer-image-box">
+                        <img src="{{asset('frontend/assets/img/ridge-partner-desktop.jpeg')}}" class="top-nav-image" loading="lazy" alt="salesforce-ridge-partner">
+                    </div>
                 </div>
               
             </div>

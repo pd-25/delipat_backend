@@ -56,7 +56,7 @@
 </section>
 <!-- BANNER SECTION -->
 <!-- CLEAN SECTION -->
-<section class="w-100 float-left clean-con">
+<section class="w-100 float-left trusted-crm-area">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-md-8 col-12 mb-3" data-aos="fade-up" data-aos-duration="600">

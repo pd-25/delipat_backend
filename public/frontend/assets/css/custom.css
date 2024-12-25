@@ -184,9 +184,9 @@ body{
     /* overflow: hidden; */
     width: 100%;
     background-image: url(../images/main-banner-bg.jpg);
-    background-size: 140% 116%;
+    background-size: 140% 210%;
     background-repeat: no-repeat;
-    height: 700px;
+    /* height: 700px; */
 }
 /* .banner-inner-con:after, */
 .contact-con:after {
@@ -3059,4 +3059,27 @@ height: 50px;
     width: 100%;
     background-position: 36% 99%;
     background-size: 113% 103%;
+}
+/* --------- 25/12/2024 ----------- */
+.top-nav-image{
+    width: 200px;
+    object-fit: cover;
+    margin: auto;
+    height: auto;
+    display: block;
+}
+.top-nav-image-monile{
+    display: none;
+    width: 68px;
+    object-fit: cover;
+    
+    height: auto;
+}
+.footer-area .top-nav-image {
+    width: 247px;
+    margin: 10px 0;
+}
+.trusted-crm-area{
+    /* padding-top: 90px; */
+    padding-bottom: 70px;
 }

@@ -1525,7 +1525,27 @@
     }
     .bvvc {
         box-shadow: 0px 0px 5px 0px inset #013144;
-
+    }
+    .top-nav-image{
+        display: none;
+    }
+    .top-nav-image-monile{
+        display: block;
+    }
+    .navbar {
+        
+        justify-content: left!important;
+       
+    }
+    .lower-nav .client-info ul li a {
+        font-size: 15px;
+    }
+    .lower-nav .socisl-con span {
+        font-size: 15px;
+    }
+    .trusted-crm-area{
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -2001,6 +2021,15 @@
         background-position: 30% 100%;
         background-size: 100% 42%;
     }
+    .home-banner {
+        background-size: 100% 45%;
+        background-position: 39% 0%;
+    }
+    .trusted-crm-area {
+        padding-top: 9px;
+        padding-bottom: 10px;
+    }
+    
 }
 @media only screen and (max-width: 575px) {
 
