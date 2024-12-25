@@ -108,16 +108,19 @@
                 <a class="navbar-brand d-lg-none" href="{{route('index')}}">
                     <img src="{{asset('storage/'.$siteSettings->logo1)}}" alt="mobile-logo">
                 </a>
-                <div class="top-nav-image-box-mobile">
-                        <img src="{{asset('frontend/assets/img/ridge-partner-mobile.jpeg')}}" class="top-nav-image-monile"  alt="salesforce-ridge-partner">
+                <div class="flex-div">
+                    <div class="top-nav-image-box-mobile">
+                        <img src="{{asset('frontend/assets/img/ridge-partner-mobile.jpeg')}}" class="top-nav-image-mobile"  alt="salesforce-ridge-partner">
                     </div>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+               
 
                 <!--  Use flexbox utility classes to change how the child elements are justified  -->
                 <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
