@@ -237,8 +237,21 @@
                                     alt="contact-location-icon">
                             </figure>
                             <div class="contact-info-content">
-                                <h5>Address</h5>
+                                <h5>Address in India</h5>
                                 <span>2nd floor, Phase 2, Webel IT Park, Palashdiha, Durgapur, West Bengal 713208
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="600">
+                        <div class="contact-info-item" style="    margin-top: -13px;">
+                            <figure class="mb-0">
+                                <img src="{{asset('frontend/assets/images/contact-location-icon.png')}}"
+                                    alt="contact-location-icon">
+                            </figure>
+                            <div class="contact-info-content">
+                                <h5>Address in Australia</h5>
+                                <span>Suite 706/35 Kenny Street, Wollongong, NSW 2500, Australia
                                 </span>
                             </div>
                         </div>
