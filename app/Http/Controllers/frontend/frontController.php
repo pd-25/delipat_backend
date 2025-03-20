@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\GalleryImage;
 use App\Models\MetaData;
+use App\Models\PartnerLogo;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -18,7 +19,8 @@ class frontController extends Controller
         $blogs = Blog::take(3)->get();
         $pagemeta = MetaData::where('page_name', 'home')->first();
         $services = Service::get();
-        return view('frontend.index', compact('blogs','pagemeta','services'));
+        $pratnarlogos = PartnerLogo::all();
+        return view('frontend.index', compact('blogs','pagemeta','services','pratnarlogos'));
     }
     public function about()
     {

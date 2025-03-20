@@ -266,6 +266,77 @@
     </div>
 </section>
 <!-- industries we serve end  -->
+<style> 
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.partner-section {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.logo-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content; /* Ensures the logos take up their natural width */
+    animation: scroll 20s linear infinite; /* Adjust 20s for speed */
+}
+
+.partner-logos img {
+    width: 100px;
+    height: 100px;
+    margin: 0 15px; /* Space between logos */
+    flex-shrink: 0;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.partner-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Animation keyframes for right-to-left */
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(-100% + 1300px)); /* Start off-screen to the left */
+    }
+    100% {
+        transform: translateX(0); /* Move to the right */
+    }
+}
+
+/* Pause on hover (optional) */
+.partner-section:hover .partner-logos {
+    animation-play-state: paused;
+}
+</style>
+@if($pratnarlogos->count() > 0)
+<div class="container">
+    <div class="partner-section">
+        <h2 class="main-header-h2 text-center py-4" data-aos="fade-up" data-aos-duration="600">Our Trasted Partners</h2>
+        <div class="logo-wrapper">
+            <div class="partner-logos">
+                @foreach ($pratnarlogos as $partner)
+                <img src="{{'storage/'. $partner->image}}" alt="{{$partner->alt}}">
+                @endforeach
+               
+                
+               
+            </div>
+        </div>
+    </div>
+</div>
+@endif
+
 
 <section 
     class="w-100 float-left user-con our-approach-sec our-approach-sec-2" 

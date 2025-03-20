@@ -431,7 +431,29 @@
                 }
             }
         })
+        $("#partner-slider").owlCarousel({
+            loop: true,              // Infinite loop
+        margin: 20,             // Space between items
+        nav: true,              // Show navigation arrows
+        dots: false,            // Hide dots
+        autoplay: true,         // Auto scroll
+        autoplayTimeout: 3000,  // Time between slides (in ms)
+        autoplaySpeed: 1000,    // Animation speed
+        smartSpeed: 1000,       // Transition speed
+        fluidSpeed: 1000,       // Speed for fluid transitions
+        responsive: {
+            0: {
+                items: 2        // 2 items on mobile
+            },
+            600: {
+                items: 3        // 3 items on tablet
+            },
+            1000: {
+                items: 5        // 5 items on desktop
+            }
+        }
 
+        });
       
     </script>
     <script>

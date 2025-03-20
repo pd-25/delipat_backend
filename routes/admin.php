@@ -6,6 +6,7 @@ use App\Http\Controllers\admin\casestudies\casestudiesController;
 use App\Http\Controllers\admin\dashboard\DashboardController;
 use App\Http\Controllers\admin\gallery\GalleryImageController;
 use App\Http\Controllers\admin\metadata\MetaDataController;
+use App\Http\Controllers\admin\partner\partnelogoController;
 use App\Http\Controllers\admin\sitesetting\siteSettingController;
 use App\Http\Controllers\admin\testimonial\testimonialController;
 use App\Http\Controllers\ServiceController;
@@ -25,6 +26,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('case-studies', casestudiesController::class);
     route::resource('services', ServiceController::class);
     Route::resource('testimonials', testimonialController::class);
+    Route::resource('partner', partnelogoController::class);
 
 
 });

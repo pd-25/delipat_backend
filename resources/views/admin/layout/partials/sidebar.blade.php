@@ -50,6 +50,13 @@
                 <span>Site Settings</span>
             </a>
         </li>
+        <li class="nav-item {{ Route::is('partner.*') ? 'active' : '' }}">
+            <a class="nav-link "
+                href="{{ route('partner.index') }}">
+                <i class="ri-group-fill"></i>
+                <span>Partner Logos</span>
+            </a>
+        </li>
          {{-- 
 
         <li class="nav-item {{ Route::is('product-mamages.*') ? 'active' : '' }}">
