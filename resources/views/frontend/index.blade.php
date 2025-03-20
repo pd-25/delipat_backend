@@ -326,7 +326,7 @@
         <div class="logo-wrapper">
             <div class="partner-logos">
                 @foreach ($pratnarlogos as $partner)
-                <img src="{{'storage/'. $partner->image}}" alt="{{$partner->alt}}">
+                <img src="{{asset('storage/'. $partner->image)}}" alt="{{$partner->alt}}">
                 @endforeach
                
                 
