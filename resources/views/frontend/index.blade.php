@@ -309,25 +309,22 @@
 </div>
 
 <style>
-
     .partner-section {
         position: relative;
         width: 100%;
         background: #fff;
-       
+        padding: 0 40px;
     }
 
     .carousel {
         display: flex;
         flex-direction: column;
-        width: 99%;
+        width: 100%;
         position: relative;
         align-items: center;
-      
     }
 
     .row-partner {
-     
         width: 100%;
         margin-bottom: 20px;
         overflow: hidden;
@@ -336,27 +333,39 @@
     .partner-logos {
         display: flex;
         transition: transform 0.5s ease-in-out;
+        padding: 0 20px;
     }
 
     .partner-logos img {
-    width: 216px;
-    height: 140px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    padding: 5px 20px 5px 10px;
-    margin: 0 20px 0 24px;
+        width: 216px;
+        height: 140px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        margin: 0 15px;
     }
+
     @media (max-width: 768px) {
-        .nav-arrow{
-            padding: 2px 8px !important;
-        }
-        .partner-logos img {
-        width: 60px;
-        height: 60px;
-        padding: 0px 18px 0 0px;
-        margin: 0px 7px 0 45px !important;
+        .partner-section {
+            padding: 0 20px;
         }
         
+        .nav-arrow {
+            padding: 2px 8px !important;
+        }
+        
+        .partner-logos img {
+            width: 80px;
+            height: 60px;
+            margin: 0 10px;
+        }
+        
+        .nav-arrow.left {
+            left: -10px;
+        }
+        
+        .nav-arrow.right {
+            right: -10px;
+        }
     }
 
     .partner-logos img:hover {
@@ -364,25 +373,25 @@
     }
 
     .nav-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgb(0 0 0 / 69%);
-    color: white;
-    border: none;
-    padding: 0px 8px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 50%;
-    z-index: 10;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgb(0 0 0 / 69%);
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 50%;
+        z-index: 10;
     }
 
     .nav-arrow.left {
-        left: -24px;
+        left: -30px;
     }
 
     .nav-arrow.right {
-        right: -24px;
+        right: -30px;
     }
 
     .nav-arrow:hover {
@@ -418,9 +427,9 @@
     const dotsContainer = document.getElementById('dotsContainer');
     let autoSlideInterval;
 
-    // Dynamically calculate total slides based on available images
+    // Calculate total slides based on available images
     const totalImages = Math.max(
-        row1.getElementsByTagName('img').length / 2, // Divide by 2 to account for duplicates
+        row1.getElementsByTagName('img').length / 2,
         row2.getElementsByTagName('img').length / 2,
         row3.getElementsByTagName('img').length / 2
     );
@@ -439,35 +448,40 @@
     }
 
     function updateCarousel() {
-    // Determine logo width based on screen size
-    const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
-    const logoWidth = isMobile ? 110 : 95; // 110px for mobile, 100px for desktop
-    const margin = 0; // Margin remains 0 as in your code
-    
-    const offset = -currentIndex * (logoWidth + margin) * logosPerView;
-    
-    row1.style.transform = `translateX(${offset}px)`;
-    row2.style.transform = `translateX(${offset}px)`;
-    row3.style.transform = `translateX(${offset}px)`;
+        // Get the first logo element to calculate dimensions
+        const firstLogo = row1.querySelector('img');
+        if (!firstLogo) return;
+        
+        // Calculate the total width of one logo including margins
+        const logoStyle = window.getComputedStyle(firstLogo);
+        const logoWidth = firstLogo.offsetWidth;
+        const logoMargin = parseFloat(logoStyle.marginLeft) + parseFloat(logoStyle.marginRight);
+        const totalLogoWidth = logoWidth + logoMargin;
+        
+        // Calculate the offset for the current slide
+        const offset = -currentIndex * totalLogoWidth * logosPerView;
+        
+        // Apply the transform to all rows
+        row1.style.transform = `translateX(${offset}px)`;
+        row2.style.transform = `translateX(${offset}px)`;
+        row3.style.transform = `translateX(${offset}px)`;
 
-    // Update active dot
-    const dots = document.querySelectorAll('.dot');
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
-    });
-}
-
-
+        // Update active dot
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
 
     function moveSlide(direction) {
         currentIndex += direction;
         if (currentIndex < 0) {
-            currentIndex = totalSlides - 1; // Loop to the last slide
+            currentIndex = totalSlides - 1;
         } else if (currentIndex >= totalSlides) {
-            currentIndex = 0; // Loop to the first slide
+            currentIndex = 0;
         }
         updateCarousel();
-        resetAutoSlide(); // Reset auto-slide timer on manual navigation
+        resetAutoSlide();
     }
 
     // Auto-slide functionality
@@ -476,7 +490,7 @@
     }
 
     function startAutoSlide() {
-        autoSlideInterval = setInterval(autoSlide, 5000); // Slide every 3 seconds
+        autoSlideInterval = setInterval(autoSlide, 5000);
     }
 
     function resetAutoSlide() {
@@ -484,14 +498,16 @@
         startAutoSlide();
     }
 
-    // Initialize the carousel and start auto-slide
+    // Initialize the carousel
     updateCarousel();
     startAutoSlide();
+
+    // Handle window resize
+    window.addEventListener('resize', updateCarousel);
 </script>
 @else
     <p>No partner logos available to display.</p>
 @endif
-
 
 
 <section 
