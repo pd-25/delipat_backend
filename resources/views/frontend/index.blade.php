@@ -266,76 +266,232 @@
     </div>
 </section>
 <!-- industries we serve end  -->
-<style> 
-.container {
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.partner-section {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-
-.logo-wrapper {
-    width: 100%;
-    overflow: hidden;
-}
-
-.partner-logos {
-    display: flex;
-    flex-wrap: nowrap;
-    width: max-content; /* Ensures the logos take up their natural width */
-    animation: scroll 20s linear infinite; /* Adjust 20s for speed */
-}
-
-.partner-logos img {
-    width: 100px;
-    height: 100px;
-    margin: 0 15px; /* Space between logos */
-    flex-shrink: 0;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.partner-logos img:hover {
-    transform: scale(1.1);
-}
-
-/* Animation keyframes for right-to-left */
-@keyframes scroll {
-    0% {
-        transform: translateX(calc(-100% + 1300px)); /* Start off-screen to the left */
-    }
-    100% {
-        transform: translateX(0); /* Move to the right */
-    }
-}
-
-/* Pause on hover (optional) */
-.partner-section:hover .partner-logos {
-    animation-play-state: paused;
-}
-</style>
 @if($pratnarlogos->count() > 0)
 <div class="container">
     <div class="partner-section">
-        <h2 class="main-header-h2 text-center py-4" data-aos="fade-up" data-aos-duration="600">Our Trasted Partners</h2>
-        <div class="logo-wrapper">
-            <div class="partner-logos">
-                @foreach ($pratnarlogos as $partner)
-                <img src="{{asset('storage/'. $partner->image)}}" alt="{{$partner->alt}}">
-                @endforeach
-               
-                
-               
+        <h2 class="main-header-h2 text-center py-4" data-aos="fade-up" data-aos-duration="600">Our Trusted Partners</h2>
+        <div class="carousel">
+            <button class="nav-arrow left" onclick="moveSlide(-1)">❮</button>
+            <div class="row row-partner">
+                <div class="partner-logos" id="row1">
+                    @for($i = 0; $i < min(4, $pratnarlogos->count()); $i++)
+                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
+                    @endfor
+                    @for($i = 0; $i < min(5, $pratnarlogos->count()); $i++)
+                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
+                    @endfor
+                </div>
             </div>
+            <div class="row row-partner">
+                <div class="partner-logos" id="row2">
+                    @for($i = 5; $i < min(10, $pratnarlogos->count()); $i++)
+                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
+                    @endfor
+                    @for($i = 5; $i < min(10, $pratnarlogos->count()); $i++)
+                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
+                    @endfor
+                </div>
+            </div>
+            <div class="row row-partner">
+                <div class="partner-logos" id="row3">
+                    @for($i = 10; $i < min(15, $pratnarlogos->count()); $i++)
+                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
+                    @endfor
+                    @for($i = 10; $i < min(15, $pratnarlogos->count()); $i++)
+                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
+                    @endfor
+                </div>
+            </div>
+            <button class="nav-arrow right" onclick="moveSlide(1)">❯</button>
         </div>
+        <div class="dots" id="dotsContainer"></div>
     </div>
 </div>
+
+<style>
+
+    .partner-section {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .row-partner {
+     
+        width: 100%;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .partner-logos {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .partner-logos img {
+    width: 216px;
+    height: 140px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    padding: 5px 20px 5px 10px;
+    margin: 0 20px 0 28px;
+    }
+    @media (max-width: 768px) {
+        .nav-arrow{
+            padding: 2px 8px !important;
+        }
+        .partner-logos img {
+        width: 60px;
+        height: 60px;
+        padding: 0px 18px 0 0px;
+        margin: 0px 7px 0 45px !important;
+        }
+        
+    }
+
+    .partner-logos img:hover {
+        transform: scale(1.1);
+    }
+
+    .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(0 0 0 / 69%);
+    color: white;
+    border: none;
+    padding: 0px 8px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    z-index: 10;
+    }
+
+    .nav-arrow.left {
+        left: 0;
+    }
+
+    .nav-arrow.right {
+        right: 0;
+    }
+
+    .nav-arrow:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .dots {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .dot.active {
+        background-color: #717171;
+    }
+</style>
+
+<script>
+    let currentIndex = 0;
+    const logosPerView = 3; // Number of logos visible per row
+    const row1 = document.getElementById('row1');
+    const row2 = document.getElementById('row2');
+    const row3 = document.getElementById('row3');
+    const dotsContainer = document.getElementById('dotsContainer');
+    let autoSlideInterval;
+
+    // Dynamically calculate total slides based on available images
+    const totalImages = Math.max(
+        row1.getElementsByTagName('img').length / 2, // Divide by 2 to account for duplicates
+        row2.getElementsByTagName('img').length / 2,
+        row3.getElementsByTagName('img').length / 2
+    );
+    const totalSlides = Math.ceil(totalImages / logosPerView);
+
+    // Create dots for pagination
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateCarousel();
+            resetAutoSlide();
+        });
+        dotsContainer.appendChild(dot);
+    }
+
+    function updateCarousel() {
+    // Determine logo width based on screen size
+    const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
+    const logoWidth = isMobile ? 110 : 100; // 110px for mobile, 100px for desktop
+    const margin = 0; // Margin remains 0 as in your code
+    
+    const offset = -currentIndex * (logoWidth + margin) * logosPerView;
+    
+    row1.style.transform = `translateX(${offset}px)`;
+    row2.style.transform = `translateX(${offset}px)`;
+    row3.style.transform = `translateX(${offset}px)`;
+
+    // Update active dot
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+}
+
+
+
+    function moveSlide(direction) {
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = totalSlides - 1; // Loop to the last slide
+        } else if (currentIndex >= totalSlides) {
+            currentIndex = 0; // Loop to the first slide
+        }
+        updateCarousel();
+        resetAutoSlide(); // Reset auto-slide timer on manual navigation
+    }
+
+    // Auto-slide functionality
+    function autoSlide() {
+        moveSlide(1);
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(autoSlide, 5000); // Slide every 3 seconds
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    // Initialize the carousel and start auto-slide
+    updateCarousel();
+    startAutoSlide();
+</script>
+@else
+    <p>No partner logos available to display.</p>
 @endif
+
 
 
 <section 
