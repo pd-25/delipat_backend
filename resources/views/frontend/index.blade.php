@@ -320,7 +320,7 @@
     .carousel {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 99%;
         position: relative;
         align-items: center;
       
@@ -441,7 +441,7 @@
     function updateCarousel() {
     // Determine logo width based on screen size
     const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
-    const logoWidth = isMobile ? 110 : 90; // 110px for mobile, 100px for desktop
+    const logoWidth = isMobile ? 110 : 95; // 110px for mobile, 100px for desktop
     const margin = 0; // Margin remains 0 as in your code
     
     const offset = -currentIndex * (logoWidth + margin) * logosPerView;
