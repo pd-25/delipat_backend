@@ -335,7 +335,7 @@
         display: flex;
         transition: transform 0.5s ease-in-out;
         padding: 0 20px;
-        margin-left: -34px;
+        margin-left: -32px;
     }
 
     .partner-logos img {
