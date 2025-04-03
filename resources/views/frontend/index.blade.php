@@ -328,12 +328,14 @@
         width: 100%;
         margin-bottom: 20px;
         overflow: hidden;
+        
     }
 
     .partner-logos {
         display: flex;
         transition: transform 0.5s ease-in-out;
         padding: 0 20px;
+        margin-left: -30px;
     }
 
     .partner-logos img {
@@ -420,7 +422,7 @@
 
 <script>
     let currentIndex = 0;
-    const logosPerView = 3; // Number of logos visible per row
+    const logosPerView = 2; // Number of logos visible per row
     const row1 = document.getElementById('row1');
     const row2 = document.getElementById('row2');
     const row3 = document.getElementById('row3');
