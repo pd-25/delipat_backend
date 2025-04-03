@@ -314,7 +314,7 @@
         position: relative;
         width: 100%;
         background: #fff;
-        overflow: hidden;
+       
     }
 
     .carousel {
@@ -323,7 +323,7 @@
         width: 100%;
         position: relative;
         align-items: center;
-        overflow: hidden;
+      
     }
 
     .row-partner {
@@ -344,7 +344,7 @@
     object-fit: contain;
     transition: transform 0.3s ease;
     padding: 5px 20px 5px 10px;
-    margin: 0 20px 0 28px;
+    margin: 0 20px 0 24px;
     }
     @media (max-width: 768px) {
         .nav-arrow{
@@ -378,11 +378,11 @@
     }
 
     .nav-arrow.left {
-        left: 0;
+        left: -24px;
     }
 
     .nav-arrow.right {
-        right: 0;
+        right: -24px;
     }
 
     .nav-arrow:hover {
