@@ -335,7 +335,7 @@
         display: flex;
         transition: transform 0.5s ease-in-out;
         padding: 0 20px;
-        margin-left: -30px;
+        margin-left: -34px;
     }
 
     .partner-logos img {
@@ -344,9 +344,14 @@
         object-fit: contain;
         transition: transform 0.3s ease;
         margin: 0 15px;
+        padding: 10px;
     }
 
     @media (max-width: 768px) {
+        .partner-logos {
+        margin-left: -40px;
+    }
+
         .partner-section {
             padding: 0 20px;
         }
