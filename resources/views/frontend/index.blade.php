@@ -333,10 +333,7 @@
     .partner-logos {
         display: flex;
         transition: transform 0.5s ease-in-out;
-        padding: 0 0px;
-        align-items: center;
-        justify-content: center;
-        gap: 35px;
+        padding: 0 20px;
     }
 
     .partner-logos img {
@@ -344,7 +341,7 @@
         height: 140px;
         object-fit: contain;
         transition: transform 0.3s ease;
-        margin: 0 0px;
+        margin: 0 15px;
     }
 
     @media (max-width: 768px) {
