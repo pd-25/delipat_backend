@@ -274,30 +274,30 @@
             <button class="nav-arrow left" onclick="moveSlide(-1)">❮</button>
             <div class="row row-partner">
                 <div class="partner-logos" id="row1">
-                    @for($i = 0; $i < min(4, $pratnarlogos->count()); $i++)
+                    @for($i = 0; $i < min(11, $pratnarlogos->count()); $i++)
                         <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
                     @endfor
-                    @for($i = 0; $i < min(5, $pratnarlogos->count()); $i++)
+                    @for($i = 0; $i < min(11, $pratnarlogos->count()); $i++)
                         <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
                     @endfor
                 </div>
             </div>
             <div class="row row-partner">
                 <div class="partner-logos" id="row2">
-                    @for($i = 5; $i < min(10, $pratnarlogos->count()); $i++)
+                    @for($i = 11; $i < min(22, $pratnarlogos->count()); $i++)
                         <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
                     @endfor
-                    @for($i = 5; $i < min(10, $pratnarlogos->count()); $i++)
+                    @for($i = 11; $i < min(22, $pratnarlogos->count()); $i++)
                         <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
                     @endfor
                 </div>
             </div>
             <div class="row row-partner">
                 <div class="partner-logos" id="row3">
-                    @for($i = 10; $i < min(15, $pratnarlogos->count()); $i++)
+                    @for($i = 22; $i < min(33, $pratnarlogos->count()); $i++)
                         <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
                     @endfor
-                    @for($i = 10; $i < min(15, $pratnarlogos->count()); $i++)
+                    @for($i = 22; $i < min(33, $pratnarlogos->count()); $i++)
                         <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
                     @endfor
                 </div>
