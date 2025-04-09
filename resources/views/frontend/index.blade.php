@@ -509,7 +509,7 @@
 @else
     <p>No partner logos available to display.</p>
 @endif
-<h1>sss</h1>
+
 
 <section 
     class="w-100 float-left user-con our-approach-sec our-approach-sec-2" 
