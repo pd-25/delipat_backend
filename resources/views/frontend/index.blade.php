@@ -274,32 +274,36 @@
             <button class="nav-arrow left" onclick="moveSlide(-1)">❮</button>
             <div class="row row-partner">
                 <div class="partner-logos" id="row1">
-                    @for($i = 0; $i < min(11, $pratnarlogos->count()); $i++)
-                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
-                    @endfor
-                    @for($i = 0; $i < min(11, $pratnarlogos->count()); $i++)
-                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
-                    @endfor
+                    @foreach($pratnarlogos->chunk(ceil($pratnarlogos->count() / 3))[0] as $logo)
+                        <img src="{{ asset('storage/' . $logo->image) }}" alt="{{ $logo->alt ?? 'Partner Logo' }}">
+                    @endforeach
+                    @foreach($pratnarlogos->chunk(ceil($pratnarlogos->count() / 3))[0] as $logo)
+                        <img src="{{ asset('storage/' . $logo->image) }}" alt="{{ $logo->alt ?? 'Partner Logo' }}">
+                    @endforeach
                 </div>
             </div>
             <div class="row row-partner">
                 <div class="partner-logos" id="row2">
-                    @for($i = 11; $i < min(22, $pratnarlogos->count()); $i++)
-                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
-                    @endfor
-                    @for($i = 11; $i < min(22, $pratnarlogos->count()); $i++)
-                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
-                    @endfor
+                    @if($pratnarlogos->count() > ceil($pratnarlogos->count() / 3))
+                        @foreach($pratnarlogos->chunk(ceil($pratnarlogos->count() / 3))[1] as $logo)
+                            <img src="{{ asset('storage/' . $logo->image) }}" alt="{{ $logo->alt ?? 'Partner Logo' }}">
+                        @endforeach
+                        @foreach($pratnarlogos->chunk(ceil($pratnarlogos->count() / 3))[1] as $logo)
+                            <img src="{{ asset('storage/' . $logo->image) }}" alt="{{ $logo->alt ?? 'Partner Logo' }}">
+                        @endforeach
+                    @endif
                 </div>
             </div>
             <div class="row row-partner">
                 <div class="partner-logos" id="row3">
-                    @for($i = 22; $i < min(33, $pratnarlogos->count()); $i++)
-                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
-                    @endfor
-                    @for($i = 22; $i < min(33, $pratnarlogos->count()); $i++)
-                        <img src="{{ asset('storage/' . $pratnarlogos[$i]->image) }}" alt="{{ $pratnarlogos[$i]->alt ?? 'Partner Logo' }}">
-                    @endfor
+                    @if($pratnarlogos->count() > 2 * ceil($pratnarlogos->count() / 3))
+                        @foreach($pratnarlogos->chunk(ceil($pratnarlogos->count() / 3))[2] as $logo)
+                            <img src="{{ asset('storage/' . $logo->image) }}" alt="{{ $logo->alt ?? 'Partner Logo' }}">
+                        @endforeach
+                        @foreach($pratnarlogos->chunk(ceil($pratnarlogos->count() / 3))[2] as $logo)
+                            <img src="{{ asset('storage/' . $logo->image) }}" alt="{{ $logo->alt ?? 'Partner Logo' }}">
+                        @endforeach
+                    @endif
                 </div>
             </div>
             <button class="nav-arrow right" onclick="moveSlide(1)">❯</button>
@@ -328,7 +332,6 @@
         width: 100%;
         margin-bottom: 20px;
         overflow: hidden;
-        
     }
 
     .partner-logos {
@@ -349,8 +352,8 @@
 
     @media (max-width: 768px) {
         .partner-logos {
-        margin-left: -40px;
-    }
+            margin-left: -40px;
+        }
 
         .partner-section {
             padding: 0 20px;
@@ -427,22 +430,20 @@
 
 <script>
     let currentIndex = 0;
-    const logosPerView = 2; // Number of logos visible per row
     const row1 = document.getElementById('row1');
     const row2 = document.getElementById('row2');
     const row3 = document.getElementById('row3');
     const dotsContainer = document.getElementById('dotsContainer');
-    let autoSlideInterval;
-
-    // Calculate total slides based on available images
+    const logosPerView = 5; // Number of logos visible per row at a time
     const totalImages = Math.max(
         row1.getElementsByTagName('img').length / 2,
-        row2.getElementsByTagName('img').length / 2,
-        row3.getElementsByTagName('img').length / 2
+        row2.getElementsByTagName('img').length / 2 || 0,
+        row3.getElementsByTagName('img').length / 2 || 0
     );
     const totalSlides = Math.ceil(totalImages / logosPerView);
+    let autoSlideInterval;
 
-    // Create dots for pagination
+    // Create dots dynamically
     for (let i = 0; i < totalSlides; i++) {
         const dot = document.createElement('span');
         dot.classList.add('dot');
@@ -455,25 +456,19 @@
     }
 
     function updateCarousel() {
-        // Get the first logo element to calculate dimensions
         const firstLogo = row1.querySelector('img');
         if (!firstLogo) return;
-        
-        // Calculate the total width of one logo including margins
+
         const logoStyle = window.getComputedStyle(firstLogo);
         const logoWidth = firstLogo.offsetWidth;
         const logoMargin = parseFloat(logoStyle.marginLeft) + parseFloat(logoStyle.marginRight);
         const totalLogoWidth = logoWidth + logoMargin;
-        
-        // Calculate the offset for the current slide
         const offset = -currentIndex * totalLogoWidth * logosPerView;
-        
-        // Apply the transform to all rows
-        row1.style.transform = `translateX(${offset}px)`;
-        row2.style.transform = `translateX(${offset}px)`;
-        row3.style.transform = `translateX(${offset}px)`;
 
-        // Update active dot
+        row1.style.transform = `translateX(${offset}px)`;
+        if (row2) row2.style.transform = `translateX(${offset}px)`;
+        if (row3) row3.style.transform = `translateX(${offset}px)`;
+
         const dots = document.querySelectorAll('.dot');
         dots.forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
@@ -491,7 +486,6 @@
         resetAutoSlide();
     }
 
-    // Auto-slide functionality
     function autoSlide() {
         moveSlide(1);
     }
@@ -505,7 +499,7 @@
         startAutoSlide();
     }
 
-    // Initialize the carousel
+    // Initialize
     updateCarousel();
     startAutoSlide();
 
@@ -515,7 +509,6 @@
 @else
     <p>No partner logos available to display.</p>
 @endif
-
 
 <section 
     class="w-100 float-left user-con our-approach-sec our-approach-sec-2" 
