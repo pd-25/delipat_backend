@@ -350,34 +350,6 @@
         padding: 10px;
     }
 
-    @media (max-width: 768px) {
-        .partner-logos {
-            margin-left: -40px;
-        }
-
-        .partner-section {
-            padding: 0 20px;
-        }
-        
-        .nav-arrow {
-            padding: 2px 8px !important;
-        }
-        
-        .partner-logos img {
-            width: 80px;
-            height: 60px;
-            margin: 0 10px;
-        }
-        
-        .nav-arrow.left {
-            left: -10px;
-        }
-        
-        .nav-arrow.right {
-            right: -10px;
-        }
-    }
-
     .partner-logos img:hover {
         transform: scale(1.1);
     }
@@ -425,6 +397,174 @@
 
     .dot.active {
         background-color: #717171;
+    }
+
+    /* Responsive Adjustments */
+    /* Large screens (e.g., >1400px) use default styles */
+
+    /* 14-inch screens (approx. 1200px - 1400px) */
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        .partner-logos img {
+            width: 190px;
+            height: 125px;
+            margin: 0 12px;
+        }
+        .partner-logos {
+            margin-left: -25px;
+        }
+        .nav-arrow {
+            padding: 5px 9px;
+            font-size: 15px;
+        }
+        .nav-arrow.left {
+            left: -25px;
+        }
+        .nav-arrow.right {
+            right: -25px;
+        }
+        .partner-section {
+            padding: 0 35px;
+        }
+    }
+
+    /* 13-inch screens (approx. 992px - 1199px) */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .partner-logos img {
+            width: 155px;
+            height: 90px;
+            margin: 0 10px;
+        }
+        .partner-logos {
+            margin-left: -20px;
+        }
+        .nav-arrow {
+            padding: 4px 8px;
+            font-size: 14px;
+        }
+        .nav-arrow.left {
+            left: -20px;
+        }
+        .nav-arrow.right {
+            right: -20px;
+        }
+        .partner-section {
+            padding: 0 30px;
+        }
+    }
+
+    /* Tablets and smaller laptops (768px - 991px) */
+    @media (max-width: 991px) {
+        .partner-logos img {
+            width: 130px;
+            height: 85px;
+            margin: 0 8px;
+        }
+        .partner-logos {
+            margin-left: -15px;
+        }
+        .nav-arrow {
+            padding: 3px 7px;
+            font-size: 13px;
+        }
+        .nav-arrow.left {
+            left: -15px;
+        }
+        .nav-arrow.right {
+            right: -15px;
+        }
+        .partner-section {
+            padding: 0 25px;
+        }
+    }
+
+    /* Larger mobile devices (576px - 767px) */
+    @media (max-width: 767px) {
+        .partner-logos img {
+            width: 100px;
+            height: 65px;
+            margin: 0 6px;
+        }
+        .partner-logos {
+            margin-left: -12px;
+        }
+        .nav-arrow {
+            padding: 3px 6px;
+            font-size: 12px;
+        }
+        .nav-arrow.left {
+            left: -10px;
+        }
+        .nav-arrow.right {
+            right: -10px;
+        }
+        .partner-section {
+            padding: 0 20px;
+        }
+    }
+
+    /* Small mobile devices (400px - 575px) */
+    @media (max-width: 575px) {
+        .partner-logos img {
+            width: 80px;
+            height: 50px;
+            margin: 0 5px;
+            padding: 5px;
+        }
+        .partner-logos {
+            margin-left: -10px;
+            padding: 0 10px;
+        }
+        .nav-arrow {
+            padding: 2px 5px;
+            font-size: 10px;
+        }
+        .nav-arrow.left {
+            left: -5px;
+        }
+        .nav-arrow.right {
+            right: -5px;
+        }
+        .partner-section {
+            padding: 0 15px;
+        }
+        .row-partner {
+            margin-bottom: 10px;
+        }
+        .dots {
+            margin-top: 5px;
+        }
+        .dot {
+            height: 8px;
+            width: 8px;
+            margin: 0 4px;
+        }
+    }
+
+    /* Extra small devices (<400px) */
+    @media (max-width: 399px) {
+        .partner-logos img {
+            width: 60px;
+            height: 40px;
+            margin: 0 4px;
+            padding: 3px;
+        }
+        .partner-logos {
+            margin-left: -8px;
+            padding: 0 8px;
+        }
+        .nav-arrow {
+            padding: 2px 4px;
+            font-size: 8px;
+        }
+        .nav-arrow.left {
+            left: -2px;
+        }
+        .nav-arrow.right {
+            right: -2px;
+        }
+        .partner-section {
+            padding: 0 10px;
+        }
     }
 </style>
 
