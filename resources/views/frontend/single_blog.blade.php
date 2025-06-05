@@ -120,5 +120,15 @@
         </div>
     </div>
 </section>
+<style>
+    li {
+    font-size: 17px;
+    color: rgb(0 0 0 / 60%);
+    line-height: 2rem;
+}
+dl, ol, ul {
+    padding: 0 45px;
+}
+</style>
 
 @endsection
