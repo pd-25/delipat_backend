@@ -10,6 +10,7 @@ use App\Models\PartnerLogo;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Route;
 
 class frontController extends Controller
 { 
@@ -52,7 +53,23 @@ public function showblog($slug)
 {
     $blog = Blog::where('slug', $slug )->firstOrFail();
     $pagemeta = $blog;
-    $relatedBlogs = Blog::where('id', '!=', $blog->id)->orderBy('created_at', 'desc')->limit(3)->get();
+    $pageroute = Route::currentRouteName();
+    // dd($pageroute);
+    if($pageroute==='case-study.show'){
+        $relatedBlogs = Blog::where('id', '!=', $blog->id)
+    ->where('type', 'case-studies')
+    ->orderBy('created_at', 'desc')
+    ->limit(3)
+    ->get();
+
+    }else{
+        $relatedBlogs = Blog::where('id', '!=', $blog->id)
+    ->where('type', 'blog')
+    ->orderBy('created_at', 'desc')
+    ->limit(3)
+    ->get();
+
+    }
 
     // Ensure tags are always an array
     if (is_array($blog->tags)) {

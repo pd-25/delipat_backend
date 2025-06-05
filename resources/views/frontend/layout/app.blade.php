@@ -232,18 +232,19 @@
                         {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('gallery') ? 'active' : '' }}" href="{{route('gallery')}}">Gallery</a>
                         </li>  --}}
-                        <li class="nav-item">
-                            <a class="nav-link p-0 {{ request()->is('service/hubspot-consulting-optimization') ? 'active' : '' }}" href="{{ url('/service/hubspot-consulting-optimization') }}">HubSpot</a>
+                          <li class="nav-item">
+                            <a class="nav-link p-0 {{ Route::is('case-study') ? 'active' : '' }}" href="{{route('case-study')}}">Case Studies</a>
 
                         </li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link p-0 {{ request()->is('service/hubspot-consulting-optimization') ? 'active' : '' }}" href="{{ url('/service/hubspot-consulting-optimization') }}">HubSpot</a>
+
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('industry') ? 'active' : '' }}" href="{{route('industry')}}">industry</a>
                         </li>
 
-                        {{-- <li class="nav-item">
-                            <a class="nav-link p-0 {{ Route::is('case-study') ? 'active' : '' }}" href="{{route('case-study')}}">Case Studies</a>
-
-                        </li> --}}
+                      
                         {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ Route::is('blog') ? 'active' : '' }}" href="{{route('blog')}}">Blog</a>
 

@@ -37,23 +37,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4">
-                {{-- <div class="single-generic-box" data-aos="fade-up" data-aos-duration="600">
-                    <h3>Search News</h3>
-                    <div class="search-input">
-                        <input type="text" placeholder="Type Keywords">
-                    </div>
-                </div> --}}
-                {{-- <div class="single-generic-box" data-aos="fade-up" data-aos-duration="600">
-                    <h3>Tags</h3>
-                    <div class="tag-link">
-                        <ul class="list-unstyled mb-0">
-                            @foreach($blog->tags as $tag)
-                            <li><a href="#">{{ trim($tag) }}</a></li>
-                            @endforeach
-                        </ul>
-                    </div>
-
-                </div> --}}
+                
                 <div class="single-generic-box mb-0" data-aos="fade-up" data-aos-duration="600">
                     <h3>Popular Posts</h3>
                     <div class="recant-post">
@@ -66,7 +50,7 @@
                                             alt="{{ $related->title }}">
                                     </figure>
                                     <div class="recant-post-content">
-                                        <a href="{{ route('blog.show', $related->slug) }}">
+                                        <a href="{{ route('case-study.show', $related->slug) }}">
                                             <h4>{{ $related->title }}</h4>
                                         </a>
                                         <div class="recant-calander">
