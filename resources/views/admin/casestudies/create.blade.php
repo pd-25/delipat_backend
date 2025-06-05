@@ -61,8 +61,8 @@
                 <h5>FAQs</h5>
                 <div id="faq-container">
                     <div class="faq-item mb-3">
-                        <input type="text" class="form-control mb-2" name="faqs[0][question]" placeholder="Question" required>
-                        <textarea class="form-control" name="faqs[0][answer]" placeholder="Answer" rows="2" required></textarea>
+                        <input type="text" class="form-control mb-2" name="faqs[0][question]" placeholder="Question" >
+                        <textarea class="form-control" name="faqs[0][answer]" placeholder="Answer" rows="2" ></textarea>
                     </div>
                 </div>
                 <button type="button" id="add-faq" class="btn btn-secondary mb-3">Add FAQ</button>

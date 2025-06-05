@@ -32,16 +32,16 @@ class casestudiesController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
-            'short_description' => 'required|string|max:255',
+            'title' => 'required|string',
+            'short_description' => 'required|string',
             'description' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,webp',
             'tags' => 'nullable|array',
-            'meta_title' => 'nullable|string|max:255',
-            'meta_description' => 'nullable|string|max:255',
+            'meta_title' => 'nullable|string',
+            'meta_description' => 'nullable|string',
             'headerscript' => 'nullable|string',
-            'faqs.*.question' => 'required|string|max:255',
-            'faqs.*.answer' => 'required|string',
+            'faqs.*.question' => 'nullable|string',
+            'faqs.*.answer' => 'nullable|string',
 
         ]);
 
@@ -107,16 +107,16 @@ class casestudiesController extends Controller
     public function update(Request $request, string $id)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
-            'short_description' => 'required|string|max:255',
+            'title' => 'required|string',
+            'short_description' => 'required|string',
             'description' => 'required',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,webp',
             'tags' => 'nullable|array',
-            'meta_title' => 'nullable|string|max:255',
-            'meta_description' => 'nullable|string|max:255',
+            'meta_title' => 'nullable|string',
+            'meta_description' => 'nullable|string',
             'headerscript' => 'nullable|string',
-            'faqs.*.question' => 'required|string|max:255',
-            'faqs.*.answer' => 'required|string',
+            'faqs.*.question' => 'nullable|string',
+            'faqs.*.answer' => 'nullable|string',
         ]);
     
         $blog = Blog::findOrFail($id);

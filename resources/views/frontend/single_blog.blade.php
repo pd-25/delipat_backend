@@ -84,6 +84,7 @@
         </div>
     </div>
 </section>
+@if ($blog->faqs->count() > 0)
 <section class="w-100 float-left faq-box  video-gradient-sec">
     <div class="container">
         <div class="blog-title text-center position-relative" data-aos="fade-up" data-aos-duration="600">
@@ -120,6 +121,8 @@
         </div>
     </div>
 </section>
+@endif
+
 <style>
     li {
     font-size: 17px;
