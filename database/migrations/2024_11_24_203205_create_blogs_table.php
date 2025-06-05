@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id(); // Primary key
             $table->string('title'); // Blog title
             $table->string('slug')->unique(); // Unique slug
-            $table->string('short_description'); // Short description
+            $table->longText('short_description'); // Short description
             $table->text('description'); // Full description
             $table->string('image'); // Blog image URL or path
             $table->json('tags')->nullable(); // Tags stored as JSON
