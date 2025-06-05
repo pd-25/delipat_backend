@@ -123,16 +123,16 @@ $(document).on('click', '.dropdown-toggle', function (e) {
     </script> --}}
     <script>
     $(document).ready(function() {
-        // Initialize Summernote without the font option
         $('.summernote').summernote({
             height: 300,
             toolbar: [
-                // Define only the tools you want to keep
-                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['style', ['style']], // Includes h1, h2, etc.
+                ['fontstyle', ['bold', 'italic', 'underline', 'clear']],
                 ['para', ['ul', 'ol', 'paragraph']],
                 ['insert', ['link', 'picture', 'video']],
                 ['view', ['fullscreen', 'codeview', 'help']]
             ],
+            styleTags: ['p', 'h1', 'h2', 'h3', 'h4'], // Only allow these block styles
             callbacks: {
                 onChange: function(contents, $editable) {
                     $(this).closest('.form-group').find('input[type="hidden"]').val(contents);
