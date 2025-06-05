@@ -92,7 +92,7 @@
     </script>
 
     @yield('script')
-    <script>
+    {{-- <script>
        $(document).ready(function() {
     // Initialize Summernote for all elements with the class "summernote"
     $('.summernote').summernote({
@@ -120,7 +120,43 @@ $(document).on('click', '.dropdown-toggle', function (e) {
                 }, 3000); // 3000 milliseconds = 3 seconds
             }
         });
-    </script>
+    </script> --}}
+    <script>
+    $(document).ready(function() {
+        // Initialize Summernote without the font option
+        $('.summernote').summernote({
+            height: 300,
+            toolbar: [
+                // Define only the tools you want to keep
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ],
+            callbacks: {
+                onChange: function(contents, $editable) {
+                    $(this).closest('.form-group').find('input[type="hidden"]').val(contents);
+                }
+            }
+        });
+    });
+
+    $(document).on('click', '.dropdown-toggle', function (e) {
+        if ($(this).closest('.note-editor').length > 0) {
+            $(this).dropdown('toggle');
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var messageAlert = document.getElementById('message-alert');
+        if (messageAlert) {
+            setTimeout(function() {
+                messageAlert.style.display = 'none';
+            }, 3000);
+        }
+    });
+</script>
+
     <style>
         .note-dropdown-menu {
     z-index: 1050 !important; /* Ensure dropdown appears above other elements */
