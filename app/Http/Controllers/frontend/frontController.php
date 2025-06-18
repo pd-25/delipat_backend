@@ -86,7 +86,7 @@ public function showblog($slug)
     // dd($tags);  // For debugging purposes, check the result of the split
     // dd($blog->faqs);
 
-    return view('frontend.single_blog', compact('blog', 'relatedBlogs', 'tags','pagemeta'));
+    return view('frontend.single_blog', compact('blog', 'relatedBlogs', 'tags','pagemeta','pageroute'));
 }
 
 public function industry(){

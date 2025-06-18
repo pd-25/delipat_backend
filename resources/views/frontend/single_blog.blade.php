@@ -39,10 +39,14 @@
             <div class="col-lg-4 col-md-4">
                 
                 <div class="single-generic-box mb-0" data-aos="fade-up" data-aos-duration="600">
-                    <h3>Popular Posts</h3>
+                    @if($pageroute==='case-study.show')
+                    <h3>Popular Case Studies</h3>
+                    @else
+                    <h3>Popular Blogs</h3>
+                    @endif
                     <div class="recant-post">
                         <ul class="list-unstyled mb-0">
-                            @foreach($relatedBlogs as $related)
+                            @foreach($relatedBlogs as $related) 
                             <li>
                                 <div class="recant-post-box position-relative">
                                     <figure class="mb-0">

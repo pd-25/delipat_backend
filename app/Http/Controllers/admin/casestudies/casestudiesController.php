@@ -72,11 +72,18 @@ class casestudiesController extends Controller
         ]);
 
         // Add FAQs
-        if ($request->has('faqs')) {
-            foreach ($request->faqs as $faq) {
-                $blog->faqs()->create($faq);
-            }
+       if ($request->has('faqs')) {
+    foreach ($request->faqs as $faq) {
+        // Only save if question is not empty
+        if (!empty($faq['question'])) {
+            $blog->faqs()->create([
+                'question' => $faq['question'],
+                'answer' => $faq['answer'] ?? null,
+            ]);
         }
+    }
+}
+
 
         return redirect()->route('case-studies.index')->with('success', 'Case Studies created successfully!');
     }
