@@ -1,5 +1,8 @@
 @php
     $siteSettings = App\Models\SiteSetting::first();
+
+    use App\Models\Blog;
+    $caseStudies = Blog::where('type','case-studies')->latest()->get();
 @endphp
 <!DOCTYPE html>
 <html lang="zxx">
@@ -34,89 +37,89 @@
     </div> -->
     <!-- TOP BAR CON -->
     <div class="sticky-header">
-    <div class="w-100 float-left top-bar-con lower-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div
-                        class="socisl-con d-flex align-items-center justify-content-md-start justify-content-center h-100">
-                        <span class="text-white d-inline-block text-uppercase">Follow Us:</span>
-                        <ul class="list-unstyled mb-0 d-flex">
-                            @if(!empty($siteSettings->facebooklink))
-                                <li><a href="{{$siteSettings->facebooklink}}"><i
-                                            class="fab fa-facebook-f d-flex align-items-center justify-content-center"></i></a>
-                                </li>
-                            @endif
-                            @if(!empty($siteSettings->twitterlink))
-                                <li><a href="{{$siteSettings->twitterlink}}"><i
-                                            class="fab fa-twitter d-flex align-items-center justify-content-center"></i></a>
-                                </li>
-                            @endif
-                            @if(!empty($siteSettings->linkdinlink))
-                                <li><a href="{{$siteSettings->linkdinlink}}"><i
-                                            class="fab fa-linkedin-in d-flex align-items-center justify-content-center"></i></a>
-                                </li>
-                            @endif
-                            @if(!empty($siteSettings->instagramlink))
+        <div class="w-100 float-left top-bar-con lower-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div
+                            class="socisl-con d-flex align-items-center justify-content-md-start justify-content-center h-100">
+                            <span class="text-white d-inline-block text-uppercase">Follow Us:</span>
+                            <ul class="list-unstyled mb-0 d-flex">
+                                @if(!empty($siteSettings->facebooklink))
+                                    <li><a href="{{$siteSettings->facebooklink}}"><i
+                                                class="fab fa-facebook-f d-flex align-items-center justify-content-center"></i></a>
+                                    </li>
+                                @endif
+                                @if(!empty($siteSettings->twitterlink))
+                                    <li><a href="{{$siteSettings->twitterlink}}"><i
+                                                class="fab fa-twitter d-flex align-items-center justify-content-center"></i></a>
+                                    </li>
+                                @endif
+                                @if(!empty($siteSettings->linkdinlink))
+                                    <li><a href="{{$siteSettings->linkdinlink}}"><i
+                                                class="fab fa-linkedin-in d-flex align-items-center justify-content-center"></i></a>
+                                    </li>
+                                @endif
+                                @if(!empty($siteSettings->instagramlink))
 
-                                <li><a href="{{$siteSettings->instagramlink}}"><i
-                                            class="fab fa-instagram d-flex align-items-center justify-content-center"></i></a>
-                                </li>
-                            @endif
-                            @if(!empty($siteSettings->youtubelink))
-                                <li><a href="{{$siteSettings->youtubelink}}"><i
-                                            class="fab fa-youtube d-flex align-items-center justify-content-center"></i></a>
-                                </li>
-                            @endif
+                                    <li><a href="{{$siteSettings->instagramlink}}"><i
+                                                class="fab fa-instagram d-flex align-items-center justify-content-center"></i></a>
+                                    </li>
+                                @endif
+                                @if(!empty($siteSettings->youtubelink))
+                                    <li><a href="{{$siteSettings->youtubelink}}"><i
+                                                class="fab fa-youtube d-flex align-items-center justify-content-center"></i></a>
+                                    </li>
+                                @endif
 
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <!-- <div class="col-lg-3 col-md-none d-md-none d-lg-block">
+                    <!-- <div class="col-lg-3 col-md-none d-md-none d-lg-block">
                     <div class="top-nav-image-box">
                         <img src="{{asset('frontend/assets/img/ridge-partner-desktop.jpeg')}}" class="top-nav-image" loading="lazy" alt="salesforce-ridge-partner">
                     </div>
                 </div> -->
-                <div
-                    class="col-lg-6 col-md-6 col-12 d-flex justify-content-md-end align-items-center justify-content-center">
-                    <div class="client-info">
-                        <ul class="list-unstyled mb-0 d-flex align-items-center">
-                            @if(!empty($siteSettings->phone))
-                                <li>
-                                    <a style="color: white;" href="tel:{{$siteSettings->phone}}">
-                                        <!-- <img src="{{asset('frontend/assets/images/phone-icon.png')}}" alt="phone-icon"> -->
-                                        <img src="{{asset('frontend/assets/img/whatsapp.png')}}"
-                                            style="width: 20px; padding: 0px; margin: -2px 0px 0px 0px;"> | <img
-                                            src="{{asset('frontend/assets/img/viber.png')}}"
-                                            style="width: 16px; padding: 0px; margin: -3px 0px 0px 0px;">
-                                        {{$siteSettings->phone}}
-                                    </a>
-                                </li>
-                            @endif
+                    <div
+                        class="col-lg-6 col-md-6 col-12 d-flex justify-content-md-end align-items-center justify-content-center">
+                        <div class="client-info">
+                            <ul class="list-unstyled mb-0 d-flex align-items-center">
+                                @if(!empty($siteSettings->phone))
+                                    <li>
+                                        <a style="color: white;" href="tel:{{$siteSettings->phone}}">
+                                            <!-- <img src="{{asset('frontend/assets/images/phone-icon.png')}}" alt="phone-icon"> -->
+                                            <img src="{{asset('frontend/assets/img/whatsapp.png')}}"
+                                                style="width: 20px; padding: 0px; margin: -2px 0px 0px 0px;"> | <img
+                                                src="{{asset('frontend/assets/img/viber.png')}}"
+                                                style="width: 16px; padding: 0px; margin: -3px 0px 0px 0px;">
+                                            {{$siteSettings->phone}}
+                                        </a>
+                                    </li>
+                                @endif
 
-                            {{-- @if(!empty($siteSettings->email))
-                            <li><a style="color: white;" href="mailto:{{$siteSettings->email}}"> <i
-                                        class="fa fa-envelope" aria-hidden="true"></i>
-                                    {{$siteSettings->email}}</a></li>
-                            @endif --}}
-                           
-                            <div class="generic-btn">
-                                <a class="book-bt"
-                                    href="https://calendly.com/expertsalesforce/30min/" target="_blank">Book a Meeting
-                                </a>
-                            </div>
-                        </ul>
+                                {{-- @if(!empty($siteSettings->email))
+                                <li><a style="color: white;" href="mailto:{{$siteSettings->email}}"> <i
+                                            class="fa fa-envelope" aria-hidden="true"></i>
+                                        {{$siteSettings->email}}</a></li>
+                                @endif --}}
+
+                                <div class="generic-btn">
+                                    <a class="book-bt" href="https://calendly.com/expertsalesforce/30min/"
+                                        target="_blank">Book a Meeting
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <!-- container -->
             </div>
-            <!-- container -->
         </div>
+        <!-- TOP BAR CON -->
+        <!-- HEADER -->
+
     </div>
-    <!-- TOP BAR CON -->
-    <!-- HEADER -->
-   
-    </div>
-     <header class="w-100 float-left header-con">
+    <header class="w-100 float-left header-con">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark px-0  dropdown">
                 <a class="navbar-brand d-lg-none" href="{{route('index')}}">
@@ -262,7 +265,8 @@
                     <!--   Show this only lg screens and up   -->
                     <a class="navbar-brand d-none d-lg-block" href="{{route('index')}}">
                         <figure class="mb-0">
-                            <img src="{{asset('storage/' . $siteSettings->logo1)}}" alt="delipat" style="max-width:190px">
+                            <img src="{{asset('storage/' . $siteSettings->logo1)}}" alt="delipat"
+                                style="max-width:190px">
                         </figure>
                     </a>
                     <ul class="navbar-nav">
@@ -273,11 +277,26 @@
                             <a class="nav-link p-0 {{ Route::is('gallery') ? 'active' : '' }}"
                                 href="{{route('gallery')}}">Gallery</a>
                         </li> --}}
-                        <li class="nav-item">
-                            <a class="nav-link p-0 {{ Route::is('case-study') ? 'active' : '' }}"
-                                href="{{route('case-study')}}">Case Studies</a>
+                        <li class="nav-item sdey-dropdown">
+                            <div class="d-flex">
+                                <a href="{{ route('case-study') }}" class="nav-link p-0 sdey-link">
+                                    Case Studies
+                                </a>
+                                <span class="sdey-arrow">&#9662;</span>
+                            </div>
 
+
+                            <ul class="sdey-menu">
+                                  @foreach($caseStudies as $caseStudy)
+                                    <li><a href="{{ route('case-study.show', $caseStudy->slug) }}">{{ $caseStudy->title }}</a></li>
+                                  @endforeach
+                            </ul>
                         </li>
+
+
+                      
+
+                       
                         {{-- <li class="nav-item">
                             <a class="nav-link p-0 {{ request()->is('service/hubspot-consulting-optimization') ? 'active' : '' }}"
                                 href="{{ url('/service/hubspot-consulting-optimization') }}">HubSpot</a>
@@ -533,7 +552,23 @@
         }
     });
 </script>
+  <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const dropdown = document.querySelector('.sdey-dropdown');
+                                const arrow = dropdown.querySelector('.sdey-arrow');
 
+                                arrow.addEventListener('click', function (e) {
+                                    e.stopPropagation(); // Prevent body click listener
+                                    dropdown.classList.toggle('open');
+                                });
+
+                                document.addEventListener('click', function (e) {
+                                    if (!dropdown.contains(e.target)) {
+                                        dropdown.classList.remove('open');
+                                    }
+                                });
+                            });
+                        </script>
 
 <!--End of Tawk.to Script-->
 

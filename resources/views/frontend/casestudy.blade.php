@@ -38,7 +38,7 @@
                                     <i class="tag-mb fa-solid fa-tag"></i>
                                     <span class="text-size-14"></span>
                                     <h5>
-                                        <a href="{{ route('blog.show', $blog->slug) }}" style="color: #023244;">{{ $blog->title }}</a>
+                                        <a href="{{ route('case-study.show', $blog->slug) }}" style="color: #023244;">{{ $blog->title }}</a>
                                     </h5>
                                     <p>{{ Str::limit($blog->short_description, 100) }}</p>
                                 </div>
