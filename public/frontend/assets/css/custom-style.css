@@ -5680,7 +5680,7 @@ a.item-link {
     border: 1px solid #013345;
     padding: 0;
     z-index: 999;
-    min-width: 200px;
+    min-width: 300px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -5696,7 +5696,6 @@ a.item-link {
 .sdey-menu li a:hover {
     background-color: #f0f0f0;
     color: #fcb61f;
-    font-weight: 600;
 }
 
 .sdey-dropdown.open .sdey-menu {
