@@ -59,7 +59,7 @@ public function showblog($slug)
         $relatedBlogs = Blog::where('id', '!=', $blog->id)
     ->where('type', 'case-studies')
     ->orderBy('created_at', 'desc')
-    ->limit(3)
+    ->limit(7)
     ->get();
 
     }else{
